@@ -37,7 +37,7 @@ li
 /*
 *
 *
-* NAVBAR SECTION */
+/* NAVBAR SECTION */
 #navBar
 {
   position: fixed;
@@ -68,7 +68,7 @@ li
 #innerLinks a
 {
   margin-left: 20px;
-  color: #e0e0e0;
+  color: #b0b0b0;
 }
 
 #innerLinks a:hover
@@ -112,11 +112,59 @@ li
   position: relative;
 }
 
+#trigger
+{
+  position: relative;
+  top: 200px;
+}
+
+#trigger2
+{
+  position: relative;
+  top: 200px;
+}
+
+/*
+*
+*
+/* HEADER SECTION */
 #header
 {
   position: absolute;
   left: 0px;
   bottom: 0px;
+}
+
+/*
+*
+*
+/* SIDE BUTTONS SECTION */
+#sideButtons
+{
+  position: fixed;
+  right: 80px;
+  top: 100px;
+}
+
+.side
+{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  background-color: #fafafa;
+  border-top: solid 1px white;
+  border-left: solid 1px white;
+  border-radius: 50%;
+  box-shadow: 12px 12px 42px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.sides
+{
+  display: block;
+  position: relative;
+  margin: auto;
 }
 
 .containText
