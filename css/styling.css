@@ -13,6 +13,7 @@ h1
 p
 {
   text-align: justify;
+  font-size: 18px;
 }
 
 a
@@ -32,7 +33,6 @@ li
   display: inline-block;
   text-decoration: none;
 }
-
 
 /*
 *
@@ -55,6 +55,77 @@ li
   position: absolute;
   left: 10px;
   top: 10px;
+  cursor: pointer;
+}
+
+#change
+{
+  pointer-events: none;
+  animation: bounce 3s linear infinite;
+}
+
+@keyframes bounce
+{
+  0%
+  {
+    bottom: 40px;
+  }
+  3%
+  {
+    bottom: 40px;
+  }
+  7%
+  {
+    bottom: 77px;
+  }
+  10%
+  {
+    bottom: 80px;
+  }
+  13%
+  {
+    bottom: 77px;
+  }
+  19%
+  {
+    bottom: 40px;
+  }
+  20%
+  {
+    bottom: 40px;
+  }
+  21%
+  {
+    bottom: 40px;
+  }
+  23%
+  {
+    bottom: 58px;
+  }
+  25%
+  {
+    bottom: 60px;
+  }
+  27%
+  {
+    bottom: 58px;
+  }
+  30%
+  {
+    bottom: 40px;
+  }
+  33%
+  {
+    bottom: 40px;
+  }
+  36%
+  {
+    bottom: 40px;
+  }
+  100%
+  {
+    bottom: 40px;
+  }
 }
 
 #innerLinks
@@ -144,6 +215,7 @@ li
   position: fixed;
   right: 80px;
   top: 100px;
+  z-index: 2;
 }
 
 .side
@@ -156,7 +228,7 @@ li
   border-top: solid 1px white;
   border-left: solid 1px white;
   border-radius: 50%;
-  box-shadow: 8px 8px 32px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -167,9 +239,411 @@ li
   margin: auto;
 }
 
+/*
+*
+*
+/* BIOGRAPHY SECTION */
+#bio
+{
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  border-bottom: solid 5px white;
+}
+
+#face
+{
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
 .containText
+{
+  position: relative;
+  margin: auto;
+  padding-bottom: 20px;
+  width: 60%;
+}
+
+#bio a
+{
+  text-decoration: underline;
+}
+
+/*
+*
+*
+/* SKILLS SECTION */
+#skills
+{
+  position: absolute;
+  top: 1160px;
+}
+
+#skillContainer
+{
+  position: absolute;
+  left: 0px;
+  top: 1250px;
+  height: 670px;
+  border-bottom: solid 5px white;
+}
+
+#containSkills
 {
   position: relative;
   margin: auto;
   width: 60%;
 }
+
+.left
+{
+  position: relative;
+  left: -10px;
+}
+
+.right
+{
+  position: relative;
+  left: 10px;
+}
+
+.pointsL
+{
+  position: relative;
+  top: -16px;
+}
+
+.point
+{
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4a86e8;
+}
+
+.activate
+{
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #8cade3;
+}
+
+.null
+{
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #d0d0d0;
+}
+
+.blink
+{
+  animation: blinker 0.5s ease infinite;
+}
+
+@keyframes blinker
+{
+  0%
+  {
+    opacity: 1;
+  }
+  25%
+  {
+    opacity: 0;
+  }
+  75%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+#tech
+{
+  position: absolute;
+  top: -2px;
+  left: 80px;
+}
+
+#html
+{
+  margin-top: 25px;
+}
+
+#css
+{
+  position: relative;
+  top: -25px;
+}
+
+#js
+{
+  position: relative;
+  top: -50px;
+}
+
+#rea
+{
+  position: relative;
+  top: -75px;
+}
+
+#py
+{
+  position: relative;
+  top: -100px;
+}
+
+#java
+{
+  position: relative;
+  top: -125px;
+}
+
+#php
+{
+  position: relative;
+  top: -150px;
+}
+
+#sql
+{
+  position: relative;
+  top: -175px;
+}
+
+#lamp
+{
+  position: relative;
+  display: block;
+  margin: auto;
+  top: -639px;
+}
+
+#create
+{
+  position: relative;
+  text-align: center;
+  left: 140px;
+  top: -691px;
+}
+
+.createContainers
+{
+  position: absolute;
+  width: 100%;
+  top: 75px;
+}
+
+.createContainers p
+{
+  position: relative;
+  text-align: left;
+  left: 140px;
+  top: -45px;
+}
+
+.creative
+{
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.centerContainer
+{
+  position: relative;
+  margin: auto;
+  width: 200px;
+}
+
+#ai
+{
+  top: 120px;
+}
+
+#ps
+{
+  top: 165px;
+}
+
+#pt
+{
+  top: 210px;
+}
+
+#pd
+{
+  top: 255px;
+}
+
+#fm
+{
+  top: 300px;
+}
+
+#pr
+{
+  top: 345px;
+}
+
+#ae
+{
+  top: 390px;
+}
+
+.pointsR
+{
+  position: relative;
+  top: -100px;
+  left: 205px;
+}
+
+/*
+*
+*
+/* INTERACTIONS SECTION */
+#interactions
+{
+  position: absolute;
+  top: 1845px;
+}
+
+#interactionsContainer
+{
+  position: relative;
+  top: 1940px;
+}
+
+#radial
+{
+  position: relative;
+  margin: auto;
+  width: 60%;
+}
+
+.overlayL
+{
+  position: relative;
+  left: -275px;
+  top: -28px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.sketchL
+{
+  position: absolute;;
+  right: -50px;
+  top: 5px;
+}
+
+.shadowL
+{
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 273px;
+  height: 603px;
+  border-radius: 35px;
+  background-color: #e4e4e4;
+  box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+#containOne
+{
+  position: absolute;
+  left: 9px;
+  top: 33px;
+  width: 263px;
+  height: 542px;
+  background-color: #e4e4e4;
+  z-index: -1;
+}
+
+.topBar
+{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 20px;
+  background-color: black;
+  color: white;
+}
+
+.rec
+{
+  position: absolute;
+  left: 167px;
+  top: 3.5px;
+}
+
+.percent
+{
+  position: absolute;
+  font-size: 10px;
+  left: 185px;
+  top: -3.5px;
+}
+
+.bat
+{
+  position: absolute;
+  left: 209px;
+  top: 6px;
+}
+
+.time
+{
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  left: 220px;
+  top: 6px;
+}
+
+.bottomBar
+{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+}
+
+.back
+{
+  position: relative;
+  top: 6px;
+  left: 35px;
+}
+
+.homie
+{
+  position: relative;
+  display: block;
+  margin: auto;
+  top: -14px;
+}
+
+.recents
+{
+  position: relative;
+  top: -29px;
+  left: 210px;
+}
+
+/*
+*
+*
+/* RADIAL MENU SECTION */

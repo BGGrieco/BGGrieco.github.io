@@ -13,8 +13,9 @@ $(document).ready(function()
   {
     if ( newsrc === 0 )
     {
-      document.images["pic"].style.bottom = "5px";
-      document.images["pic"].style.left = "-5px";
+      $("#logo").css("left", "-10");
+      //document.images["pic"].style.bottom = "10px";
+      //document.images["pic"].style.left = "-10px";
       document.images["pic"].src = "imgs/materialLogo.png";
       document.images["pic"].width = "70";
       newsrc = 1;
@@ -60,12 +61,11 @@ $(document).ready(function()
     $("#up").toggleClass("upOn");
   });
 
-  /*$("#trigger2").click(function()
+  // Animated skills section.
+  $(".pointsL, .pointsR").hover(function()
   {
-    $("#mail").toggleClass("mailBack");
-    $("#civi").toggleClass("civiBack");
-    $("#up").toggleClass("upBack");
-  });*/
+    $(this).find(".activate").toggleClass("blink");
+  });
 
   // Top Bar Clock.
   startTime();
@@ -85,12 +85,6 @@ $(document).ready(function()
     if (i < 10) {i = "0" + i};
     return i;
   }
-
-  // Animated skills section.
-  $(".pointsL, .pointsR, .points").hover(function()
-  {
-    $(this).find(".activate").toggleClass("blink");
-  });
 
   // Radial Menu Animations.
   $("#fab").fadeIn("slow");
