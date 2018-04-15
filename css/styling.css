@@ -1,8 +1,14 @@
+html, body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body
 {
   background-color: #e4e4e4;
   font-family: "arial";
-  color: black;
+  color: #202020;
 }
 
 h1
@@ -203,7 +209,19 @@ li
 {
   position: absolute;
   left: 0px;
-  bottom: 0px;
+  width: 100%;
+  bottom: -4px;
+}
+
+#overlay
+{
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
 }
 
 /*
@@ -237,6 +255,64 @@ li
   display: block;
   position: relative;
   margin: auto;
+}
+
+#mail
+{
+  animation: slideOut 0.3s ease-in forwards;
+}
+
+#civi
+{
+  animation: slideOut 0.3s ease-in forwards;
+  animation-delay: 0.15s;
+}
+
+#up
+{
+  animation: slideOut 0.3s ease-in forwards;
+  animation-delay: 0.3s;
+}
+
+.mailOn
+{
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+.civiOn
+{
+  animation: slideIn 0.3s ease-out forwards;
+  animation-delay: 0.15s;
+}
+
+.upOn
+{
+  animation: slideIn 0.3s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slideIn
+{
+  0%
+  {
+    left: 137px;
+  }
+  100%
+  {
+    left: 0px;
+  }
+}
+
+@keyframes slideOut
+{
+  0%
+  {
+    left: 0px;
+  }
+  100%
+  {
+    left: 137px;
+  }
 }
 
 /*
@@ -515,13 +591,17 @@ li
 #interactions
 {
   position: absolute;
-  top: 1845px;
+  top: 1850px;
 }
 
 #interactionsContainer
 {
-  position: relative;
+  position: absolute;
   top: 1940px;
+  left: 0px;
+  height: 1500px;
+  border-bottom: solid 5px white;
+  pointer-events: none;
 }
 
 #radial
@@ -529,20 +609,17 @@ li
   position: relative;
   margin: auto;
   width: 60%;
+  pointer-events: none;
 }
 
-.overlayL
+#radial img
 {
-  position: relative;
-  left: -275px;
-  top: -28px;
   pointer-events: none;
-  z-index: 2;
 }
 
 .sketchL
 {
-  position: absolute;;
+  position: absolute;
   right: -50px;
   top: 5px;
 }
@@ -563,11 +640,12 @@ li
 #containOne
 {
   position: absolute;
-  left: 9px;
+  left: 8px;
   top: 33px;
   width: 263px;
   height: 542px;
   background-color: #e4e4e4;
+  pointer-events: auto;
   z-index: -1;
 }
 
@@ -584,7 +662,7 @@ li
 .rec
 {
   position: absolute;
-  left: 167px;
+  left: 168px;
   top: 3.5px;
 }
 
@@ -592,14 +670,14 @@ li
 {
   position: absolute;
   font-size: 10px;
-  left: 185px;
+  left: 186px;
   top: -3.5px;
 }
 
 .bat
 {
   position: absolute;
-  left: 209px;
+  left: 210px;
   top: 6px;
 }
 
@@ -608,7 +686,7 @@ li
   position: absolute;
   font-size: 10px;
   color: white;
-  left: 220px;
+  left: 221px;
   top: 6px;
 }
 
@@ -643,7 +721,802 @@ li
   left: 210px;
 }
 
+/* RADIAL MENU SECTION */
+.square
+{
+  position: relative;
+  margin: auto;
+  width: 95%;
+  top: 120px;
+  pointer-events: none;
+}
+
+.square:before
+{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+/* CONTAINER SECTION */
+.container
+{
+  position: absolute;
+  top: 0px;
+  width: 17%;
+  height: 100%;
+}
+
+/* FAB SECTION */
+#fab
+{
+  position: absolute;
+  color: white;
+  font-size: 110%;
+  text-align: center;
+  width: 100%;
+  height: 17%;
+  background-color: #6eadea;
+  /*background-color: #4a86e8;*/
+  border-radius: 50%;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+  display: none;
+  cursor: pointer;
+}
+
+#fab:active
+{
+  -webkit-transform: translate(3px, 3px);
+  -moz-transform: translate(3px, 3px);
+  -o-transform: translate(3px, 3px);
+  -ms-transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#plusContain
+{
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#plus
+{
+  position: relative;
+  margin: auto;
+  top: 53%;
+  font-size: 18px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.rotate
+{
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.rotateActive
+{
+  transform: rotate(45deg);
+}
+
+/* FAB ANIMATION SECTION */
+.dotUp
+{
+  -webkit-animation: yAxisUp 0.2s ease-in forwards;
+  -moz-animation: yAxisUp 0.2s ease-in forwards;
+  -o-animation: yAxisUp 0.2s ease-in forwards;
+  -ms-animation: yAxisUp 0.2s ease-in forwards;
+  animation: yAxisUp 0.2s ease-in forwards;
+}
+
+.containerUp
+{
+  -webkit-animation: xAxisUp 0.2s ease-out forwards;
+  -moz-animation: xAxisUp 0.2s ease-out forwards;
+  -o-animation: xAxisUp 0.2s ease-out forwards;
+  -ms-animation: xAxisUp 0.2s ease-out forwards;
+  animation: xAxisUp 0.2s ease-out forwards;
+}
+
+.dotDown
+{
+  -webkit-animation: yAxisDown 0.2s ease-out forwards;
+  -moz-animation: yAxisDown 0.2s ease-out forwards;
+  -o-animation: yAxisDown 0.2s ease-out forwards;
+  -ms-animation: yAxisDown 0.2s ease-out forwards;
+  animation: yAxisDown 0.2s ease-out forwards;
+}
+
+.containerDown
+{
+  -webkit-animation: xAxisDown 0.2s ease-in forwards;
+  -moz-animation: xAxisDown 0.2s ease-in forwards;
+  -o-animation: xAxisDown 0.2s ease-in forwards;
+  -ms-animation: xAxisDown 0.2s ease-in forwards;
+  animation: xAxisDown 0.2s ease-in forwards;
+}
+
+@keyframes yAxisUp
+{
+  0%
+  {
+    bottom: -40%;
+  }
+  100%
+  {
+    bottom: 41%;
+  }
+}
+
+@keyframes xAxisUp
+{
+  0%
+  {
+    left: 75%;
+  }
+  100%
+  {
+    left: 42%;
+  }
+}
+
+@keyframes yAxisDown
+{
+  0%
+  {
+    bottom: 41%;
+  }
+  100%
+  {
+    bottom: -40%;
+  }
+}
+
+@keyframes xAxisDown
+{
+  0%
+  {
+    left: 42%;
+  }
+  100%
+  {
+    left: 75%;
+  }
+}
+
+/* RADIAL BUTTONS SECTION */
+.tab
+{
+  transform: scale(0);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.tab a
+{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#hme
+{
+  position: absolute;
+  top: 0%;
+  left: 33%;
+  text-align: center;
+  border-radius: 50%;
+  width: 34%;
+  height: 34%;
+  background-color: #fbfbfb;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #f8f8f8;
+  border-right: 1px solid #f8f8f8;
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+}
+
+#prf
+{
+  position: absolute;
+  top: 33%;
+  right: 0%;
+  text-align: center;
+  border-radius: 50%;
+  width: 34%;
+  height: 34%;
+  background-color: #fbfbfb;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #f8f8f8;
+  border-right: 1px solid #f8f8f8;
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+}
+
+#wrt
+{
+  position: absolute;
+  bottom: 0%;
+  left: 32%;
+  text-align: center;
+  border-radius: 50%;
+  width: 34%;
+  height: 34%;
+  background-color: #fbfbfb;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #f8f8f8;
+  border-right: 1px solid #f8f8f8;
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+}
+
+#cht
+{
+  position: absolute;
+  top: 33%;
+  left: 0%;
+  text-align: center;
+  border-radius: 50%;
+  width: 34%;
+  height: 34%;
+  background-color: #fbfbfb;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #f8f8f8;
+  border-right: 1px solid #f8f8f8;
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+}
+
+/* RADIAL BUTTONS ICONS */
+#hme img
+{
+  position: relative;
+  top: 20px;
+  width: 45%;
+}
+
+#prf img
+{
+  position: relative;
+  top: 20px;
+  width: 46%;
+}
+
+#wrt img
+{
+  position: relative;
+  top: 24px;
+  width: 45%;
+}
+
+#cht img
+{
+  position: relative;
+  top: 28px;
+  width: 45%;
+}
+
+.iconButton
+{
+  position: relative;
+  margin: auto;
+  top: 0%;
+}
+
+/* RADIAL BUTTONS ONCLICK ANIMATION */
+#hme:active, #cht:active
+{
+  margin-top: 3px;
+  margin-left: 3px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#prf:active
+{
+  margin-top: 3px;
+  margin-right: -3px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#wrt:active
+{
+  margin-bottom: -3px;
+  margin-left: 3px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* RADIAL BUTTONS APPEAR ANIMATION SECTION */
+.bigOneOn
+{
+  animation: appear 0.15s ease forwards, up 0.2s ease forwards, appearFade 0.1s ease forwards;
+  animation-delay: 0.15s;
+}
+
+.bigTwoOn
+{
+  animation: appear 0.15s ease forwards, toRight 0.2s ease forwards, appearFade 0.1s ease forwards;
+  animation-delay: 0.15s;
+}
+
+.bigThreeOn
+{
+  animation: appear 0.15s ease forwards, down 0.2s ease forwards, appearFade 0.1s ease forwards;
+  animation-delay: 0.15s;
+}
+
+.bigFourOn
+{
+  animation: appear 0.15s ease forwards, toLeft 0.2s ease forwards, appearFade 0.1s ease forwards;
+  animation-delay: 0.15s;
+}
+
+@keyframes appear
+{
+  100%
+  {
+    transform: scale(1,1);
+  }
+}
+
+@keyframes appearFade
+{
+  100%
+  {
+    opacity: 1;
+  }
+}
+
+@keyframes up
+{
+  0%
+  {
+    top: 35%;
+  }
+  100%
+  {
+    top: 0%;
+  }
+}
+
+@keyframes toRight
+{
+  0%
+  {
+    right: 35%;
+  }
+  100%
+  {
+    right: 0%;
+  }
+}
+
+@keyframes down
+{
+  0%
+  {
+    bottom: 35%;
+  }
+  100%
+  {
+    bottom: 0%;
+  }
+}
+
+@keyframes toLeft
+{
+  0%
+  {
+    left: 35%;
+  }
+  100%
+  {
+    left: 0%;
+  }
+}
+
+/* RADIAL NAV SECTION */
+#navigate
+{
+  position: relative;
+  margin: auto;
+  width: 60%;
+  top: 20px;
+  pointer-events: none;
+}
+
+#navigate img
+{
+  pointer-events: none;
+}
+
+.phoneR
+{
+  position: absolute;
+  right: 0px;
+}
+
+.sketchR
+{
+  position: absolute;
+  left: -50px;
+  top: 50px;
+}
+
+.shadowR
+{
+  position: absolute;
+  right: 4px;
+  top: 1px;
+  width: 273px;
+  height: 603px;
+  border-radius: 35px;
+  background-color: #e4e4e4;
+  box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+#containTwo
+{
+  position: absolute;
+  right: 8px;
+  top: 33px;
+  width: 263px;
+  height: 542px;
+  background-color: #e4e4e4;
+  pointer-events: auto;
+  z-index: -1;
+}
+
+.footer
+{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #d36363;
+  bottom: 30px;
+}
+
+/* BURGER MENU SECTION */
+.burgerMenu
+{
+  position: relative;
+  margin: auto;
+  top: -2px;
+  height: 26px;
+  width: 26px;
+  cursor: pointer;
+}
+
+.tap
+{
+  position: relative;
+  margin: auto;
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+  top: 10px;
+  background-color: transparent;
+  border: solid 2px rgba(255, 255, 255, 0.6);
+}
+
+#top
+{
+  position: relative;
+  top: 5px;
+}
+
+/* NAVIGATION BUTTONS SECTION */
+#navContainer
+{
+  position: relative;
+  margin: auto;
+  width: 50px;
+}
+
+#grayOne
+{
+  display: block;
+  position: relative;
+  margin: auto;
+  top: 33%;
+  left: 1px;
+}
+
+#navOne img:last-child
+{
+  display: none;
+}
+
+#navOne:hover img:first-child
+{
+  display: none;
+}
+
+#navOne:hover img:last-child
+{
+  display: block;
+  position: relative;
+  margin: auto;
+  top: 28%;
+}
+
+#grayTwo
+{
+  display: block;
+  position: relative;
+  margin: auto;
+  top: 25%;
+  left: -0.5px;
+}
+
+#navTwo img:last-child
+{
+  display: none;
+}
+
+#navTwo:hover img:first-child
+{
+  display: none;
+}
+
+#navTwo:hover img:last-child
+{
+  display: block;
+  position: relative;
+  margin: auto;
+  top: 18%;
+}
+
+#grayThree
+{
+  display: block;
+  position: relative;
+  margin: auto;
+  top: 23%;
+  left: 0px;
+}
+
+#navThree img:last-child
+{
+  display: none;
+}
+
+#navThree:hover img:first-child
+{
+  display: none;
+}
+
+#navThree:hover img:last-child
+{
+  display: block;
+  position: relative;
+  margin: auto;
+  top: 22%;
+}
+
+.sml
+{
+  transform: scale(0);
+}
+
+.testOne a, .testTwo a, .testThree a
+{
+  position: absolute;
+  display: block;
+  border: 2px solid #58a7dd;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  top: -2px;
+  left: -2px;
+}
+
+.testOne a:hover
+{
+  background-color: #6eadea;
+  border: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-animation: whopL 0.2s forwards;
+  -moz-animation: whopL 0.2s forwards;
+  -o-animation: whopL 0.2s forwards;
+  -ms-animation: whopL 0.2s forwards;
+  animation: whopL 0.2s forwards;
+}
+
+.testTwo a:hover
+{
+  background-color: #6eadea;
+  border: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-animation: whopC 0.2s forwards;
+  -moz-animation: whopC 0.2s forwards;
+  -o-animation: whopC 0.2s forwards;
+  -ms-animation: whopC 0.2s forwards;
+  animation: whopC 0.2s forwards;
+}
+
+.testThree a:hover
+{
+  background-color: #6eadea;
+  border: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-animation: whopR 0.2s forwards;
+  -moz-animation: whopR 0.2s forwards;
+  -o-animation: whopR 0.2s forwards;
+  -ms-animation: whopR 0.2s forwards;
+  animation: whopR 0.2s forwards;
+}
+
+#workouts
+{
+  position: absolute;
+  bottom: 10px;
+  left: -60px;
+}
+
+#home
+{
+  position: absolute;
+  bottom: 50px;
+}
+
+#profile
+{
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+}
+
+/* NAVIGATION BUTTONS ANIMATIONS SECTION */
+.smlOnOne
+{
+  -webkit-animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
+  -moz-animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
+  -o-animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
+  -ms-animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
+  animation: pop 0.1s ease-in forwards, slideOne 0.15s ease-in forwards;
+}
+
+.smlOnTwo
+{
+  -webkit-animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
+  -moz-animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
+  -o-animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
+  -ms-animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
+  animation: pop 0.1s ease-in forwards, slideTwo 0.15s ease-in forwards;
+}
+
+.smlOnThree
+{
+  -webkit-animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
+  -moz-animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
+  -o-animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
+  -ms-animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
+  animation: pop 0.1s ease-in forwards, slideThree 0.15s ease-in forwards;
+}
+
+@keyframes pop
+{
+  100%
+  {
+    transform: scale(1,1);
+  }
+}
+
+@keyframes slideOne
+{
+  0%
+  {
+    bottom: 30px;
+    left: 20px;
+  }
+  100%
+  {
+    bottom: 50px;
+    left: -40px;
+  }
+}
+
+@keyframes slideTwo
+{
+  0%
+  {
+    bottom: 40px;
+    left: 25px;
+  }
+  100%
+  {
+    bottom: 83px;
+    left: 6px;
+  }
+}
+
+@keyframes slideThree
+{
+  0%
+  {
+    bottom: 30px;
+    left: 25px;
+  }
+  100%
+  {
+    bottom: 50px;
+    left: 50px;
+  }
+}
+
+@keyframes whopL
+{
+  0%
+  {
+    transform: scale(1,1) translateY(0px) translateX(0px);
+  }
+  100%
+  {
+    transform: scale(1.5) translateY(-10px) translateX(-10px);
+  }
+}
+
+@keyframes whopC
+{
+  0%
+  {
+    transform: scale(1,1) translateY(0px) translateX(0px);
+  }
+  100%
+  {
+    transform: scale(1.5) translateY(-10px);
+  }
+}
+
+@keyframes whopR
+{
+  0%
+  {
+    transform: scale(1,1) translateY(0px) translateX(0px);
+  }
+  100%
+  {
+    transform: scale(1.5) translateY(-10px) translateX(10px);
+  }
+}
+
 /*
 *
 *
-/* RADIAL MENU SECTION */
+/* INTERACTIONS SECTION */
+#designs
+{
+  position: absolute;
+  top: 1850px;
+}
+
+#designsContainer
+{
+  position: absolute;
+  width: 100%;
+  top: 3500px;
+  height: 500px;
+  left: 0px;
+  border-bottom: solid 5px white;
+  pointer-events: none;
+}

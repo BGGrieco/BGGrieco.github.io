@@ -104,7 +104,6 @@ $(document).ready(function()
   // Nav Menu Animations.
   $(".burgerMenu").click(function()
   {
-    //modifyOverlay(3);
     $(".smlOne").toggleClass("smlOnOne");
     $(".smlTwo").toggleClass("smlOnTwo");
     $(".smlThree").toggleClass("smlOnThree");

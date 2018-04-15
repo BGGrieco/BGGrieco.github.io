@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>Brian Grieco</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official website of UX Designer, Web Developer and media artist Brian Grieco.">
+    <meta name="keywords" content="Design,UX,UXDesigner">
+    <meta name="author" content="Brian G. Grieco">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/styling.css" type="text/css">
@@ -17,8 +21,9 @@
         <li><a href="#bio">Biography</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#interactions">Interactions</a></li>
-        <li><a href="#">Designs</a></li>
+        <li><a href="#designs">Designs</a></li>
         <li><a href="#">Contacts</a></li>
+        <li><a href="#">More</a></li>
       </ul>
 
       <ul id="outerLinks">
@@ -53,19 +58,22 @@
     <!--Header-->
     <div id="header">
       <img src="imgs/duomo.jpg" alt="" />
+      <div id="overlay">
+        <h1></h1>
+      </div>
     </div>
 
     <!--Side Buttons-->
     <div id="sideButtons">
-      <div id="mail" class="side mail">
+      <div id="mail" class="side">
         <img class="sides" src="imgs/mail.png" width="27" style="position: relative; top: 19px; left: -1px;" alt="" />
       </div>
 
-      <div id="civi" class="side civi">
+      <div id="civi" class="side">
         <img class="sides" src="imgs/download.png" width="31" style="position: relative; top: 18px; left: -2px;" alt="" />
       </div>
 
-      <div id="up" class="side up">
+      <div id="up" class="side">
         <img class="sides" src="imgs/up.png" width="17" style="position: relative; top: 17px; left: -1px;" alt="" />
       </div>
     </div>
@@ -328,7 +336,6 @@
       <!--RADIAL OPTIONS MENU-->
       <div id="radial">
         <img src="imgs/sgs8_2.png" width="280" alt="" />
-        <!--<img class="overlayL" src="imgs/overlay.png" width="261" alt="" />-->
         <img class="sketchL" src="imgs/illustrationOne.png" width="461" alt="" />
         <div class="shadowL"></div>
         <div id="containOne">
@@ -355,17 +362,17 @@
               </div>
             </div>
             <div id="prf" class="tab bigTwo">
-              <div class="iconButton" style="top: 24%;">
+              <div class="iconButton">
                 <img class="workIcon" src="imgs/profile.png" alt="" />
               </div>
             </div>
             <div id="wrt" class="tab bigThree">
-              <div class="iconButton" style="top: 36%">
+              <div class="iconButton">
                 <img class="workIcon" src="imgs/stylus.png" alt="" />
               </div>
             </div>
             <div id="cht" class="tab bigFour">
-              <div class="iconButton" style="top: 23%">
+              <div class="iconButton">
                 <img class="workIcon" src="imgs/msg.png" alt="" />
               </div>
             </div>
@@ -379,38 +386,37 @@
         </div>
       </div>
 
-      <!--RADIAL NAVIGATION MENU
+      <!--RADIAL NAVIGATION MENU-->
       <div id="navigate">
-        <img src="imgs/sgs8.png" width="280" alt="" />
-        <img class="overlayR" src="imgs/overlay.png" width="261" alt="" />
+        <img class="phoneR" src="imgs/sgs8_2.png" width="280" alt="" />
         <img class="sketchR" src="imgs/illustrationTwo.png" width="461" alt="" />
         <div class="shadowR"></div>
         <div id="containTwo">
-          <!--Top Bar
+          <!--Top Bar-->
           <div class="topBar">
             <img class="rec" src="imgs/reception.png" width="12" alt="" />
-            <p>82%</p>
+            <p class="percent">82%</p>
             <img class="bat" src="imgs/battery.png" width="6" alt="" />
             <div class="time"></div>
           </div>
-        <!--Footer
+        <!--Footer-->
         <div class="footer">
-          <!--Radial Nav Menu
+          <!--Radial Nav Menu-->
           <div id="navContainer">
-            <!--Buttons
+            <!--Buttons-->
             <div id="workouts" class="sml smlOne">
               <div class="testOne">
                 <a id="navOne" href="routines.html">
-                  <img id="grayOne" class="in" src="imgs/darkMessage.png" width="20" alt="" />
-                  <img id="whiteOne" class="out" src="imgs/whiteMessage.png" width="30" alt="" />
+                  <img id="grayOne" class="in" src="imgs/darkMessage.png" width="21" alt="" />
+                  <img id="whiteOne" class="out" src="imgs/whiteMessage.png" width="25" alt="" />
                 </a>
               </div>
             </div>
             <div id="home" class="sml smlTwo">
               <div class="testTwo">
                 <a id="navTwo" href="index.html">
-                  <img id="grayTwo" class="in" src="imgs/darkHome.png" width="17" alt="" />
-                  <img id="whiteTwo" class="out" src="imgs/whiteHome.png" width="28" alt="" />
+                  <img id="grayTwo" class="in" src="imgs/darkHome.png" width="18" alt="" />
+                  <img id="whiteTwo" class="out" src="imgs/whiteHome.png" width="23" alt="" />
                 </a>
               </div>
             </div>
@@ -418,24 +424,37 @@
               <div class="testThree">
                 <a id="navThree" href="profile.html">
                   <img id="grayThree" class="in" src="imgs/darkProfile.png" width="18" alt="" />
-                  <img id="whiteThree" class="out" src="imgs/whiteProfile.png" width="28" alt="" />
+                  <img id="whiteThree" class="out" src="imgs/whiteProfile.png" width="23" alt="" />
                 </a>
               </div>
             </div>
-            <!--Interaction Menu
+            <!--Interaction Menu-->
             <div id="burger" class="burgerMenu">
               <div id="circle" class="tap"></div>
             </div>
           </div>
         </div>
-        <!--Bottom Bar
+        <!--Bottom Bar-->
         <div class="bottomBar">
           <img class="back" src="imgs/backWhite.png" width="16" alt="" />
-          <img class="homieLeft" src="imgs/homeWhite.png" width="16" alt="" />
+          <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
           <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
         </div>
       </div>
-    </div>-->
+    </div>
+  </div>
+
+    <!--Designs-->
+    <div id="designs"></div>
+    <div id="designsContainer">
+      <h1>DESIGNS</h1>
+      <div class="containText" id="designsText">
+        <p>
+          A small showcase of some of the designs I have created for printed media:
+          buisness cards, CVs, posters, random art etc.
+        </p>
+      </div>
+    </div>
 
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
