@@ -11,7 +11,7 @@ body
   color: #202020;
 }
 
-h1
+h1, h2
 {
   text-align: center;
 }
@@ -158,7 +158,7 @@ li
 {
   position: absolute;
   top: 10px;
-  left: 480px;
+  left: 550px;
 }
 
 #outerLinks a
@@ -342,7 +342,7 @@ li
   width: 60%;
 }
 
-#bio a
+.containText a
 {
   text-decoration: underline;
 }
@@ -1503,11 +1503,11 @@ li
 /*
 *
 *
-/* INTERACTIONS SECTION */
+/* DESIGNS SECTION */
 #designs
 {
   position: absolute;
-  top: 1850px;
+  top: 3400px;
 }
 
 #designsContainer
@@ -1518,5 +1518,24 @@ li
   height: 500px;
   left: 0px;
   border-bottom: solid 5px white;
-  pointer-events: none;
+}
+
+/*
+*
+*
+/* MORE SECTION */
+#more
+{
+  position: absolute;
+  top: 4000px;
+}
+
+#moreContainer
+{
+  position: absolute;
+  width: 100%;
+  top: 4050px;
+  height: 500px;
+  left: 0px;
+  border-bottom: solid 5px white;
 }
