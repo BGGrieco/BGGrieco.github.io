@@ -4,16 +4,16 @@
     <title>Brian Grieco</title>
     <meta charset="UTF-8">
     <meta name="description" content="Official website of UX Designer, Web Developer and media artist Brian Grieco.">
-    <meta name="keywords" content="Design,UX,UXDesigner">
+    <meta name="keywords" content="Design, UI, UX, UIDesigner, SoftwareDesign, UXDesigner">
     <meta name="author" content="Brian G. Grieco">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/styling.css" type="text/css">
   </head>
   <body>
-
     <!--Nav Bar-->
-    <div id="navBar">
+    <div id="navBar" class="nav">
       <div id="logo" class="attention">
         <img id="change" name="pic" src="imgs/logo.png" width="60" alt="" />
       </div>
@@ -52,423 +52,447 @@
           </a>
         </li>
       </ul>
-      <button id="trigger">HERE</button>
     </div>
 
     <!--Header-->
     <div id="header">
-      <img src="imgs/duomo.jpg" alt="" />
-      <div id="overlay">
-        <h1></h1>
+      <img id="duomo" src="imgs/duomo.jpg" alt="" />
+      <div id="overlay"></div>
+      <div id="wordsContainer">
+        <img id="words" src="imgs/header.png" alt="" />
+        <div id="call" class="js-touch-effect">
+          <a href="#">Show me</a>
+        </div>
       </div>
     </div>
 
     <!--Side Buttons-->
     <div id="sideButtons">
-      <div id="mail" class="side">
-        <img class="sides" src="imgs/mail.png" width="27" style="position: relative; top: 19px; left: -1px;" alt="" />
+      <div id="mail" class="side mail">
+        <div class="ripple"></div>
+        <img class="sideimg" src="imgs/mail.png" width="27" style="top: 19px; left: -1px;" alt="" />
       </div>
 
-      <div id="civi" class="side">
-        <img class="sides" src="imgs/download.png" width="31" style="position: relative; top: 18px; left: -2px;" alt="" />
+      <div id="civi" class="side civi">
+        <div class="ripple"></div>
+        <img class="sideimg" src="imgs/download.png" width="31" style="top: 18px; left: -2px;" alt="" />
       </div>
 
-      <div id="up" class="side">
-        <img class="sides" src="imgs/up.png" width="17" style="position: relative; top: 17px; left: -1px;" alt="" />
-      </div>
-    </div>
-
-    <!--Bio-->
-    <div id="bio">
-      <h1>BIOGRAPHY</h1>
-      <img id="face" src="imgs/face.png" width="220" alt="" />
-      <div class="containText">
-        <p>
-          I am a UX designer, media expert, and creative web developer currently working with a strong and
-          motivated team at <a href="https://www.megsupporttools.com/" target="_blank">MEG Support Tools</a> and
-          <a href="https://info.patientmpower.com/" target="_blank">patientMpower</a>.
-          I specialize in bringing concepts and ideas for mobile applications from sketch to completion,
-          following and tayloring every stage of the process: from initial data models and screen-flows to completed
-          product.
-          <br /><br />
-          I work with a number of tools, most prominently Sketch, Zeplin, Illustrator and Balsamiq Mockups.
-          Due to my past career in audio production, I also have a lot of experience with audio and video editing
-          software.
-        </p>
+      <div id="up" class="side up">
+        <div class="ripple"></div>
+        <img class="sideimg" src="imgs/up.png" width="17" style="top: 17px; left: -1px;" alt="" />
       </div>
     </div>
 
-    <!--Skills-->
-    <div id="skills"></div>
-    <div id="skillContainer">
-      <h1>SKILLS</h1>
-      <div class="containText" id="skillsText">
-        <p>
-          Due to my past work in audio and media, I have a varied set of technical skills, ranging from
-          audio and video production, as well as basic knowledge of the most used programming languages and
-          frameworks.
-        </p>
-      </div>
-      <div id="containSkills">
-        <img id="cog" src="imgs/cog.png" width="50" alt="" />
-        <p id="tech">TECHNICAL SKILLS:</p>
-        <!--HTML-->
-        <div id="html">
-          <img class="left" src="imgs/html.png" width="50" alt="" />
-          <ul class="pointsL">
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="activate"></div></li>
-          </ul>
+    <div id="contentContainer">
+      <!--Bio-->
+      <div id="bio"></div>
+      <div class="sectionContainer">
+        <h1>BIOGRAPHY</h1>
+        <div id="faceContainer">
+          <img id="face" src="imgs/face.png" width="200" alt="" />
         </div>
-        <!--CSS-->
-        <div id="css">
-          <img class="right" src="imgs/css.png" width="50" alt="" />
-          <ul class="pointsL">
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="activate"></div></li>
-          </ul>
-        </div>
-        <!--JS-->
-        <div id="js">
-          <img class="left" src="imgs/js.png" width="50" alt="" />
-          <ul class="pointsL">
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="activate"></div></li>
-            <li><div class="null"></div></li>
-          </ul>
-        </div>
-        <!--REACT-->
-        <div id="rea">
-          <img class="right" src="imgs/react.png" width="50" alt="" />
-          <ul class="pointsL">
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="activate"></div></li>
-            <li><div class="null"></div></li>
-          </ul>
-        </div>
-        <!--PYTHON-->
-        <div id="py">
-          <img class="left" src="imgs/python.png" width="50" alt="" />
-          <ul class="pointsL">
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="activate"></div></li>
-            <li><div class="null"></div></li>
-            <li><div class="null"></div></li>
-          </ul>
-        </div>
-        <!--JAVA-->
-        <div id="java">
-          <img class="right" src="imgs/java.png" width="50" alt="" />
-          <ul class="pointsL">
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="activate"></div></li>
-            <li><div class="null"></div></li>
-            <li><div class="null"></div></li>
-          </ul>
-        </div>
-        <!--PHP-->
-        <div id="php">
-          <img class="left" src="imgs/php.png" width="50" alt="" />
-          <ul class="pointsL">
-            <li><div class="point"></div></li>
-            <li><div class="point"></div></li>
-            <li><div class="activate"></div></li>
-            <li><div class="null"></div></li>
-            <li><div class="null"></div></li>
-          </ul>
-        </div>
-        <!--SQL-->
-        <div id="sql">
-          <img class="right" src="imgs/sql.png" width="50" alt="" />
-          <ul class="pointsL">
-            <li><div class="point"></div></li>
-            <li><div class="activate"></div></li>
-            <li><div class="null"></div></li>
-            <li><div class="null"></div></li>
-            <li><div class="null"></div></li>
-          </ul>
-        </div>
-
-        <!--CREATIVE SKILLS-->
-        <img id="lamp" src="imgs/lamp.png" width="50" alt="" />
-        <p id="create">CREATIVE SKILLS:</p>
-        <!--SKETCH-->
-        <div id="ska" class="createContainers">
-          <img class="creative" src="imgs/ai.png" width="45" alt="" style="top: 5px" />
-          <div class="centerContainer">
-            <p>SketchApp</p>
-            <ul class="pointsR">
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="activate"></div></li>
-            </ul>
-          </div>
-        </div>
-        <!--ILLUSTRATOR-->
-        <div id="ai" class="createContainers">
-          <img class="creative" src="imgs/ai.png" width="45" alt="" style="top: 5px" />
-          <div class="centerContainer">
-            <p>Illustrator</p>
-            <ul class="pointsR">
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="activate"></div></li>
-            </ul>
-          </div>
-        </div>
-        <!--PHOTOSHOP-->
-        <div id="ps" class="createContainers">
-          <img class="creative" src="imgs/ps.png" width="45" alt="" style="top: 5px" />
-          <div class="centerContainer">
-            <p>PhotoShop</p>
-            <ul class="pointsR">
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="activate"></div></li>
-              <li><div class="null"></div></li>
-            </ul>
-          </div>
-        </div>
-        <!--PRO~TOOLS-->
-        <div id="pt" class="createContainers">
-          <img class="creative" src="imgs/pt.png" width="45" alt="" style="top: 5px" />
-          <div class="centerContainer">
-            <p>ProTools</p>
-            <ul class="pointsR">
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-            </ul>
-          </div>
-        </div>
-        <!--PURE-DATA-->
-        <div id="pd" class="createContainers">
-          <img class="creative" src="imgs/pd.png" width="45" alt="" style="top: 5px" />
-          <div class="centerContainer">
-            <p>PureData</p>
-            <ul class="pointsR">
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="activate"></div></li>
-            </ul>
-          </div>
-        </div>
-        <!--F-MOD-->
-        <div id="fm" class="createContainers">
-          <img class="creative" src="imgs/fm.png" width="45" alt="" style="top: 5px" />
-          <div class="centerContainer">
-            <p>F-Mod</p>
-            <ul class="pointsR">
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="activate"></div></li>
-            </ul>
-          </div>
-        </div>
-        <!--PREMIERE PRO-->
-        <div id="pr" class="createContainers">
-          <img class="creative" src="imgs/pr.png" width="45" alt="" style="top: 5px" />
-          <div class="centerContainer">
-            <p>Premiere</p>
-            <ul class="pointsR">
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="activate"></div></li>
-            </ul>
-          </div>
-        </div>
-        <!--AFTER EFFECTS-->
-        <div id="ae" class="createContainers">
-          <img class="creative" src="imgs/ae.png" width="45" alt="" style="top: 5px" />
-          <div class="centerContainer">
-            <p>AfterEffects</p>
-            <ul class="pointsR">
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="point"></div></li>
-              <li><div class="activate"></div></li>
-              <li><div class="null"></div></li>
-            </ul>
-          </div>
+        <div class="containText">
+          <p>
+            I am a UX/UI designer, media expert, and creative web developer currently working with a strong and
+            motivated team at <a href="https://www.megsupporttools.com/" target="_blank">MEG Support Tools</a> and
+            <a href="https://info.patientmpower.com/" target="_blank">patientMpower</a>.
+            I specialize in bringing concepts and ideas for mobile applications from sketch to completion,
+            following and tayloring every stage of the process: from initial data models and screen-flows to completed
+            product.
+            <br /><br />
+            I work with a number of tools, most prominently Sketch, Zeplin, Illustrator and Balsamiq Mockups.
+            Due to my past career in audio production, I also have a lot of experience with audio and video editing
+            software.
+          </p>
+          <div class="ghost"><a href="#designs">Cool. What have you actually done though?</a></div>
         </div>
       </div>
-    </div>
 
-    <!--Interactions-->
-    <div id="interactions"></div>
-    <div id="interactionsContainer">
-      <h1>INTERACTIONS</h1>
-      <div class="containText" id="interactionsText">
-        <p>
-          Here you can view and engage with interactions I created for hybrid mobile applications.
-          Some of these are original interactions I experimented with while developing
-          my first applications, others are standard interactions that are common in native
-          applications, but are recreated here using JavaScript and HTML. The point of this is to
-          show my skill in creating hybrid applications that retain a native appereance and feel.
-        </p>
+      <!--Skills-->
+      <div id="skills"></div>
+      <div class="sectionContainer">
+        <h1>SKILLS</h1>
+        <div class="containText">
+          <p>
+            Due to my past work in audio and media, I have a varied set of technical skills, ranging from
+            audio and video production, as well as basic knowledge of the most used programming languages and
+            frameworks.
+          </p>
+        </div>
+
+        <!--SKILL GRAPHS-->
+        <div class="contain">
+          <div class="columnContainer">
+            <img class="skillIcon" src="imgs/cog.png" width="50" alt="" />
+            <p class="skillTitle">TECHNICAL SKILLS:</p>
+            <!--HTML-->
+            <div id="html">
+              <img class="left" src="imgs/html.png" width="50" alt="" />
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+              </ul>
+            </div>
+            <!--CSS-->
+            <div id="css">
+              <img class="right" src="imgs/css.png" width="50" alt="" />
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+              </ul>
+            </div>
+            <!--JS-->
+            <div id="js">
+              <img class="left" src="imgs/js.png" width="50" alt="" />
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--REACT-->
+            <div id="rea">
+              <img class="right" src="imgs/react.png" width="50" alt="" />
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--PYTHON-->
+            <div id="py">
+              <img class="left" src="imgs/python.png" width="50" alt="" />
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--JAVA-->
+            <div id="java">
+              <img class="right" src="imgs/java.png" width="50" alt="" />
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--PHP-->
+            <div id="php">
+              <img class="left" src="imgs/php.png" width="50" alt="" />
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--SQL-->
+            <div id="sql">
+              <img class="right" src="imgs/sql.png" width="50" alt="" />
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+          </div>
+
+          <!--CREATIVE SKILLS-->
+          <div class="columnContainer">
+            <img class="skillIcon" src="imgs/lamp.png" width="50" alt="" />
+            <p class="skillTitle">CREATIVE SKILLS:</p>
+            <!--SKETCH-->
+            <div id="ska" class="createContainers">
+              <img class="creative" src="imgs/ai.png" width="45" alt="" style="top: 5px" />
+              <p>SketchApp</p>
+              <ul class="pointsR">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+              </ul>
+            </div>
+            <!--ILLUSTRATOR-->
+            <div id="ai" class="createContainers">
+              <img class="creative" src="imgs/ai.png" width="45" alt="" style="top: 5px" />
+              <div class="centerContainer">
+                <p>Illustrator</p>
+                <ul class="pointsR">
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="activate"></div></li>
+                </ul>
+              </div>
+            </div>
+            <!--PHOTOSHOP-->
+            <div id="ps" class="createContainers">
+              <img class="creative" src="imgs/ps.png" width="45" alt="" style="top: 5px" />
+              <div class="centerContainer">
+                <p>PhotoShop</p>
+                <ul class="pointsR">
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="activate"></div></li>
+                  <li><div class="null"></div></li>
+                </ul>
+              </div>
+            </div>
+            <!--PRO~TOOLS-->
+            <div id="pt" class="createContainers">
+              <img class="creative" src="imgs/pt.png" width="45" alt="" style="top: 5px" />
+              <div class="centerContainer">
+                <p>ProTools</p>
+                <ul class="pointsR">
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                </ul>
+              </div>
+            </div>
+            <!--PURE-DATA-->
+            <div id="pd" class="createContainers">
+              <img class="creative" src="imgs/pd.png" width="45" alt="" style="top: 5px" />
+              <div class="centerContainer">
+                <p>PureData</p>
+                <ul class="pointsR">
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="activate"></div></li>
+                </ul>
+              </div>
+            </div>
+            <!--F-MOD-->
+            <div id="fm" class="createContainers">
+              <img class="creative" src="imgs/fm.png" width="45" alt="" style="top: 5px" />
+              <div class="centerContainer">
+                <p>F-Mod</p>
+                <ul class="pointsR">
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="activate"></div></li>
+                </ul>
+              </div>
+            </div>
+            <!--PREMIERE PRO-->
+            <div id="pr" class="createContainers">
+              <img class="creative" src="imgs/pr.png" width="45" alt="" style="top: 5px" />
+              <div class="centerContainer">
+                <p>Premiere</p>
+                <ul class="pointsR">
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="activate"></div></li>
+                </ul>
+              </div>
+            </div>
+            <!--AFTER EFFECTS-->
+            <div id="ae" class="createContainers">
+              <img class="creative" src="imgs/ae.png" width="45" alt="" style="top: 5px" />
+              <div class="centerContainer">
+                <p>AfterEffects</p>
+                <ul class="pointsR">
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="point"></div></li>
+                  <li><div class="activate"></div></li>
+                  <li><div class="null"></div></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!--RADIAL OPTIONS MENU-->
-      <div id="radial">
-        <img src="imgs/sgs8_2.png" width="280" alt="" />
-        <img class="sketchL" src="imgs/illustrationOne.png" width="461" alt="" />
-        <div class="shadowL"></div>
-        <div id="containOne">
-          <!--Top Bar-->
-          <div class="topBar">
-            <img class="rec" src="imgs/reception.png" width="12" alt="" />
-            <p class="percent">82%</p>
-            <img class="bat" src="imgs/battery.png" width="6" alt="" />
-            <div class="time"></div>
+      <!--Interactions-->
+      <div id="interactions"></div>
+      <div class="sectionContainer">
+        <h1>INTERACTIONS</h1>
+        <div class="containText">
+          <p>
+            Here you can view and engage with interactions I created for hybrid mobile applications.
+            Some of these are original interactions I experimented with while developing
+            my first applications, others are standard interactions that are common in native
+            applications, but are recreated here using JavaScript and HTML. The point of this is to
+            show my skill in creating hybrid applications that retain a native appereance and feel.
+          </p>
+          <div class="ghost"><a href="#">Sorry, who are you again?</a></div>
+          <div class="ghost"><a href="#">How did you say you did all this?</a></div>
+        </div>
+
+        <div class="contain">
+          <!--RADIAL OPTIONS MENU-->
+          <div id="radial">
+            <img src="imgs/sgs8_2.png" width="280" alt="" />
+            <img class="sketchL" src="imgs/illustrationOne.png" width="461" alt="" />
+            <div class="shadowL"></div>
+            <div id="containOne">
+              <!--Top Bar-->
+              <div class="topBar">
+                <img class="rec" src="imgs/reception.png" width="12" alt="" />
+                <p class="percent">82%</p>
+                <img class="bat" src="imgs/battery.png" width="6" alt="" />
+                <div class="time"></div>
+              </div>
+              <!--Adaptive Container-->
+              <div class="square">
+                <div class="container containerDown">
+                  <div id="fab" class="dot dotDown">
+                    <div id=plusContain class="fab rotate">
+                      <div id="plus" class="plusWhite">+</div>
+                    </div>
+                  </div>
+                </div>
+                <!--Radial Buttons-->
+                <div id="hme" class="tab bigOne">
+                  <div class="iconButton">
+                    <img class="workIcon" src="imgs/home.png" alt="" />
+                  </div>
+                </div>
+                <div id="prf" class="tab bigTwo">
+                  <div class="iconButton">
+                    <img class="workIcon" src="imgs/profile.png" alt="" />
+                  </div>
+                </div>
+                <div id="wrt" class="tab bigThree">
+                  <div class="iconButton">
+                    <img class="workIcon" src="imgs/stylus.png" alt="" />
+                  </div>
+                </div>
+                <div id="cht" class="tab bigFour">
+                  <div class="iconButton">
+                    <img class="workIcon" src="imgs/msg.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!--Bottom Bar-->
+              <div class="bottomBar">
+                <img class="back" src="imgs/backWhite.png" width="16" alt="" />
+                <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
+                <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
+              </div>
+            </div>
           </div>
-          <!--Adaptive Container-->
-          <div class="square">
-            <div class="container containerDown">
-              <div id="fab" class="dot dotDown">
-                <div id=plusContain class="fab rotate">
-                  <div id="plus" class="plusWhite">+</div>
+
+          <!--RADIAL NAVIGATION MENU-->
+          <div id="navigate">
+            <img class="phoneR" src="imgs/sgs8_2.png" width="280" alt="" />
+            <img class="sketchR" src="imgs/illustrationTwo.png" width="461" alt="" />
+            <div class="shadowR"></div>
+            <div id="containTwo">
+              <!--Top Bar-->
+              <div class="topBar">
+                <img class="rec" src="imgs/reception.png" width="12" alt="" />
+                <p class="percent">82%</p>
+                <img class="bat" src="imgs/battery.png" width="6" alt="" />
+                <div class="time"></div>
+              </div>
+            <!--Footer-->
+            <div class="footer">
+              <!--Radial Nav Menu-->
+              <div id="navContainer">
+                <!--Buttons-->
+                <div id="workouts" class="sml smlOne">
+                  <div class="testOne">
+                    <a id="navOne" href="routines.html">
+                      <img id="grayOne" class="in" src="imgs/darkMessage.png" width="21" alt="" />
+                      <img id="whiteOne" class="out" src="imgs/whiteMessage.png" width="25" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div id="home" class="sml smlTwo">
+                  <div class="testTwo">
+                    <a id="navTwo" href="index.html">
+                      <img id="grayTwo" class="in" src="imgs/darkHome.png" width="18" alt="" />
+                      <img id="whiteTwo" class="out" src="imgs/whiteHome.png" width="23" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div id="profile" class="sml smlThree">
+                  <div class="testThree">
+                    <a id="navThree" href="profile.html">
+                      <img id="grayThree" class="in" src="imgs/darkProfile.png" width="18" alt="" />
+                      <img id="whiteThree" class="out" src="imgs/whiteProfile.png" width="23" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <!--Interaction Menu-->
+                <div id="burger" class="burgerMenu">
+                  <div id="circle" class="tap"></div>
                 </div>
               </div>
             </div>
-            <!--Radial Buttons-->
-            <div id="hme" class="tab bigOne">
-              <div class="iconButton">
-                <img class="workIcon" src="imgs/home.png" alt="" />
-              </div>
-            </div>
-            <div id="prf" class="tab bigTwo">
-              <div class="iconButton">
-                <img class="workIcon" src="imgs/profile.png" alt="" />
-              </div>
-            </div>
-            <div id="wrt" class="tab bigThree">
-              <div class="iconButton">
-                <img class="workIcon" src="imgs/stylus.png" alt="" />
-              </div>
-            </div>
-            <div id="cht" class="tab bigFour">
-              <div class="iconButton">
-                <img class="workIcon" src="imgs/msg.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <!--Bottom Bar-->
-          <div class="bottomBar">
-            <img class="back" src="imgs/backWhite.png" width="16" alt="" />
-            <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
-            <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <!--RADIAL NAVIGATION MENU-->
-      <div id="navigate">
-        <img class="phoneR" src="imgs/sgs8_2.png" width="280" alt="" />
-        <img class="sketchR" src="imgs/illustrationTwo.png" width="461" alt="" />
-        <div class="shadowR"></div>
-        <div id="containTwo">
-          <!--Top Bar-->
-          <div class="topBar">
-            <img class="rec" src="imgs/reception.png" width="12" alt="" />
-            <p class="percent">82%</p>
-            <img class="bat" src="imgs/battery.png" width="6" alt="" />
-            <div class="time"></div>
-          </div>
-        <!--Footer-->
-        <div class="footer">
-          <!--Radial Nav Menu-->
-          <div id="navContainer">
-            <!--Buttons-->
-            <div id="workouts" class="sml smlOne">
-              <div class="testOne">
-                <a id="navOne" href="routines.html">
-                  <img id="grayOne" class="in" src="imgs/darkMessage.png" width="21" alt="" />
-                  <img id="whiteOne" class="out" src="imgs/whiteMessage.png" width="25" alt="" />
-                </a>
-              </div>
-            </div>
-            <div id="home" class="sml smlTwo">
-              <div class="testTwo">
-                <a id="navTwo" href="index.html">
-                  <img id="grayTwo" class="in" src="imgs/darkHome.png" width="18" alt="" />
-                  <img id="whiteTwo" class="out" src="imgs/whiteHome.png" width="23" alt="" />
-                </a>
-              </div>
-            </div>
-            <div id="profile" class="sml smlThree">
-              <div class="testThree">
-                <a id="navThree" href="profile.html">
-                  <img id="grayThree" class="in" src="imgs/darkProfile.png" width="18" alt="" />
-                  <img id="whiteThree" class="out" src="imgs/whiteProfile.png" width="23" alt="" />
-                </a>
-              </div>
-            </div>
-            <!--Interaction Menu-->
-            <div id="burger" class="burgerMenu">
-              <div id="circle" class="tap"></div>
+            <!--Bottom Bar-->
+            <div class="bottomBar">
+              <img class="back" src="imgs/backWhite.png" width="16" alt="" />
+              <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
+              <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
             </div>
           </div>
         </div>
-        <!--Bottom Bar-->
-        <div class="bottomBar">
-          <img class="back" src="imgs/backWhite.png" width="16" alt="" />
-          <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
-          <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
         </div>
       </div>
-    </div>
-  </div>
 
-    <!--Designs-->
-    <div id="designs"></div>
-    <div id="designsContainer">
-      <h1>PORTFOLIO</h1>
-      <div class="containText" id="designsText">
-        <p>
-          A small showcase of some of the designs I have created:
-          buisness cards, CVs, posters, other websites etc.
-        </p>
+      <!--Designs-->
+      <!-- <div id="designs"></div>
+      <div id="designsContainer" class="sectionContainer">
+        <h1>PORTFOLIO</h1>
+        <div class="containText" id="designsText">
+          <p>
+            A small showcase of some of the designs I have created:
+            buisness cards, CVs, posters, other websites etc.
+          </p>
+          <div class="ghost"><a href="#">Sorry, who are you again?</a></div>
+          <div class="ghost"><a href="#">How did you say you did all this?</a></div>
+        </div>
       </div>
+
+      <!--More
+      <div id="more"></div>
+      <div id="moreContainer" class="sectionContainer">
+        <h1>THANK YOU FOR SCROLLING THIS FAR!</h1>
+        <h2>Want to know more about me and my work? You can...</h2>
+        <div class="containText" id="moreText">
+          <a href="#">Visit my Dribbble account.</a>
+          <a href="#">Visit my CodePen page.</a>
+          <p>
+            Visit my <a href="#">GitHub page</a>, where you can view all of my personal project's codebases, including <a href="#">this website's!</a>
+          </p>
+        </div>
+      </div> -->
     </div>
 
-    <!--More-->
-    <div id="more"></div>
-    <div id="moreContainer">
-      <h1>THANK YOU FOR SCROLLING THIS FAR!</h1>
-      <h2>Want to know more about me and my work? You can...</h2>
-      <div class="containText" id="moreText">
-        <a href="#">Visit my Dribbble account.</a>
-        <a href="#">Visit my CodePen page.</a>
-        <p>
-          <a href="#">Visit my GitHub page</a>, where you can view all of my personal project's codebases, including <a href="#">this websites!</a>
-        </p>
-      </div>
-    </div>
+    <div id="fader"></div>
 
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>

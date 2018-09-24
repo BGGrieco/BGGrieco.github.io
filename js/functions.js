@@ -14,8 +14,8 @@ $(document).ready(function()
     if ( newsrc === 0 )
     {
       $("#logo").css("left", "-10");
-      //document.images["pic"].style.bottom = "10px";
-      //document.images["pic"].style.left = "-10px";
+      document.images["pic"].style.top = "-3px";
+      document.images["pic"].style.left = "-3px";
       document.images["pic"].src = "imgs/materialLogo.png";
       document.images["pic"].width = "70";
       newsrc = 1;
@@ -38,28 +38,62 @@ $(document).ready(function()
     }
   }
 
-  /*$(window).scroll(function()
+  // Scroll animations
+  $(window).scroll(function()
   {
     if ($(window).scrollTop() > 500)
     {
-      $(".mail").toggleClass(".mailOn");
-      $(".civi").toggleClass("civiOn");
-      $(".up").toggleClass("upOn");
+      $("#navBar").addClass("navOn");
+    }
+    if ($(window).scrollTop() > 800)
+    {
+      $(".mail").addClass("mailOn");
+      $(".civi").addClass("civiOn");
+      $(".up").addClass("upOn");
     }
     if ($(window).scrollTop() < 500)
     {
-      $(".mail").toggleClass(".mailBack");
-      $(".civi").toggleClass("civiBack");
-      $(".up").toggleClass("upBack");
+      $("#navBar").removeClass("navOn");
     }
-  });*/
-
-  $("#trigger").click(function()
-  {
-    $("#mail").toggleClass("mailOn");
-    $("#civi").toggleClass("civiOn");
-    $("#up").toggleClass("upOn");
+    if ($(window).scrollTop() < 800)
+    {
+      $(".mail").removeClass("mailOn");
+      $(".civi").removeClass("civiOn");
+      $(".up").removeClass("upOn");
+    }
   });
+
+  // Ripple effect
+  var $window = window;
+
+  function buttonTouchEffect()
+  {
+    var $buttonTouchEffect = $(".js-touch-effect");
+    //button
+    $buttonTouchEffect.on("click",function(e)
+    {
+      e.preventDefault();
+
+      $(this).append("<span></span>");
+      var $span = $(this).find("span"),
+          offSet = $(this).offset(),
+          offSetY = event.pageY-offSet.top,
+          offSetX = event.pageX-offSet.left;
+
+      console.log(offSetY,offSetX);
+      $span.css({
+        top:offSetY,
+        left:offSetX
+      });
+
+      $window.setTimeout(function()
+      {
+        $span.remove();
+      }, 400);
+    });
+  }
+
+  buttonTouchEffect();
 
   // Animated skills section.
   $(".pointsL, .pointsR").hover(function()
@@ -109,4 +143,10 @@ $(document).ready(function()
     $(".smlThree").toggleClass("smlOnThree");
     $(".tap").toggleClass("tapOn");
   });
+
+  // Fade Content Animation.
+  setTimeout(function()
+  {
+    $("#fader").addClass("fader");
+  }, 1000);
 });
