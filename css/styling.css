@@ -657,46 +657,22 @@ span
   top: -175px;
 }
 
-#ai
-{
-  top: 120px;
+.createContainers {
+  position: relative;
+  margin-top: 20px;
+  height: 25px;
 }
 
-#ps
-{
-  top: 165px;
-}
-
-#pt
-{
-  top: 210px;
-}
-
-#pd
-{
-  top: 255px;
-}
-
-#fm
-{
-  top: 300px;
-}
-
-#pr
-{
-  top: 345px;
-}
-
-#ae
-{
-  top: 390px;
+.creative {
+  position: absolute;
+  left: 80px;
+  top: -5px;
 }
 
 .pointsR
 {
-  position: relative;
-  top: -120px;
-  left: 5px;
+  position: absolute;
+  right: 0px;
 }
 
 /*
