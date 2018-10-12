@@ -305,6 +305,8 @@ span
   display: block;
   margin: auto;
   top: 0px;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #overlay
@@ -511,6 +513,11 @@ span
 *
 *
 /* SKILLS SECTION */
+.skillContainer
+{
+  padding-bottom: 500px;
+}
+
 .contain
 {
   position: relative;
@@ -519,7 +526,8 @@ span
   margin-bottom: 20px;
 }
 
-.columnContainer {
+.columnContainer
+{
   position: relative;
   top: 40px;
   float: left;
@@ -534,7 +542,8 @@ span
   left: 0px;
 }
 
-.skillTitle {
+.skillTitle
+{
   position: absolute;;
   left: 65px;
   top: -5px;
