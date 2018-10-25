@@ -186,8 +186,8 @@
               <img class="right" src="imgs/java.png" width="50" alt="" />
               <ul class="pointsL">
                 <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
                 <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
                 <li><div class="null"></div></li>
                 <li><div class="null"></div></li>
               </ul>
@@ -197,8 +197,8 @@
               <img class="left" src="imgs/php.png" width="50" alt="" />
               <ul class="pointsL">
                 <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
                 <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
                 <li><div class="null"></div></li>
                 <li><div class="null"></div></li>
               </ul>
@@ -339,7 +339,7 @@
         <div class="contain">
           <!--RADIAL OPTIONS MENU-->
           <div id="radial">
-            <img src="imgs/sgs8_2.png" width="280" alt="" />
+            <img class="phoneL" src="imgs/sgs8_2.png" width="280" alt="" />
             <img class="sketchL" src="imgs/illustrationOne.png" width="461" alt="" />
             <div class="shadowL"></div>
             <div id="containOne">
@@ -355,7 +355,7 @@
                 <div class="container containerDown">
                   <div id="fab" class="dot dotDown">
                     <div id=plusContain class="fab rotate">
-                      <div id="plus" class="plusWhite">+</div>
+                      <div id="plus" class="lighten">+</div>
                     </div>
                   </div>
                 </div>
@@ -403,54 +403,66 @@
                 <img class="bat" src="imgs/battery.png" width="6" alt="" />
                 <div class="time"></div>
               </div>
-            <!--Footer-->
-            <div class="footer">
-              <!--Radial Nav Menu-->
-              <div id="navContainer">
-                <!--Buttons-->
-                <div id="workouts" class="sml smlOne">
-                  <div class="testOne">
-                    <a id="navOne" href="routines.html">
-                      <img id="grayOne" class="in" src="imgs/darkMessage.png" width="21" alt="" />
-                      <img id="whiteOne" class="out" src="imgs/whiteMessage.png" width="25" alt="" />
-                    </a>
+              <!--Page-->
+              <div id="chatWrapper" class="hiddenLeft">
+                <img class="pageIcon" src="imgs/msg.png" alt="" />
+              </div>
+              <div id="homeWrapper">
+                <img class="pageIcon" src="imgs/home.png" alt="" />
+              </div>
+              <div id="profileWrapper" class="hiddenRight">
+                <img class="pageIcon" src="imgs/profile.png" alt="" />
+              </div>
+              <!--Footer-->
+              <div class="footer">
+                <!--Radial Nav Menu-->
+                <div id="navContainer">
+                  <!--Buttons-->
+                  <div id="chat" class="sml smlOne">
+                    <div class="testOne">
+                      <a id="navOne">
+                        <img id="grayOne" class="in" src="imgs/darkMessage.png" width="21" alt="" />
+                        <img id="whiteOne" class="out" src="imgs/whiteMessage.png" width="25" alt="" />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div id="home" class="sml smlTwo">
-                  <div class="testTwo">
-                    <a id="navTwo" href="index.html">
-                      <img id="grayTwo" class="in" src="imgs/darkHome.png" width="18" alt="" />
-                      <img id="whiteTwo" class="out" src="imgs/whiteHome.png" width="23" alt="" />
-                    </a>
+                  <div id="home" class="sml smlTwo">
+                    <div class="testTwo">
+                      <a id="navTwo">
+                        <img id="grayTwo" class="in" src="imgs/darkHome.png" width="18" alt="" />
+                        <img id="whiteTwo" class="out" src="imgs/whiteHome.png" width="23" alt="" />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div id="profile" class="sml smlThree">
-                  <div class="testThree">
-                    <a id="navThree" href="profile.html">
-                      <img id="grayThree" class="in" src="imgs/darkProfile.png" width="18" alt="" />
-                      <img id="whiteThree" class="out" src="imgs/whiteProfile.png" width="23" alt="" />
-                    </a>
+                  <div id="profile" class="sml smlThree">
+                    <div class="testThree">
+                      <a id="navThree">
+                        <img id="grayThree" class="in" src="imgs/darkProfile.png" width="18" alt="" />
+                        <img id="whiteThree" class="out" src="imgs/whiteProfile.png" width="23" alt="" />
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <!--Interaction Menu-->
-                <div id="burger" class="burgerMenu">
-                  <div id="circle" class="tap"></div>
+                  <!--Interaction Menu-->
+                  <div id="burger" class="burgerMenu">
+                    <div id="circle" class="tap"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!--Bottom Bar-->
-            <div class="bottomBar">
-              <img class="back" src="imgs/backWhite.png" width="16" alt="" />
-              <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
-              <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
+              <!--Bottom Bar-->
+              <div class="bottomBar">
+                <img class="back" src="imgs/backWhite.png" width="16" alt="" />
+                <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
+                <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
+              </div>
             </div>
           </div>
+
+          <div id="filler"></div>
         </div>
       </div>
-    </div>
 
       <!--Designs-->
-      <!-- <div id="designs"></div>
+      <div id="designs"></div>
       <div id="designsContainer" class="sectionContainer">
         <h1>PORTFOLIO</h1>
         <div class="containText" id="designsText">
@@ -476,7 +488,7 @@
           </p>
         </div>
       </div> -->
-
+    </div>
     <div id="fader"></div>
 
     <script type="text/javascript" src="js/jQuery.js"></script>

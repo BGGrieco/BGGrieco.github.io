@@ -69,7 +69,7 @@ $(document).ready(function()
   function buttonTouchEffect()
   {
     var $buttonTouchEffect = $(".js-touch-effect");
-    //button
+    // button
     $buttonTouchEffect.on("click",function(e)
     {
       e.preventDefault();
@@ -95,13 +95,13 @@ $(document).ready(function()
 
   buttonTouchEffect();
 
-  // Animated skills section.
+  // Animated skills section
   $(".pointsL, .pointsR").hover(function()
   {
     $(this).find(".activate").toggleClass("blink");
   });
 
-  // Top Bar Clock.
+  // Top Bar Clock
   startTime();
 
   function startTime()
@@ -120,12 +120,12 @@ $(document).ready(function()
     return i;
   }
 
-  // Radial Menu Animations.
+  // Radial Menu Animations
   $("#fab").fadeIn("slow");
 
   $("#fab").click(function()
   {
-    $(".plusWhite").toggleClass("plusDark");
+    $(".lighten").toggleClass("darken");
     $(".dot").toggleClass("dotUp dotDown");
     $(".rotate").toggleClass("rotateActive");
     $(".container").toggleClass("containerUp containerDown");
@@ -135,7 +135,7 @@ $(document).ready(function()
     $(".bigFour").toggleClass("bigFourOn");
   });
 
-  // Nav Menu Animations.
+  // Nav Menu Animations
   $(".burgerMenu").click(function()
   {
     $(".smlOne").toggleClass("smlOnOne");
@@ -144,7 +144,70 @@ $(document).ready(function()
     $(".tap").toggleClass("tapOn");
   });
 
-  // Fade Content Animation.
+  // Page Icon Change
+  var page = 0;
+
+  $("#chat").click(function()
+  {
+    if (page === 0)
+    {
+      $("#homeWrapper").toggleClass("slideOutRight");
+      $("#chatWrapper").toggleClass("slideInLeft");
+      page = 1;
+    }
+    else if (page === 2)
+    {
+      $("#profileWrapper").toggleClass("slideOutRight");
+      $("#chatWrapper").toggleClass("slideInLeft");
+      page = 1;
+    }
+    else
+    {
+      console.log("Page is: " + page);
+    }
+  });
+
+  $("#home").click(function()
+  {
+    if (page === 1)
+    {
+      $("#chatWrapper").toggleClass("slideOutLeft");
+      $("#homeWrapper").toggleClass("slideInRight");
+      page = 0;
+    }
+    else if (page === 2)
+    {
+      $("#profileWrapper").toggleClass("slideOutRight");
+      $("#homeWrapper").toggleClass("slideInLeft");
+      page = 0;
+    }
+    else
+    {
+      console.log("Page is: " + page);
+    }
+  });
+
+  $("#profile").click(function()
+  {
+    if (page === 1)
+    {
+      $("#chatWrapper").toggleClass("slideOutLeft");
+      $("#profileWrapper").toggleClass("slideInRight");
+      page = 2;
+    }
+    else if (page === 0)
+    {
+      $("#homeWrapper").toggleClass("slideOutLeft");
+      $("#profileWrapper").toggleClass("slideInRight");
+      page = 2;
+    }
+    else
+    {
+      console.log("Page is: " + page);
+    }
+  });
+
+  // Fade Content Animation
   setTimeout(function()
   {
     $("#fader").addClass("fader");
