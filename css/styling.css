@@ -119,6 +119,7 @@ li
   top: 10px;
   width: 60px;
   cursor: pointer;
+  z-index: 3;
 }
 
 #change
@@ -399,34 +400,40 @@ span
 
 .mail
 {
+  left: 0px;
   animation: slideOut 0.3s ease-in forwards;
 }
 
 .civi
 {
+  left: 0px;
   animation: slideOut 0.3s ease-in forwards;
   animation-delay: 0.15s;
 }
 
 .up
 {
+  left: 0px;
   animation: slideOut 0.3s ease-in forwards;
   animation-delay: 0.3s;
 }
 
 .mailOn
 {
+  left: 137px;
   animation: slideIn 0.3s ease-out forwards;
 }
 
 .civiOn
 {
+  left: 137px;
   animation: slideIn 0.3s ease-out forwards;
   animation-delay: 0.15s;
 }
 
 .upOn
 {
+  left: 137px;
   animation: slideIn 0.3s ease-out forwards;
   animation-delay: 0.3s;
 }
@@ -514,11 +521,6 @@ span
 *
 *
 /* SKILLS SECTION */
-.skillContainer
-{
-  padding-bottom: 500px;
-}
-
 .contain
 {
   position: relative;
@@ -528,12 +530,20 @@ span
   margin-bottom: 20px;
 }
 
-.columnContainer
+.columnContainerL
 {
   position: relative;
-  top: 30px;
-  float: left;
   width: 50%;
+  max-height: 500px;
+}
+
+.columnContainerR
+{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  max-height: 500px;
 }
 
 .skillIcon
@@ -605,19 +615,19 @@ span
 {
   0%
   {
-    opacity: 1;
+    background-color: #8cade3;
   }
-  25%
+  30%
   {
-    opacity: 0;
+    background-color: #d0d0d0;
   }
-  75%
+  60%
   {
-    opacity: 0;
+    background-color: #d0d0d0;
   }
   100%
   {
-    opacity: 1;
+    background-color: #8cade3;
   }
 }
 
@@ -1361,7 +1371,6 @@ span
   height: 130px;
   top: 180px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 #chatWrapper>.pageIcon
@@ -1378,7 +1387,6 @@ span
   height: 130px;
   top: 48px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 #profileWrapper
@@ -1386,9 +1394,8 @@ span
   position: relative;
   width: 130px;
   height: 130px;
-  top: 180px;
+  top: -70px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .pageIcon
@@ -1522,6 +1529,11 @@ span
 .sml
 {
   transform: scale(0);
+}
+
+.testOne, .testTwo, .testThree
+{
+  cursor: pointer;
 }
 
 .testOne a, .testTwo a, .testThree a

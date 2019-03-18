@@ -136,80 +136,135 @@ $(document).ready(function()
   });
 
   // Nav Menu Animations
-  $(".burgerMenu").click(function()
+  function burgerMenu()
   {
     $(".smlOne").toggleClass("smlOnOne");
     $(".smlTwo").toggleClass("smlOnTwo");
     $(".smlThree").toggleClass("smlOnThree");
     $(".tap").toggleClass("tapOn");
+  };
+
+  $(".burgerMenu").click(function()
+  {
+    burgerMenu();
   });
 
   // Page Icon Change
+  $("#homeWrapper").addClass("slideInRight");
+  $("#chatWrapper").addClass("slideOutLeft");
+  $("#profileWrapper").addClass("slideOutRight");
+
   var page = 0;
+  var whichClass = $("#homeWrapper").hasClass("slideInRight");
+  console.log(whichClass);
 
   $("#chat").click(function()
   {
-    if (page === 0)
+    switch(page)
     {
-      $("#homeWrapper").toggleClass("slideOutRight");
-      $("#chatWrapper").toggleClass("slideInLeft");
-      page = 1;
-    }
-    else if (page === 2)
-    {
-      $("#profileWrapper").toggleClass("slideOutRight");
-      $("#chatWrapper").toggleClass("slideInLeft");
-      page = 1;
-    }
-    else
-    {
+      case 0:
+        page = 1;
+        switch(whichClass)
+        {
+          case true:
+            $("#homeWrapper").removeClass("slideInRight");
+            $("#homeWrapper").addClass("slideOutRight");
+            break;
+          default:
+          $("#homeWrapper").removeClass("slideInLeft");
+          $("#homeWrapper").addClass("slideOutLeft");
+        }
+        $("#chatWrapper").removeClass("slideOutLeft");
+        $("#chatWrapper").addClass("slideInLeft");
+        break;
+      case 2:
+        page = 1;
+        $("#profileWrapper").removeClass("slideInRight");
+        $("#profileWrapper").addClass("slideOutRight");
+        $("#chatWrapper").removeClass("slideOutLeft");
+        $("#chatWrapper").addClass("slideInLeft");
+        break;
+      default:
       console.log("Page is: " + page);
     }
+    burgerMenu();
   });
 
   $("#home").click(function()
   {
-    if (page === 1)
+    switch(page)
     {
-      $("#chatWrapper").toggleClass("slideOutLeft");
-      $("#homeWrapper").toggleClass("slideInRight");
-      page = 0;
-    }
-    else if (page === 2)
-    {
-      $("#profileWrapper").toggleClass("slideOutRight");
-      $("#homeWrapper").toggleClass("slideInLeft");
-      page = 0;
-    }
-    else
-    {
+      case 1:
+        page = 0;
+        $("#chatWrapper").removeClass("slideInLeft");
+        $("#chatWrapper").addClass("slideOutLeft");
+        switch(whichClass)
+        {
+          case true:
+            $("#homeWrapper").removeClass("slideInRight");
+            $("#homeWrapper").addClass("slideOutRight");
+            break;
+          default:
+          $("#homeWrapper").removeClass("slideInLeft");
+          $("#homeWrapper").addClass("slideOutLeft");
+        }
+        break;
+      case 2:
+        page = 0;
+        $("#profileWrapper").removeClass("slideInRight");
+        $("#profileWrapper").addClass("slideOutRight");
+        switch(whichClass)
+        {
+          case true:
+            $("#homeWrapper").removeClass("slideInRight");
+            $("#homeWrapper").addClass("slideOutRight");
+            break;
+          default:
+          $("#homeWrapper").removeClass("slideInLeft");
+          $("#homeWrapper").addClass("slideOutLeft");
+        }
+        break;
+      default:
       console.log("Page is: " + page);
     }
+    burgerMenu();
   });
 
   $("#profile").click(function()
   {
-    if (page === 1)
+    switch(page)
     {
-      $("#chatWrapper").toggleClass("slideOutLeft");
-      $("#profileWrapper").toggleClass("slideInRight");
-      page = 2;
-    }
-    else if (page === 0)
-    {
-      $("#homeWrapper").toggleClass("slideOutLeft");
-      $("#profileWrapper").toggleClass("slideInRight");
-      page = 2;
-    }
-    else
-    {
+      case 1:
+        page = 2;
+        $("#chatWrapper").removeClass("slideInLeft");
+        $("#chatWrapper").addClass("slideOutLeft");
+        $("#profileWrapper").removeClass("slideOutRight");
+        $("#profileWrapper").addClass("slideInRight");
+        break;
+      case 0:
+        page = 2;
+        switch(whichClass)
+        {
+          case true:
+            $("#homeWrapper").removeClass("slideInRight");
+            $("#homeWrapper").addClass("slideOutRight");
+            break;
+          default:
+          $("#homeWrapper").removeClass("slideInLeft");
+          $("#homeWrapper").addClass("slideOutLeft");
+        }
+        $("#profileWrapper").removeClass("slideOutRight");
+        $("#profileWrapper").addClass("slideInRight");
+        break;
+      default:
       console.log("Page is: " + page);
     }
+    burgerMenu();
   });
 
   // Fade Content Animation
   setTimeout(function()
   {
     $("#fader").addClass("fader");
-  }, 1000);
+  }, 800);
 });
