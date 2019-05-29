@@ -1,18 +1,14 @@
-$(document).ready(function()
-{
+$(document).ready(function() {
   // Animated logo section.
-  $("#logo").mouseup(function()
-  {
+  $("#logo").mouseup(function() {
     $(this).css({"animation-play-state": "paused"});
     changeImage();
   });
 
   var newsrc = 0;
 
-  function changeImage()
-  {
-    if ( newsrc === 0 )
-    {
+  function changeImage() {
+    if ( newsrc === 0 ) {
       $("#logo").css("left", "-10");
       document.images["pic"].style.top = "-3px";
       document.images["pic"].style.left = "-3px";
@@ -20,16 +16,14 @@ $(document).ready(function()
       document.images["pic"].width = "70";
       newsrc = 1;
     }
-    else if ( newsrc === 1 )
-    {
+    else if ( newsrc === 1 ) {
       document.images["pic"].src = "imgs/appleLogo.png";
       document.images["pic"].width = "65";
       document.images["pic"].style.top = "-2px";
       document.images["pic"].style.left = "-2px";
       newsrc = 2;
     }
-    else
-    {
+    else {
       document.images["pic"].src = "imgs/logo.png";
       document.images["pic"].width = "60";
       document.images["pic"].style.top = "0px";
@@ -39,24 +33,19 @@ $(document).ready(function()
   }
 
   // Scroll animations
-  $(window).scroll(function()
-  {
-    if ($(window).scrollTop() > 500)
-    {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 500) {
       $("#navBar").addClass("navOn");
     }
-    if ($(window).scrollTop() > 800)
-    {
+    if ($(window).scrollTop() > 800) {
       $(".mail").addClass("mailOn");
       $(".civi").addClass("civiOn");
       $(".up").addClass("upOn");
     }
-    if ($(window).scrollTop() < 500)
-    {
+    if ($(window).scrollTop() < 500) {
       $("#navBar").removeClass("navOn");
     }
-    if ($(window).scrollTop() < 800)
-    {
+    if ($(window).scrollTop() < 800) {
       $(".mail").removeClass("mailOn");
       $(".civi").removeClass("civiOn");
       $(".up").removeClass("upOn");
@@ -66,12 +55,10 @@ $(document).ready(function()
   // Ripple effect
   var $window = window;
 
-  function buttonTouchEffect()
-  {
+  function buttonTouchEffect() {
     var $buttonTouchEffect = $(".js-touch-effect");
     // button
-    $buttonTouchEffect.on("click",function(e)
-    {
+    $buttonTouchEffect.on("click",function(e) {
       e.preventDefault();
 
       $(this).append("<span></span>");
@@ -86,8 +73,7 @@ $(document).ready(function()
         left:offSetX
       });
 
-      $window.setTimeout(function()
-      {
+      $window.setTimeout(function() {
         $span.remove();
       }, 400);
     });
@@ -96,16 +82,14 @@ $(document).ready(function()
   buttonTouchEffect();
 
   // Animated skills section
-  $(".pointsL, .pointsR").hover(function()
-  {
+  $(".pointsL, .pointsR").hover(function() {
     $(this).find(".activate").toggleClass("blink");
   });
 
   // Top Bar Clock
   startTime();
 
-  function startTime()
-  {
+  function startTime() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
@@ -114,8 +98,8 @@ $(document).ready(function()
     $(".time").html(h + ":" + m);
     var t = setTimeout(startTime, 500);
   }
-  function checkTime(i)
-  {
+
+  function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
   }
@@ -123,8 +107,7 @@ $(document).ready(function()
   // Radial Menu Animations
   $("#fab").fadeIn("slow");
 
-  $("#fab").click(function()
-  {
+  $("#fab").click(function() {
     $(".lighten").toggleClass("darken");
     $(".dot").toggleClass("dotUp dotDown");
     $(".rotate").toggleClass("rotateActive");
@@ -136,16 +119,14 @@ $(document).ready(function()
   });
 
   // Nav Menu Animations
-  function burgerMenu()
-  {
+  function burgerMenu() {
     $(".smlOne").toggleClass("smlOnOne");
     $(".smlTwo").toggleClass("smlOnTwo");
     $(".smlThree").toggleClass("smlOnThree");
     $(".tap").toggleClass("tapOn");
   };
 
-  $(".burgerMenu").click(function()
-  {
+  $(".burgerMenu").click(function() {
     burgerMenu();
   });
 
@@ -156,16 +137,12 @@ $(document).ready(function()
 
   var page = 0;
   var whichClass = $("#homeWrapper").hasClass("slideInRight");
-  console.log(whichClass);
 
-  $("#chat").click(function()
-  {
-    switch(page)
-    {
+  $("#chat").click(function() {
+    switch(page) {
       case 0:
         page = 1;
-        switch(whichClass)
-        {
+        switch(whichClass) {
           case true:
             $("#homeWrapper").removeClass("slideInRight");
             $("#homeWrapper").addClass("slideOutRight");
@@ -190,16 +167,13 @@ $(document).ready(function()
     burgerMenu();
   });
 
-  $("#home").click(function()
-  {
-    switch(page)
-    {
+  $("#home").click(function() {
+    switch(page) {
       case 1:
         page = 0;
         $("#chatWrapper").removeClass("slideInLeft");
         $("#chatWrapper").addClass("slideOutLeft");
-        switch(whichClass)
-        {
+        switch(whichClass) {
           case true:
             $("#homeWrapper").removeClass("slideInRight");
             $("#homeWrapper").addClass("slideOutRight");
@@ -213,8 +187,7 @@ $(document).ready(function()
         page = 0;
         $("#profileWrapper").removeClass("slideInRight");
         $("#profileWrapper").addClass("slideOutRight");
-        switch(whichClass)
-        {
+        switch(whichClass) {
           case true:
             $("#homeWrapper").removeClass("slideInRight");
             $("#homeWrapper").addClass("slideOutRight");
@@ -230,10 +203,8 @@ $(document).ready(function()
     burgerMenu();
   });
 
-  $("#profile").click(function()
-  {
-    switch(page)
-    {
+  $("#profile").click(function() {
+    switch(page) {
       case 1:
         page = 2;
         $("#chatWrapper").removeClass("slideInLeft");
@@ -243,8 +214,7 @@ $(document).ready(function()
         break;
       case 0:
         page = 2;
-        switch(whichClass)
-        {
+        switch(whichClass) {
           case true:
             $("#homeWrapper").removeClass("slideInRight");
             $("#homeWrapper").addClass("slideOutRight");
@@ -263,8 +233,7 @@ $(document).ready(function()
   });
 
   // Fade Content Animation
-  setTimeout(function()
-  {
+  setTimeout(function() {
     $("#fader").addClass("fader");
   }, 800);
 });
