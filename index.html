@@ -10,48 +10,55 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/styling.css" type="text/css">
+    <script type="text/javascript">
+      function scrollWin() {
+        window.scrollTo(0, 1258);
+      };
+    </script>
   </head>
   <body>
     <!--Nav Bar-->
     <div id="navBar" class="nav">
-      <div id="logo" class="attention">
-        <img id="change" name="pic" src="imgs/logo.png" width="60" alt="" />
-      </div>
-      <ul id="innerLinks">
-        <li><a href="#bio">Biography</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interactions">Interactions</a></li>
-        <li><a href="#designs">Portfolio</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">More</a></li>
-      </ul>
+      <div class="navbarContent">
+        <div id="logo" class="attention">
+          <img id="change" name="pic" src="imgs/logo.png" width="60" alt="" />
+        </div>
+        <ul id="innerLinks">
+          <li><a href="#bio">Biography</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#interactions">Interactions</a></li>
+          <li><a href="#designs">Portfolio</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">More</a></li>
+        </ul>
 
-      <ul id="outerLinks">
-        <li>
-          <a class="hoverable" href="https://github.com/BGGrieco" target="_blank">
-            <img src="imgs/gitHubA.png" width="20" alt="" />
-            <img src="imgs/gitHubHover.png" width="20" alt="" />
-          </a>
-        </li>
-        <li>
-          <a class="hoverable" href="https://codepen.io/BGGrieco/" target="_blank">
-            <img src="imgs/codepen.png" width="20" alt="" />
-            <img src="imgs/codepenHover.png" width="20" alt="" />
-          </a>
-        </li>
-        <li>
+        <ul id="outerLinks">
           <li>
-            <a class="hoverable" href="https://dribbble.com/bggrieco" target="_blank">
-              <img src="imgs/dribbble.png" width="20" alt="" />
-              <img src="imgs/dribbbleHover.png" width="20" alt="" />
+            <a class="hoverable" href="https://github.com/BGGrieco" target="_blank">
+              <img src="imgs/gitHubA.png" width="20" alt="" />
+              <img src="imgs/gitHubHover.png" width="20" alt="" />
             </a>
           </li>
-          <a class="hoverable" href="https://www.linkedin.com/in/briangrieco/" target="_blank">
-            <img src="imgs/linkedIn.png" width="20" alt="" />
-            <img src="imgs/linkedInHover.png" width="20" alt="" />
-          </a>
-        </li>
-      </ul>
+          <li>
+            <a class="hoverable" href="https://codepen.io/BGGrieco/" target="_blank">
+              <img src="imgs/codepen.png" width="20" alt="" />
+              <img src="imgs/codepenHover.png" width="20" alt="" />
+            </a>
+          </li>
+          <li>
+            <li>
+              <a class="hoverable" href="https://dribbble.com/bggrieco" target="_blank">
+                <img src="imgs/dribbble.png" width="20" alt="" />
+                <img src="imgs/dribbbleHover.png" width="20" alt="" />
+              </a>
+            </li>
+            <a class="hoverable" href="https://www.linkedin.com/in/briangrieco/" target="_blank">
+              <img src="imgs/linkedIn.png" width="20" alt="" />
+              <img src="imgs/linkedInHover.png" width="20" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!--Header-->
@@ -61,7 +68,8 @@
       <div id="wordsContainer">
         <img id="words" src="imgs/header.png" alt="" />
         <div id="call" class="js-touch-effect">
-          <a href="#">Show me</a>
+          <a href="#designs">Show me</a>
+          <img id="goArrow" src="imgs/go.png" width="20" />
         </div>
       </div>
     </div>
@@ -69,16 +77,16 @@
     <!--Side Buttons-->
     <div id="sideButtons">
       <div id="mail" class="side mail">
-        <div class="ripple"></div>
+        <a href="mailto:brian.g.grieco@gmail.com"><div class="ripple"></div></a>
         <img class="sideimg" src="imgs/mail.png" width="27" style="top: 19px; left: -1px;" alt="" />
       </div>
 
       <div id="civi" class="side civi">
-        <div class="ripple"></div>
+        <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank"><div class="ripple"></div></a>
         <img class="sideimg" src="imgs/download.png" width="31" style="top: 18px; left: -2px;" alt="" />
       </div>
 
-      <div id="up" class="side up">
+      <div id="up" class="side up" onclick="scrollWin()">
         <div class="ripple"></div>
         <img class="sideimg" src="imgs/up.png" width="17" style="top: 17px; left: -1px;" alt="" />
       </div>
@@ -90,7 +98,7 @@
       <div class="sectionContainer">
         <h1>BIOGRAPHY</h1>
         <div id="faceContainer">
-          <img id="face" src="imgs/face.png" width="200" alt="" />
+          <img id="face" src="imgs/face2.png" width="200" alt="" />
         </div>
         <div class="containText">
           <p>
@@ -121,103 +129,9 @@
           </p>
         </div>
 
-        <!--SKILL GRAPHS-->
-        <div class="contain">
+        <!--CREATIVE SKILLS-->
+        <div class="contain containSkills">
           <div class="columnContainerL">
-            <img class="skillIcon" src="imgs/cog.png" width="50" alt="" />
-            <p class="skillTitle">TECHNICAL SKILLS:</p>
-            <!--HTML-->
-            <div id="html">
-              <img class="left" src="imgs/html.png" width="50" alt="" />
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-              </ul>
-            </div>
-            <!--CSS-->
-            <div id="css">
-              <img class="right" src="imgs/css.png" width="50" alt="" />
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-              </ul>
-            </div>
-            <!--JS-->
-            <div id="js">
-              <img class="left" src="imgs/js.png" width="50" alt="" />
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--REACT-->
-            <div id="rea">
-              <img class="right" src="imgs/react.png" width="50" alt="" />
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--PYTHON-->
-            <div id="py">
-              <img class="left" src="imgs/python.png" width="50" alt="" />
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--JAVA-->
-            <div id="java">
-              <img class="right" src="imgs/java.png" width="50" alt="" />
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--PHP-->
-            <div id="php">
-              <img class="left" src="imgs/php.png" width="50" alt="" />
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--SQL-->
-            <div id="sql">
-              <img class="right" src="imgs/sql.png" width="50" alt="" />
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-          </div>
-
-          <!--CREATIVE SKILLS-->
-          <div class="columnContainerR">
             <img class="skillIcon" src="imgs/lamp.png" width="50" alt="" />
             <p class="skillTitle">CREATIVE SKILLS:</p>
             <!--SKETCH-->
@@ -248,6 +162,30 @@
             <div id="ps" class="createContainers">
               <img src="imgs/ps.png" width="45" alt=""/>
               <p class="creative">PhotoShop</p>
+              <ul class="pointsR">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--PREMIERE PRO-->
+            <div id="pr" class="createContainers">
+              <img src="imgs/pr.png" width="45" alt=""/>
+              <p class="creative">Premiere</p>
+              <ul class="pointsR">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+              </ul>
+            </div>
+            <!--AFTER EFFECTS-->
+            <div id="ae" class="createContainers">
+            <img src="imgs/ae.png" width="45" alt=""/>
+              <p class="creative">AfterEffects</p>
               <ul class="pointsR">
                 <li><div class="point"></div></li>
                 <li><div class="point"></div></li>
@@ -292,11 +230,17 @@
                 <li><div class="activate"></div></li>
               </ul>
             </div>
-            <!--PREMIERE PRO-->
-            <div id="pr" class="createContainers">
-              <img src="imgs/pr.png" width="45" alt=""/>
-              <p class="creative">Premiere</p>
-              <ul class="pointsR">
+          </div>
+
+          <!--TECNICAL SKILLS-->
+          <div class="columnContainerR">
+            <img class="skillIcon" src="imgs/cog.png" width="50" alt="" />
+            <p class="skillTitle">TECHNICAL SKILLS:</p>
+            <!--HTML-->
+            <div id="html" class="hexagon">
+              <img class="left" src="imgs/html.png" width="50" alt="" />
+              <p class="technicalL">HTML 5</p>
+              <ul class="pointsL">
                 <li><div class="point"></div></li>
                 <li><div class="point"></div></li>
                 <li><div class="point"></div></li>
@@ -304,15 +248,87 @@
                 <li><div class="activate"></div></li>
               </ul>
             </div>
-            <!--AFTER EFFECTS-->
-            <div id="ae" class="createContainers">
-            <img src="imgs/ae.png" width="45" alt=""/>
-              <p class="creative">AfterEffects</p>
-              <ul class="pointsR">
+            <!--CSS-->
+            <div id="css" class="hexagon">
+              <img class="right" src="imgs/css.png" width="50" alt="" />
+              <p class="technicalR">CSS 3</p>
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
                 <li><div class="point"></div></li>
                 <li><div class="point"></div></li>
                 <li><div class="point"></div></li>
                 <li><div class="activate"></div></li>
+              </ul>
+            </div>
+            <!--JS-->
+            <div id="js" class="hexagon">
+              <img class="left" src="imgs/js.png" width="50" alt="" />
+              <p class="technicalL">JavaScript</p>
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--REACT-->
+            <div id="rea" class="hexagon">
+              <img class="right" src="imgs/react.png" width="50" alt="" />
+              <p class="technicalR">React Native</p>
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--PYTHON-->
+            <div id="py" class="hexagon">
+              <img class="left" src="imgs/python.png" width="50" alt="" />
+              <p class="technicalL">Python (Django)</p>
+              <ul class="pointsL">
+                <li><div class="point"></div></li>
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--JAVA-->
+            <div id="java" class="hexagon">
+              <img class="right" src="imgs/java.png" width="50" alt="" />
+              <p class="technicalR">Java</p>
+              <ul class="pointsL">
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--PHP-->
+            <div id="php" class="hexagon">
+              <img class="left" src="imgs/php.png" width="50" alt="" />
+              <p class="technicalL">PHP</p>
+              <ul class="pointsL">
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+              </ul>
+            </div>
+            <!--SQL-->
+            <div id="sql" class="hexagon">
+              <img class="right" src="imgs/sql.png" width="50" alt="" />
+              <p class="technicalR">mySQL</p>
+              <ul class="pointsL">
+                <li><div class="activate"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
+                <li><div class="null"></div></li>
                 <li><div class="null"></div></li>
               </ul>
             </div>
@@ -463,31 +479,95 @@
 
       <!--Designs-->
       <div id="designs"></div>
-      <div id="designsContainer" class="sectionContainer">
+      <div class="sectionContainer">
         <h1>PORTFOLIO</h1>
         <div class="containText" id="designsText">
           <p>
-            A small showcase of some of the designs I have created:
-            buisness cards, CVs, posters, other websites etc.
+            Below are some video showcases of some of the projects I have worked on during the years.
           </p>
           <div class="ghost"><a href="#">Sorry, who are you again?</a></div>
           <div class="ghost"><a href="#">How did you say you did all this?</a></div>
         </div>
+
+        <!--Videos-->
+        <div class="videoContainer">
+          <h2>MEG Audit Tool</h2>
+          <p>
+            A showcase of the work I have done on MEG Support Tools' Audit Tool.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - Flow design<br />
+            - UX/UI design<br />
+            - Mock-ups and testing<br />
+            - Front-end development<br />
+            - Team management
+          </p>
+          <div class="iframeContainer">
+            <iframe src="https://www.youtube.com/embed/LTZ3EWRk3aY"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+
+          <h2>patientMpower</h2>
+          <p>
+            A showcase of the work I have done for patientMpower.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - Flow design<br />
+            - UX/UI design<br />
+            - Mock-ups and testing<br />
+          </p>
+          <div class="iframeContainer">
+            <iframe src="https://www.youtube.com/embed/sH5WQo2oAIg"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+
+          <h2>Casa dello Zecchiere</h2>
+          <p>
+            A showcase of the website for Casa dello Zecchiere, which I designed and developed.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - Flow design<br />
+            - UX/UI design<br />
+            - Full stack development<br />
+          </p>
+          <div class="iframeContainer">
+            <iframe src="https://www.youtube.com/embed/DwV1Lx7nzyA"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
 
-      <!--More
+      <!--More-->
       <div id="more"></div>
       <div id="moreContainer" class="sectionContainer">
         <h1>THANK YOU FOR SCROLLING THIS FAR!</h1>
-        <h2>Want to know more about me and my work? You can...</h2>
         <div class="containText" id="moreText">
-          <a href="#">Visit my Dribbble account.</a>
-          <a href="#">Visit my CodePen page.</a>
+          <h2>Want to know more about me and my work? You can...</h2>
           <p>
-            Visit my <a href="#">GitHub page</a>, where you can view all of my personal project's codebases, including <a href="#">this website's!</a>
+            <a href="#" target="_blank">Visit my Dribbble account.</a><br/>
           </p>
+          <p>
+            <a href="#" target="_blank">Visit my Codepen page.</a>
+          </p>
+          <p>
+            Visit my <a href="#" target="_blank">GitHub page</a>, where you can view all of my personal project's codebases, including <a href="#">this website's!</a>
+          </p>
+          <p>
+            Or contact me directly through <a href="#" target="_blank">LinkedIn</a>!
+          </p>
+
+          <p>I'd love to hear from you, even just for questions or design opinions. Have a great day!</p>
         </div>
-      </div> -->
+      </div>
+
+      <div id="footer">
+        <div class="containText">
+          <p class="footerText">Brian G. Grieco | Tel: +353 87 975 3550 | <a href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
+        </div>
+      </div>
     </div>
     <div id="fader"></div>
 
