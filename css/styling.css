@@ -169,14 +169,13 @@ li {
 }
 
 #innerLinks a:hover {
-  margin-left: 20px;
   color: #4a86e8;
 }
 
 #outerLinks {
   position: absolute;
   top: 12px;
-  left: 570px;
+  right: 0;
 }
 
 #outerLinks a {
@@ -511,7 +510,7 @@ span {
 
 .pointsL {
   position: absolute;
-  right: 0;
+  right: -15px;
   top: 0;
 }
 
@@ -566,6 +565,7 @@ span {
 .hexagon {
   position: relative;
   margin: 20px 0 -30px 0;
+  left: -15px;
 }
 
 .createContainers {
@@ -1541,15 +1541,9 @@ span {
 *
 *
 /* MORE SECTION */
-/* #more
-{
-  position: absolute;
-  top: 4000px;
-} */
-
-/*
-*
-*
+#moreContainer {
+  border-bottom: none;
+}
 
 /*
 *
@@ -1601,5 +1595,161 @@ span {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .contain, .containText, .navbarContent, .videoContainer, #words {
+    width: 80%;
+  }
+
+  #sideButtons {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contain, .containText, .navbarContent, .videoContainer, #words {
+    width: 90%;
+  }
+
+  #sideButtons {
+    display: none;
+  }
+
+  #innerLinks a {
+    margin-left: 12px;
+  }
+
+  .columnContainerR {
+    position: relative;
+    top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .columnContainerL, .columnContainerR  {
+    width: 100%;
+  }
+
+  .hexagon {
+    top: -10px;
+  }
+
+  .pointsL {
+    right: -10px;
+  }
+
+  .pointsR, .pointsL {
+    top: -3px;
+  }
+
+  .pointsR>li>div, .pointsL>li>div {
+    margin-left: 16px
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .phoneL, .phoneR {
+    position: relative;
+    display: block;
+    top: 617px;
+    margin: auto;
+  }
+
+  #containOne, #containTwo {
+    top: 650px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .shadowL, .shadowR {
+    top: 617px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sketchL, .sketchR {
+    display: block;
+    position: relative;
+    top: -600px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .sketchR {
+    top: -500px;
+    left: 50px;
+  }
+
+  #filler {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 591px) {
+  .footerText {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .creative {
+    font-size: 14px;
+    top: 0;
+    left: 60px
+  }
+
+  .technicalL, .technicalR, .creative {
+    font-size: 14px;
+    transform: translateX(-5px);
+    top: 2px;
+  }
+
+  .pointsL {
+    right: -8px;
+  }
+
+  .hexagon {
+    left: -8px;
+  }
+
+  .pointsR>li>div, .pointsL>li>div {
+    margin-left: 12px
+  }
+
+  .phoneL, .phoneR {
+    top: 420px;
+  }
+
+  #containOne, #containTwo {
+    top: 453px;
+  }
+
+  .shadowL, .shadowR {
+    top: 420px;
+  }
+
+  .sketchL, .sketchR {
+    width: 320px;
+  }
+
+  .sketchR {
+    left: 20px;
+    top: -550px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .contain, .containText, .navbarContent, .videoContainer {
+    width: 96%;
+  }
+
+   #words {
+     width: 105%;
+   }
+
+  .pointsR>li>div, .pointsL>li>div {
+    margin-left: 5px
   }
 }
