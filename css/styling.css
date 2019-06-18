@@ -60,6 +60,10 @@ li {
 *
 *
 /* NAVBAR SECTION */
+.mobileNav {
+  display: none;
+}
+
 #navBar {
   position: fixed;
   top: -96px;
@@ -168,7 +172,7 @@ li {
   color: #b0b0b0;
 }
 
-#innerLinks a:hover {
+#innerLinks a:hover, #sideMenuLinks a:hover {
   color: #4a86e8;
 }
 
@@ -1598,6 +1602,225 @@ span {
   }
 }
 
+/* BOTTOM NAVBAR */
+.actions {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: calc(100% - 45px);
+  height: 100%;
+}
+
+.actions ul {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.actions li {
+  display: inline-block;
+  width: 32%;
+  height: 100%;
+}
+
+.actions .ripple {
+  border-radius: 0;
+  width: 32%;
+}
+
+/* BURGER MENU */
+.rotate {
+  position: relative;
+  top: 22px;
+  width: 44px;
+  animation: rotate 0.4s ease forwards;
+}
+
+.rotateAgain {
+  animation: rotateAgain 0.4s ease forwards;
+}
+
+.mid {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  height: 2px;
+  background-color: #202020;
+}
+
+.burgerTop {
+  position: relative;
+  margin: auto;
+  height: 2px;
+  background-color: #202020;
+  animation: rotateTopOne 0.4s ease forwards;
+}
+
+.burgerBot {
+  position: relative;
+  margin: auto;
+  height: 2px;
+  background-color: #202020;
+  animation: rotateBotOne 0.4s ease forwards;
+}
+
+.arrowTop {
+  position: relative;
+  margin: auto;
+  height: 2px;
+  background-color: #202020;
+  animation: rotateBotTwo 0.4s ease forwards;
+}
+
+.arrowBot {
+  position: relative;
+  margin: auto;
+  top: 4px;
+  height: 2px;
+  background-color: #202020;
+  animation: rotateTopTwo 0.4s ease forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateAgain {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateTopOne {
+  0% {
+    transform: rotate(-45deg);
+    left: -6px;
+    top: -2px;
+    width: 31%;
+  }
+ 100% {
+   transform: rotate(0deg);
+   left: 0;
+   top: -4px;
+   width: 50%;
+ }
+}
+
+@keyframes rotateBotOne {
+  0% {
+    transform: rotate(45deg);
+    left: -6px;
+    top: 2px;
+    width: 31%;
+  }
+  100% {
+    transform: rotate(0deg);
+    left: 0;
+    top: 4px;
+    width: 50%;
+  }
+}
+
+@keyframes rotateTopTwo {
+  0% {
+    transform: rotate(0deg);
+    left: 0;
+    top: 4px;
+    width: 50%;
+  }
+  100% {
+    transform: rotate(45deg);
+    left: -6px;
+    top: 2px;
+    width: 31%;
+  }
+}
+
+ @keyframes rotateBotTwo {
+   0% {
+     transform: rotate(0deg);
+     left: 0;
+     top: -4px;
+     width: 50%;
+   }
+  100% {
+    transform: rotate(-45deg);
+    left: -6px;
+    top: -2px;
+    width: 31%;
+  }
+}
+
+/* SIDE MENU */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 150px;
+  background-color: #fafafa;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+#sideMenuLinks {
+  position: absolute;
+  bottom: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+#sideMenuLinks li {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #d0d0d0;
+}
+
+#sideMenuLinks a {
+  display: block;
+  width: 130px;
+  height: 30px;
+  padding: 10px 0 0 20px;
+  color: #b0b0b0;
+}
+
+.opened {
+  animation: openMenu 0.4s ease-out forwards;
+}
+
+.closed {
+  animation: closeMenu 0.4s ease-in forwards;
+}
+
+@keyframes openMenu {
+  0% {
+    left: -170px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -170px;
+  }
+}
+
+/* ADAPTIVE RULES */
 @media screen and (max-width: 1600px) {
   .contain, .containText, .navbarContent, .videoContainer, #words {
     width: 80%;
@@ -1740,7 +1963,34 @@ span {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media (max-width: 760px) {
+  .navbarContent {
+    display: none;
+  }
+
+  #navBar {
+    height: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  #navBar {
+    display: none;
+  }
+
+  .mobileNav {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 49px;
+    z-index: 6;
+    background-color: #fafafa;
+    border-top: 1px solid white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  }
+
   .contain, .containText, .navbarContent, .videoContainer {
     width: 96%;
   }

@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  // Burger menu animations
+  $("#burger, #sideMenuLinks").click(function() {
+    $(".rotate").toggleClass("rotateAgain");
+    $(".burgerTop").toggleClass("arrowTop");
+    $(".burgerBot").toggleClass("arrowBot");
+    $("#sideMenu").toggleClass("opened closed");
+  });
+
   // Animated logo section.
   $("#logo").mouseup(function() {
     $(this).css({"animation-play-state": "paused"});
