@@ -43,7 +43,7 @@ li {
   height: 56px;
   border-radius: 50%;
   background-position: center;
-  transition: background 1s;
+  transition: background 0.8s;
 }
 
 .ripple:hover {
@@ -1622,7 +1622,6 @@ span {
 .actions li {
   display: inline-block;
   width: 32%;
-  height: 100%;
 }
 
 .actions .ripple {
@@ -1635,11 +1634,11 @@ span {
   position: relative;
   top: 22px;
   width: 44px;
-  animation: rotate 0.4s ease forwards;
+  animation: rotate 0.3s ease forwards;
 }
 
 .rotateAgain {
-  animation: rotateAgain 0.4s ease forwards;
+  animation: rotateAgain 0.3s ease forwards;
 }
 
 .mid {
@@ -1655,7 +1654,7 @@ span {
   margin: auto;
   height: 2px;
   background-color: #202020;
-  animation: rotateTopOne 0.4s ease forwards;
+  animation: rotateTopOne 0.3s ease forwards;
 }
 
 .burgerBot {
@@ -1663,7 +1662,7 @@ span {
   margin: auto;
   height: 2px;
   background-color: #202020;
-  animation: rotateBotOne 0.4s ease forwards;
+  animation: rotateBotOne 0.3s ease forwards;
 }
 
 .arrowTop {
@@ -1671,7 +1670,7 @@ span {
   margin: auto;
   height: 2px;
   background-color: #202020;
-  animation: rotateBotTwo 0.4s ease forwards;
+  animation: rotateBotTwo 0.3s ease forwards;
 }
 
 .arrowBot {
@@ -1680,7 +1679,7 @@ span {
   top: 4px;
   height: 2px;
   background-color: #202020;
-  animation: rotateTopTwo 0.4s ease forwards;
+  animation: rotateTopTwo 0.3s ease forwards;
 }
 
 @keyframes rotate {
@@ -1769,7 +1768,7 @@ span {
   height: 100%;
   width: 150px;
   background-color: #fafafa;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   z-index: 5;
 }
 
@@ -1795,11 +1794,11 @@ span {
 }
 
 .opened {
-  animation: openMenu 0.4s ease-out forwards;
+  animation: openMenu 0.3s ease-out forwards;
 }
 
 .closed {
-  animation: closeMenu 0.4s ease-in forwards;
+  animation: closeMenu 0.3s ease-in forwards;
 }
 
 @keyframes openMenu {
@@ -1818,6 +1817,22 @@ span {
   100% {
     left: -170px;
   }
+}
+
+#dimmer {
+  display: none;
+}
+
+#dimmer {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #000000;
+  opacity: 0.5;
+  z-index: 4;
 }
 
 /* ADAPTIVE RULES */
@@ -1973,7 +1988,7 @@ span {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 411px) {
   #navBar {
     display: none;
   }
@@ -1991,8 +2006,13 @@ span {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
   }
 
+  #logo {
+    margin: auto;
+    top: 20px;
+  }
+
   .contain, .containText, .navbarContent, .videoContainer {
-    width: 96%;
+    width: 95%;
   }
 
    #words {
@@ -2001,5 +2021,9 @@ span {
 
   .pointsR>li>div, .pointsL>li>div {
     margin-left: 5px
+  }
+
+  #footer {
+    bottom: 35px;
   }
 }

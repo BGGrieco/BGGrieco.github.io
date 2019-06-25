@@ -11,6 +11,7 @@ $(document).ready(function() {
   $("#logo").mouseup(function() {
     $(this).css({"animation-play-state": "paused"});
     changeImage();
+    alert("AY");
   });
 
   var newsrc = 0;
@@ -83,7 +84,7 @@ $(document).ready(function() {
 
       $window.setTimeout(function() {
         $span.remove();
-      }, 400);
+      }, 300);
     });
   }
 
