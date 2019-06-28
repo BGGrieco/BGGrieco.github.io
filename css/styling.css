@@ -229,6 +229,7 @@ li {
   animation: appearFade 1.5s forwards;
   animation-delay: 1.5s;
   cursor: pointer;
+  pointer-events: auto;
   border-radius: 4px;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 1);
   transition: 0.3s;
@@ -264,7 +265,14 @@ span {
   margin-top: -25px;
   position: absolute;
   background-color: white;
+  pointer-events: none;
   -webkit-animation: effect-animation 3s;
+}
+
+.round span {
+  background-color: #c0c0c0;
+  width: 45px;
+  height: 45px;
 }
 
 @-webkit-keyframes effect-animation {
@@ -417,7 +425,7 @@ span {
   left: 0;
   top: 100%;
   width: 100%;
-  background-color: #e4e4e4;
+  background-color: #e8e8e8;
 }
 
 /*
@@ -1170,6 +1178,12 @@ span {
 }
 
 /* BURGER MENU SECTION */
+.round {
+  width: 45px;
+  height: 100%;
+  overflow: hidden;
+}
+
 .burgerMenu {
   position: relative;
   margin: auto;

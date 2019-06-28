@@ -84,7 +84,7 @@ $(document).ready(function() {
 
       $window.setTimeout(function() {
         $span.remove();
-      }, 300);
+      }, 400);
     });
   }
 
