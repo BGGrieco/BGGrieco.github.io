@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Burger menu animations
-  $("#burger, #sideMenuLinks").click(function() {
-    $(".rotate").toggleClass("rotateAgain");
+  $("#navBurger, #sideMenuLinks").click(function() {
+    $(".rotateBurger").toggleClass("rotateAgain");
     $(".burgerTop").toggleClass("arrowTop");
     $(".burgerBot").toggleClass("arrowBot");
     $("#sideMenu").toggleClass("opened closed");
@@ -11,7 +11,6 @@ $(document).ready(function() {
   $("#logo").mouseup(function() {
     $(this).css({"animation-play-state": "paused"});
     changeImage();
-    alert("AY");
   });
 
   var newsrc = 0;
@@ -128,15 +127,15 @@ $(document).ready(function() {
   });
 
   // Nav Menu Animations
-  function burgerMenu() {
+  function roundMenu() {
     $(".smlOne").toggleClass("smlOnOne");
     $(".smlTwo").toggleClass("smlOnTwo");
     $(".smlThree").toggleClass("smlOnThree");
     $(".tap").toggleClass("tapOn");
   };
 
-  $(".burgerMenu").click(function() {
-    burgerMenu();
+  $(".roundMenu").click(function() {
+    roundMenu();
   });
 
   // Page Icon Change
@@ -173,7 +172,7 @@ $(document).ready(function() {
       default:
       console.log("Page is: " + page);
     }
-    burgerMenu();
+    roundMenu();
   });
 
   $("#home").click(function() {
@@ -209,7 +208,7 @@ $(document).ready(function() {
       default:
       console.log("Page is: " + page);
     }
-    burgerMenu();
+    roundMenu();
   });
 
   $("#profile").click(function() {
@@ -238,7 +237,7 @@ $(document).ready(function() {
       default:
       console.log("Page is: " + page);
     }
-    burgerMenu();
+    roundMenu();
   });
 
   // Fade Content Animation

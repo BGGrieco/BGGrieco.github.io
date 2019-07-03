@@ -10,11 +10,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/styling.css" type="text/css">
-    <script type="text/javascript">
-      function scrollWin() {
-        window.scrollTo(0, 1258);
-      };
-    </script>
   </head>
   <body>
     <!--Nav Bar-->
@@ -28,8 +23,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#interactions">Interactions</a></li>
           <li><a href="#designs">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#">More</a></li>
+          <li><a href="#moreContainer">Contacts</a></li>
         </ul>
 
         <ul id="outerLinks">
@@ -64,7 +58,7 @@
     <!--Mobile Nav Bar-->
     <div class="mobileNav">
       <div class="round js-touch-effect">
-        <div id="burger" class="rotate">
+        <div id="navBurger" class="rotateBurger">
           <div class="burgerTop"></div>
           <div class="mid"></div>
           <div class="burgerBot"></div>
@@ -81,8 +75,8 @@
             <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank"><div class="ripple"></div></a>
             <img class="sideimg" src="imgs/download.png" width="31" style="top: 14px; left: -2px;" alt="" />
           </li>
-          <li onclick="scrollWin()">
-            <div class="ripple"></div>
+          <li>
+            <a href="#phoneBio"><div class="ripple"></div></a>
             <img class="sideimg" src="imgs/up.png" width="14" style="top: 14px; left: -1px;" alt="" />
           </li>
         </ul>
@@ -96,12 +90,11 @@
       </div>
 
       <ul id="sideMenuLinks">
-        <li><a href="#bio">Biography</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interactions">Interactions</a></li>
-        <li><a href="#designs">Portfolio</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">More</a></li>
+        <li><a href="#phoneBio">Biography</a></li>
+        <li><a href="#phoneSkills">Skills</a></li>
+        <li><a href="#phoneInteractions">Interactions</a></li>
+        <li><a href="#phoneDesigns">Portfolio</a></li>
+        <li><a href="#moreContainer">Contacts</a></li>
       </ul>
     </div>
 
@@ -111,10 +104,10 @@
       <div id="overlay"></div>
       <div id="wordsContainer">
         <img id="words" src="imgs/header.png" alt="" />
-        <div id="call" class="js-touch-effect">
-          <a href="#designs">Show me</a>
+        <a href="#designs" id="call">
+          <p>Show me</p>
           <img id="goArrow" src="imgs/go.png" width="20" />
-        </div>
+        </a>
       </div>
     </div>
 
@@ -130,8 +123,8 @@
         <img class="sideimg" src="imgs/download.png" width="31" style="top: 18px; left: -2px;" alt="" />
       </div>
 
-      <div id="up" class="side up" onclick="scrollWin()">
-        <div class="ripple"></div>
+      <div id="up" class="side up">
+        <a href="#bio"><div class="ripple"></div></a>
         <img class="sideimg" src="imgs/up.png" width="17" style="top: 17px; left: -1px;" alt="" />
       </div>
     </div>
@@ -139,7 +132,7 @@
     <div id="contentContainer">
       <!--Bio-->
       <div id="bio"></div>
-      <div class="sectionContainer">
+      <div id="phoneBio" class="sectionContainer">
         <h1>BIOGRAPHY</h1>
         <div id="faceContainer">
           <img id="face" src="imgs/face2.png" width="200" alt="" />
@@ -163,7 +156,7 @@
 
       <!--Skills-->
       <div id="skills"></div>
-      <div class="sectionContainer">
+      <div id="phoneSkills" class="sectionContainer">
         <h1>SKILLS</h1>
         <div class="containText">
           <p>
@@ -382,7 +375,7 @@
 
       <!--Interactions-->
       <div id="interactions"></div>
-      <div class="sectionContainer">
+      <div id="phoneInteractions" class="sectionContainer">
         <h1>INTERACTIONS</h1>
         <div class="containText">
           <p>
@@ -392,8 +385,8 @@
             applications, but are recreated here using JavaScript and HTML. The point of this is to
             show my skill in creating hybrid applications that retain a native appereance and feel.
           </p>
-          <div class="ghost"><a href="#">Sorry, who are you again?</a></div>
-          <div class="ghost"><a href="#">How did you say you did all this?</a></div>
+          <div class="ghost"><a href="#bio">Sorry, who are you again?</a></div>
+          <div class="ghost"><a href="#skills">How did you say you did all this?</a></div>
         </div>
 
         <div class="contain">
@@ -503,7 +496,7 @@
                     </div>
                   </div>
                   <!--Interaction Menu-->
-                  <div id="burger" class="burgerMenu">
+                  <div id="burger" class="roundMenu">
                     <div id="circle" class="tap"></div>
                   </div>
                 </div>
@@ -523,14 +516,14 @@
 
       <!--Designs-->
       <div id="designs"></div>
-      <div class="sectionContainer">
+      <div id="phoneDesigns" class="sectionContainer">
         <h1>PORTFOLIO</h1>
         <div class="containText" id="designsText">
           <p>
             Below are some video showcases of some of the projects I have worked on during the years.
           </p>
-          <div class="ghost"><a href="#">Sorry, who are you again?</a></div>
-          <div class="ghost"><a href="#">How did you say you did all this?</a></div>
+          <div class="ghost"><a href="#bio">Sorry, who are you again?</a></div>
+          <div class="ghost"><a href="#skills">How did you say you did all this?</a></div>
         </div>
 
         <!--Videos-->
@@ -602,8 +595,11 @@
           <p>
             Or contact me directly through <a href="#" target="_blank">LinkedIn</a>!
           </p>
-
-          <p>I'd love to hear from you, even just for questions or design opinions. Have a great day!</p>
+          </br>
+          <h3>I'd love to hear from you, even just for questions or design opinions. Have a great day!</h3>
+          <p>Brian Grieco</p>
+          <p><img src="imgs/phone.png" width="25"/>+353 87 975 3550</p>
+          <p><img src="imgs/mail.png" width="26"/><a href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
         </div>
       </div>
 
@@ -612,9 +608,9 @@
           <p class="footerText">Brian G. Grieco | Tel: +353 87 975 3550 | <a href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
         </div>
       </div>
-      <!-- <div id="dimmer"></div> -->
     </div>
 
+    <!-- <div id="dimmer"></div> -->
     <div id="fader"></div>
 
     <script type="text/javascript" src="js/jQuery.js"></script>

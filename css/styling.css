@@ -233,26 +233,24 @@ li {
   border-radius: 4px;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 1);
   transition: 0.3s;
+  color: white;
 }
 
 #call:hover {
   box-shadow: 8px 8px 32px rgba(0, 0, 0, 1);
   transition: 0.3s;
+  color: white;
 }
 
-#call a {
+#call p {
   position: relative;
-  top: 12px;
-  left: 13px;
-  font-weight: 300;
-  font-size: 20px;
-  color: white;
-  display: block;
+  left: 12px;
+  top: -3px;
 }
 
 #goArrow {
   position: absolute;
-  top: 17px;
+  top: 19px;
   right: 12px;
 }
 
@@ -270,9 +268,7 @@ span {
 }
 
 .round span {
-  background-color: #c0c0c0;
-  width: 45px;
-  height: 45px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @-webkit-keyframes effect-animation {
@@ -313,7 +309,7 @@ span {
   height: 100%;
   opacity: 0;
   animation: appearFade 1.5s forwards;
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 }
 
 #words {
@@ -321,7 +317,7 @@ span {
   display: block;
   margin: auto;
   top: 0;
-  width: 60%;
+  width: 50%;
 }
 
 /*
@@ -432,6 +428,11 @@ span {
 *
 *
 /* BIOGRAPHY SECTION */
+#bio {
+  position: absolute;
+  top: -80px;
+}
+
 .sectionContainer {
   position: relative;
   width: 100%;
@@ -473,6 +474,11 @@ span {
 *
 *
 /* SKILLS SECTION */
+#skills {
+  position: relative;
+  top: -80px;
+}
+
 .contain {
   position: relative;
   margin: auto;
@@ -608,6 +614,11 @@ span {
 *
 *
 /* INTERACTIONS SECTION */
+#interactions {
+  position: relative;
+  top: -80px;
+}
+
 #radial {
   position: relative;
   margin: auto;
@@ -1177,14 +1188,8 @@ span {
   top: 23px;
 }
 
-/* BURGER MENU SECTION */
-.round {
-  width: 45px;
-  height: 100%;
-  overflow: hidden;
-}
-
-.burgerMenu {
+/* ROUND MENU SECTION */
+.roundMenu {
   position: relative;
   margin: auto;
   top: -2px;
@@ -1532,6 +1537,11 @@ span {
 *
 *
 /* DESIGNS SECTION */
+#designs {
+  position: relative;
+  top: -80px;
+}
+
 .videoContainer {
   position: relative;
   margin: auto;
@@ -1559,8 +1569,19 @@ span {
 *
 *
 /* MORE SECTION */
+#more {
+  position: relative;
+  top: -80px;
+}
+
 #moreContainer {
   border-bottom: none;
+}
+
+#moreText img {
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
 }
 
 /*
@@ -1644,11 +1665,21 @@ span {
 }
 
 /* BURGER MENU */
-.rotate {
+.round {
   position: relative;
-  top: 22px;
+  top: 2px;
+  display: block;
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.rotateBurger {
+  position: relative;
+  top: 20px;
   width: 44px;
-  animation: rotate 0.3s ease forwards;
+  animation: rotateTwo 0.3s ease forwards;
 }
 
 .rotateAgain {
@@ -1696,7 +1727,7 @@ span {
   animation: rotateTopTwo 0.3s ease forwards;
 }
 
-@keyframes rotate {
+@keyframes rotateTwo {
   0% {
     transform: rotate(0deg);
   }
@@ -1833,9 +1864,9 @@ span {
   }
 }
 
-#dimmer {
+/* #dimmer {
   display: none;
-}
+} */
 
 #dimmer {
   display: block;
@@ -1844,7 +1875,7 @@ span {
   left: 0;
   height: 100%;
   width: 100%;
-  color: #000000;
+  color: red;
   opacity: 0.5;
   z-index: 4;
 }
@@ -1992,17 +2023,7 @@ span {
   }
 }
 
-@media (max-width: 760px) {
-  .navbarContent {
-    display: none;
-  }
-
-  #navBar {
-    height: 60px;
-  }
-}
-
-@media (max-width: 411px) {
+@media (max-width: 750px) {
   #navBar {
     display: none;
   }
@@ -2024,7 +2045,9 @@ span {
     margin: auto;
     top: 20px;
   }
+}
 
+@media (max-width: 411px) {
   .contain, .containText, .navbarContent, .videoContainer {
     width: 95%;
   }
