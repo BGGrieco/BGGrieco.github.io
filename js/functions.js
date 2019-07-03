@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  // Burger menu animations
+  $("#navBurger, #sideMenuLinks").click(function() {
+    $(".rotateBurger").toggleClass("rotateAgain");
+    $(".burgerTop").toggleClass("arrowTop");
+    $(".burgerBot").toggleClass("arrowBot");
+    $("#sideMenu").toggleClass("opened closed");
+  });
+
   // Animated logo section.
   $("#logo").mouseup(function() {
     $(this).css({"animation-play-state": "paused"});
@@ -119,15 +127,15 @@ $(document).ready(function() {
   });
 
   // Nav Menu Animations
-  function burgerMenu() {
+  function roundMenu() {
     $(".smlOne").toggleClass("smlOnOne");
     $(".smlTwo").toggleClass("smlOnTwo");
     $(".smlThree").toggleClass("smlOnThree");
     $(".tap").toggleClass("tapOn");
   };
 
-  $(".burgerMenu").click(function() {
-    burgerMenu();
+  $(".roundMenu").click(function() {
+    roundMenu();
   });
 
   // Page Icon Change
@@ -164,7 +172,7 @@ $(document).ready(function() {
       default:
       console.log("Page is: " + page);
     }
-    burgerMenu();
+    roundMenu();
   });
 
   $("#home").click(function() {
@@ -200,7 +208,7 @@ $(document).ready(function() {
       default:
       console.log("Page is: " + page);
     }
-    burgerMenu();
+    roundMenu();
   });
 
   $("#profile").click(function() {
@@ -229,7 +237,7 @@ $(document).ready(function() {
       default:
       console.log("Page is: " + page);
     }
-    burgerMenu();
+    roundMenu();
   });
 
   // Fade Content Animation
