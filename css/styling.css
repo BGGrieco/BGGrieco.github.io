@@ -644,7 +644,7 @@ span {
   width: 273px;
   height: 603px;
   border-radius: 35px;
-  background-color: #e4e4e4;
+  background-color: #e8e8e8;
   box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -655,7 +655,7 @@ span {
   top: 33px;
   width: 263px;
   height: 542px;
-  background-color: #e4e4e4;
+  background-color: #e8e8e8;
   pointer-events: auto;
   z-index: 2;
 }
@@ -1124,7 +1124,7 @@ span {
   width: 273px;
   height: 603px;
   border-radius: 35px;
-  background-color: #e4e4e4;
+  background-color: #e8e8e8;
   box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -1135,7 +1135,7 @@ span {
   top: 33px;
   width: 263px;
   height: 542px;
-  background-color: #e4e4e4;
+  background-color: #e8e8e8;
   overflow: hidden;
   pointer-events: auto;
   z-index: 2;
@@ -1212,6 +1212,36 @@ span {
 #top {
   position: relative;
   top: 5px;
+}
+
+.highlighter {
+  position: relative;
+  margin: auto;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: highlight 1.5s linear infinite;
+}
+
+@keyframes highlight {
+  0% {
+    opacity: 1;
+    transform: scale(0.1);
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
 }
 
 /* NAVIGATION BUTTONS SECTION */

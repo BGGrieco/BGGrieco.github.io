@@ -132,6 +132,7 @@ $(document).ready(function() {
     $(".smlTwo").toggleClass("smlOnTwo");
     $(".smlThree").toggleClass("smlOnThree");
     $(".tap").toggleClass("tapOn");
+    $(".highlighter").hide(0);
   };
 
   $(".roundMenu").click(function() {
