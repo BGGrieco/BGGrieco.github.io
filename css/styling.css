@@ -1,10 +1,24 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/font/Roboto-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/font/Roboto-Bold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
 body {
-  font-family: Roboto;
+  font-family: "Roboto";
   color: #202020;
 }
 
@@ -19,7 +33,7 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #202020;
 }
 
 a:hover {
@@ -1576,6 +1590,12 @@ span {
   position: relative;
   margin: auto;
   width: 60%;
+}
+
+.videoText {
+  position: relative;
+  margin: auto;
+  max-width: 1250px;
 }
 
 .iframeContainer {
