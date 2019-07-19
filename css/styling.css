@@ -1592,10 +1592,8 @@ span {
   width: 60%;
 }
 
-.videoText {
-  position: relative;
-  margin: auto;
-  max-width: 1250px;
+.containText.videoText {
+  width: 100%;
 }
 
 .iframeContainer {
