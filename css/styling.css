@@ -606,6 +606,12 @@ span {
   height: 25px;
 }
 
+.displace {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
 .creative {
   position: absolute;
   left: 80px;
