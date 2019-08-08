@@ -232,7 +232,7 @@ li {
   background-color: #202020;
 }
 
-#call {
+.call {
   position: relative;
   margin: auto;
   display: block;
@@ -250,16 +250,31 @@ li {
   color: white;
 }
 
-#call:hover {
+.call:hover {
   box-shadow: 8px 8px 32px rgba(0, 0, 0, 1);
   transition: 0.3s;
   color: white;
 }
 
-#call p {
+.call p {
   position: relative;
   left: 12px;
   top: -3px;
+}
+
+.call.solid {
+  background-color: #fafafa;
+  color: #202020;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  width: 160px;
+  text-decoration: none;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.call.solid:hover {
+  box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 #goArrow {
