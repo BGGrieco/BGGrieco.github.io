@@ -1,0 +1,22 @@
+p {
+  margin: 0 0 40px 0;
+}
+
+.smallText {
+  font-size: 16px;
+}
+
+.role {
+  margin: -30px 0 0 0;
+}
+
+.textRight {
+  position: relative;
+  width: 50%;
+  left: 50%;
+}
+
+.textLeft {
+  position: relative;
+  width: 50%;
+}
