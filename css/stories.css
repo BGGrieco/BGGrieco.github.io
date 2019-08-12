@@ -26,7 +26,6 @@ p {
   position: relative;
   width: 100%;
   margin: auto;
-  min-height: none;
 }
 
 .storyWords {
@@ -36,15 +35,6 @@ p {
   width: 100%;
   margin: auto;
   min-height: none;
-}
-
-.storyOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.3));
 }
 
 .smallText {
@@ -133,8 +123,9 @@ p {
   left: 48px;
 }
 
-#goArrow {
+.goArrow {
   left: 12px;
+  top: 18px;
 }
 
 @media screen and (max-width: 1600px) {
