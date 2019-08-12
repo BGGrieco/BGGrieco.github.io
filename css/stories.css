@@ -1,5 +1,46 @@
+body {
+  background-color: #e8e8e8;
+}
+
 p {
   margin: 0 0 40px 0;
+}
+
+.containText {
+  min-width: 1024px;
+}
+
+#header {
+  width: 60%;
+  left: 20%;
+  min-width: 1012px;
+  background-color: #e8e8e8;
+}
+
+.storyHeader {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  min-height: none;
+}
+
+.storyWords {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  min-height: none;
+}
+
+.storyOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.3));
 }
 
 .smallText {
@@ -8,6 +49,32 @@ p {
 
 .role {
   margin: -30px 0 0 0;
+}
+
+.imagesLeft {
+  position: absolute;
+  width: 50%;
+}
+
+.imagesRight {
+  float: right;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.imagesRight img {
+  height: 300px;
+  float: right;
+  margin: 0 0 10px 5px;
+}
+
+.imagesLeft img {
+  height: 350px;
+}
+
+.imgRight {
+  float: right;
+  margin-right: 10%;
 }
 
 .textRight {
@@ -19,4 +86,36 @@ p {
 .textLeft {
   position: relative;
   width: 50%;
+}
+
+.statsList {
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+
+.floatingStat {
+  flex: 1 1 100%;
+  text-align: center;
+  position: relative;
+}
+
+.floatingStat h1 {
+  position: relative;
+  margin: 10px 0;
+  top: 0;
+  font-size: 48px;
+}
+
+.floatingStat p {
+  text-align: center;
+  position: relative;
+  top: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  #header {
+    width: 80%;
+    left: 10%;
+  }
 }

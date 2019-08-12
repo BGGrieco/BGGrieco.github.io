@@ -259,7 +259,7 @@ li {
 .call p {
   position: relative;
   left: 12px;
-  top: -3px;
+  top: -6px;
 }
 
 .call.solid {
@@ -267,7 +267,7 @@ li {
   color: #202020;
   border-top: 1px solid white;
   border-left: 1px solid white;
-  width: 160px;
+  width: 173px;
   text-decoration: none;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
