@@ -263,6 +263,7 @@ li {
 }
 
 .call.solid {
+  top: -60px;
   background-color: #fafafa;
   color: #202020;
   border-top: 1px solid white;
@@ -1610,6 +1611,13 @@ span {
 #designs {
   position: relative;
   top: -80px;
+}
+
+.centeredImage {
+  position: relative;
+  display: block;
+  margin: auto;
+  left: 150px;
 }
 
 .videoContainer {
