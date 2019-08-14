@@ -45,25 +45,48 @@ p {
   margin: -30px 0 0 0;
 }
 
+.band {
+  position: relative;
+  height: 450px;;
+}
+
 .imagesLeft {
-  position: absolute;
+  position: relative;
   width: 50%;
+  height: 450px;
+  margin-bottom: 40px;
+}
+
+.imagesLeft img {
+  width: 40%;
 }
 
 .imagesRight {
-  float: right;
+  position: absolute;
+  right: 0;
   width: 50%;
+  height: 450px;
   margin-bottom: 40px;
 }
 
 .imagesRight img {
-  height: 300px;
-  float: right;
+  width: 40%;
   margin: 0 0 10px 5px;
 }
 
-.imagesLeft img {
-  height: 350px;
+.imagesRight .imgLeft {
+  margin-left: 10%;
+}
+
+.imagesCenter {
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.imagesCenter img {
+  width: 24%;
+  margin-left: 0.5%;
 }
 
 .imgRight {
@@ -72,9 +95,10 @@ p {
 }
 
 .textRight {
-  position: relative;
+  position: absolute;
   width: 50%;
   left: 50%;
+  top: 0;
 }
 
 .textLeft {
@@ -115,6 +139,7 @@ p {
 }
 
 .call.solid {
+  top: 10px;
   width: 110px;
 }
 
