@@ -19,6 +19,7 @@ p {
   left: 20%;
   min-width: 1012px;
   background-color: #e8e8e8;
+  height: fit-content;
 }
 
 .storyHeader {
