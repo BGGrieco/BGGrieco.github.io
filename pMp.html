@@ -169,5 +169,12 @@
 
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript">
+      $(function scrollBody(){
+        var explore = $(".storyHeader").css("height");
+        var result = explore.substring(0, explore.length - 2);
+        window.scroll(0, result);
+      });
+    </script>
   </body>
 </html>
