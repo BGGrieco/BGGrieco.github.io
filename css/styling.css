@@ -1616,16 +1616,47 @@ span {
 .tilesContainer {
   position: relative;
   margin: auto;
-  width: 60%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.column {
+  -ms-flex: 33.3%;
+  flex: 33.3%;
+  max-width: 33.3%;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
 }
 
 .tile {
-  width: 500px;
   transition: 0.3s;
 }
 
 .tile:hover {
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 12px 36px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /*
