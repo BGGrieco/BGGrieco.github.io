@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brian Grieco</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Official website of UX Designer, Web Developer and Media Artist Brian Grieco.">
+    <meta name="keywords" content="Design, UI, UX, UIDesigner, UXDesigner, SoftwareDesign">
+    <meta name="author" content="Brian G. Grieco">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/styling.css" type="text/css">
+    <link rel="stylesheet" href="css/stories.css" type="text/css">
+  </head>
+  <body>
+
+    <!--Mobile Nav Bar-->
+    <div class="mobileNav">
+      <div class="round js-touch-effect">
+        <div id="navBurger" class="rotateBurger">
+          <div class="burgerTop"></div>
+          <div class="mid"></div>
+          <div class="burgerBot"></div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <ul>
+          <li>
+            <a href="mailto:brian.g.grieco@gmail.com"><div class="ripple"></div></a>
+            <img class="sideimg" src="imgs/mail.png" width="25" style="top: 14px; left: -1px;" alt="e-mail" />
+          </li>
+          <li>
+            <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank"><div class="ripple"></div></a>
+            <img class="sideimg" src="imgs/download.png" width="31" style="top: 14px; left: -2px;" alt="cv" />
+          </li>
+          <li>
+            <a href="#phoneBio"><div class="ripple"></div></a>
+            <img class="sideimg" src="imgs/up.png" width="14" style="top: 14px; left: -1px;" alt="up" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Side Menu-->
+    <div id="sideMenu" class="closed">
+      <div id="logo" class="attention">
+        <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
+      </div>
+
+      <ul id="sideMenuLinks">
+        <li><a href="index.html/#phoneBio">Biography</a></li>
+        <li><a href="index.html/#phoneSkills">Skills</a></li>
+        <li><a href="index.html/#phoneInteractions">Interactions</a></li>
+        <li><a href="index.html/#phoneDesigns">Portfolio</a></li>
+        <li><a href="index.html/#moreContainer">Contacts</a></li>
+      </ul>
+    </div>
+
+    <!--Header-->
+    <div id="header">
+      <img class="storyHeader" src="imgs/customFitHeader.png" alt="backgroundImage" />
+      <img class="storyWords" src="imgs/customFitWords.png" alt="" />
+    </div>
+
+    <div id="contentContainer">
+      <div class="sectionContainer">
+        <div class="containText">
+          <h1 style="text-align: left">About the project</h1>
+          <p>
+            The MEG Audit Tool is an auditing and incident reporting app that allows for quick and easy collection of data, creates instant compliance reports and
+            issue reports, and allows logging of custom issues with aded media options and e-mail notifications sent directly to issue handlers.
+            <br /><br />
+            <strong>My Role</strong><br />
+            On this project, I supervised the entire re-design of the interface, implemented most of the designs using CSS3 and Angular 6, and managed a junior designer.
+            <br /><br />
+          </p>
+
+          <h2 style="text-align: left">The problems</h2>
+          <p class="smallText">
+            When I started work on this project it was built using Angular 2, and the interface was antiquated, crowded and not user friendly.
+            it was agreed after some discussion with the dev team that the project needed upgrading to Angular 5: This gave us an opportunity
+            to redesign the interface while implementing Angular Material into the codebase.<br />
+            There where two main problems with the old version of the project:
+            <br /><br />
+            <strong>Navigation:</strong><br />
+            Users often got lost in the clunky interface, having to learn how to use the system through training sessions or asking for help to the customer support representatives.
+            In particular they did not know how to navigate the app using the side menu, how to access saved but unsubmitted audits,
+            and often where under the impression the audit was submitted even though it wasn't.<br /><br />
+            <strong>Audit Selection:</strong>
+            Before selecting an audit a user must enter some required information, such as the location the audit is being caried out in, the institution it's being carried out for,
+            and of course the audt itself must be selected.<br />
+            In the original version of the project, the user had to select the location and institution first, and where then brought to a seperate screen in which they could select the audit and start it.
+            This constituted an unnecessary and time consuming extra step.
+            <br /><br />
+          </p>
+
+          <div class="band">
+            <div class="imagesLeft">
+              <img class="imgLeft" src="imgs/prototypes/main.png" alt="" />
+              <img class="imgRight" src="imgs/prototypes/home.png" alt="" />
+            </div>
+
+            <div class="textRight">
+              <h2 style="text-align: left">Prototyping & Testing</h2>
+              <p class="smallText">
+                The testing strategy I devised was conical: I started validating base assumptions through
+                informal interviews, unspecific questions about the overall subject and anecdotal data from users.
+                Once these base requirements were defined, I moved on to more specific questionnaires and interviews,
+                and finally to interaction testing with prototypes and user trials.
+                <br /><br />
+                A number of initial lo fidelity prototypes and flows were created based on the initial requirements,
+                and then tested with Pop. These where hand sketches created during brain storming and "Crazy 8" sessions.
+                <br /><br />
+                Higher fidelity prototypes were used for the final interaction testing and user trials: these were created
+                with adobe illustrator and tested with InVision.
+              </p>
+            </div>
+          </div>
+
+          <div class="band">
+            <div class="imagesRight">
+              <img class="imgLeft" src="imgs/prototypes/home.png" alt="" />
+              <img class="imgRight" src="imgs/prototypes/1.png" alt="" />
+            </div>
+
+            <div class="textLeft">
+              <h2 style="text-align: left">The Final Design</h2>
+              <p class="smallText">
+                Once the correct flow and interface layout was established, the high fidelity designs were reviewed.
+                I was still new to design at this time, and I knew I needed to improve on the initial version of my interface.
+                I drew quite a lot of inspiration from Google's Material Design, but aimed to give my work a personal twist, such as
+                the highlighted edges on cards, the 45 degree angle lighting and the unique animations.
+              </p>
+            </div>
+          </div>
+
+          <div class="statsList">
+            <li class="floatingStat"><img src="imgs/prototypes/2.png" alt="" /></li>
+            <li class="floatingStat"><img src="imgs/prototypes/1.png" alt="" /></li>
+            <li class="floatingStat"><img src="imgs/prototypes/3.png" alt="" /></li>
+          </div>
+
+          <ul class="statsList">
+            <li class="floatingStat">
+              <h1>22</h1>
+              <p>Interviews</p>
+            </li>
+
+            <li class="floatingStat">
+              <h1>7</h1>
+              <p>Iterations</p>
+            </li>
+
+            <li class="floatingStat">
+              <h1>36</h1>
+              <p>User trials</p>
+            </li>
+          </ul>
+
+          <h1 style="text-align: left">What I learnt</h1>
+          <p>
+            The main takeaways from this project were to never assume the user knows what to do:
+            You are not your user. From a technical point of view, I learnt a lot about CSS and JavaScript, and how to use them
+            efficiently with each other to create responsive animations and displaying data correctly:
+            key skills that would help me later in my career when asked to carry out front end tasks.<br /><br />
+            This project definitely helped me get a headstart in my career, and gave me the necessary tools
+            to start my first job with confidence.
+            <br /><br />
+          </p>
+          <a href="index.html#designs" class="call solid">
+            <img class="goArrow" src="imgs/goDark.png" width="20" alt="" style="transform: rotate(180deg);" />
+            <p>Back</p>
+          </a>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="containText">
+          <p class="footerText">Brian G. Grieco | Tel: +353 87 975 3550 | <a href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="dimmer"></div> -->
+    <div id="fader"></div>
+
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var headerHeightString = $("#header").css("height");
+        var headerHeightTruncation = headerHeightString.substring(0, headerHeightString.length - 2);
+        var headerHeight = parseInt(headerHeightTruncation);
+        var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var result = viewportHeight - headerHeight;
+        window.scroll(0, result);
+      });
+    </script>
+  </body>
+</html>
