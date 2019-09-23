@@ -1623,39 +1623,28 @@ span {
   flex-wrap: wrap;
 }
 
-.column {
-  -ms-flex: 33.3%;
-  flex: 33.3%;
-  max-width: 33.3%;
-}
-
-.column img {
-  vertical-align: middle;
-  width: 100%;
-}
-
 .tile {
-  transition: 0.3s;
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+  width: 33.3%;
+  transition: 0.2s;
 }
 
 .tile:hover {
   box-shadow: 12px 12px 36px rgba(0, 0, 0, 0.3);
-  z-index: 10;
+  z-index: 5;
 }
 
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+.tile img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+@media screen and (max-width: 950px) {
+  .tile {
+    width: 50%;
   }
 }
 
