@@ -184,5 +184,15 @@
 
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var headerHeightString = $("#header").css("height");
+        var headerHeightTruncation = headerHeightString.substring(0, headerHeightString.length - 2);
+        var headerHeight = parseInt(headerHeightTruncation);
+        var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var result = viewportHeight - headerHeight;
+        window.scroll(0, result);
+      });
+    </script>
   </body>
 </html>
