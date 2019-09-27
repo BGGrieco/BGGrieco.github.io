@@ -29,13 +29,8 @@ p {
   margin: auto;
 }
 
-.storyWords {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: auto;
-  min-height: none;
+.sectionContainer {
+  border-bottom: none;
 }
 
 .smallText {
@@ -46,9 +41,33 @@ p {
   margin: -30px 0 0 0;
 }
 
-.band {
+.row {
   position: relative;
-  height: 450px;;
+  height: 450px;
+  margin-bottom: 50px;
+}
+
+#slideshowLeft {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  margin-top: 22px;
+}
+
+#slideshowRight {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  margin-top: 22px;
+}
+
+.mySlidesLeft, .mySlidesRight {
+  max-width: 98%;
+  max-height: 100%;
+}
+
+.mySlidesRight {
+  float: right;
 }
 
 .imagesLeft {
@@ -115,7 +134,7 @@ p {
 }
 
 .statsList {
-  margin-top: 50px;
+  margin: 50px 0;
   padding: 0;
   width: 100%;
   display: flex;
@@ -138,6 +157,14 @@ p {
   text-align: center;
   position: relative;
   top: 0;
+}
+
+.floatingStat img {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+img.final {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .call.solid {

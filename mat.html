@@ -59,8 +59,7 @@
 
     <!--Header-->
     <div id="header">
-      <img class="storyHeader" src="imgs/customFitHeader.png" alt="backgroundImage" />
-      <img class="storyWords" src="imgs/customFitWords.png" alt="" />
+      <img class="storyHeader" src="imgs/matHeader.png" alt="backgroundImage" />
     </div>
 
     <div id="contentContainer">
@@ -69,17 +68,17 @@
           <h1 style="text-align: left">About the project</h1>
           <p>
             The MEG Audit Tool is an auditing and incident reporting app that allows for quick and easy collection of data, creates instant compliance reports and
-            issue reports, and allows logging of custom issues with aded media options and e-mail notifications sent directly to issue handlers.
+            issue reports, and allows logging of custom issues with added media options and e-mail notifications sent directly to issue handlers.
             <br /><br />
             <strong>My Role</strong><br />
-            On this project, I supervised the entire re-design of the interface, implemented most of the designs using CSS3 and Angular 6, and managed a junior designer.
+            On this project, I supervised the entire re-design of the interface, the UX improvements to user flows, implemented most of the designs using CSS3 and Angular 5, and managed a junior designer.
             <br /><br />
           </p>
 
           <h2 style="text-align: left">The problems</h2>
           <p class="smallText">
             When I started work on this project it was built using Angular 2, and the interface was antiquated, crowded and not user friendly.
-            it was agreed after some discussion with the dev team that the project needed upgrading to Angular 5: This gave us an opportunity
+            It was agreed after some discussion with the dev team that the project needed upgrading to Angular 5: This gave us an opportunity
             to redesign the interface while implementing Angular Material into the codebase.<br />
             There where two main problems with the old version of the project:
             <br /><br />
@@ -88,84 +87,88 @@
             In particular they did not know how to navigate the app using the side menu, how to access saved but unsubmitted audits,
             and often where under the impression the audit was submitted even though it wasn't.<br /><br />
             <strong>Audit Selection:</strong>
-            Before selecting an audit a user must enter some required information, such as the location the audit is being caried out in, the institution it's being carried out for,
-            and of course the audt itself must be selected.<br />
-            In the original version of the project, the user had to select the location and institution first, and where then brought to a seperate screen in which they could select the audit and start it.
+            Before selecting an audit a user must enter some required information, such as the location the audit is being carried out in, the institution it's being carried out for,
+            and of course the audit itself must be selected.<br />
+            In the original version of the project, the user had to select the location and institution first, and where then brought to a separate screen in which they could select the audit and start it.
             This constituted an unnecessary and time consuming extra step.
             <br /><br />
           </p>
 
-          <div class="band">
-            <div class="imagesLeft">
-              <img class="imgLeft" src="imgs/prototypes/main.png" alt="" />
-              <img class="imgRight" src="imgs/prototypes/home.png" alt="" />
+          <div class="statsList">
+            <li class="floatingStat"><img src="imgs/prototypes/selectAuditOld.jpg" alt="" /></li>
+            <li class="floatingStat"><img src="imgs/prototypes/auditSelectOld2.jpg" alt="" /></li>
+            <li class="floatingStat"><img src="imgs/prototypes/auditOld.jpg" alt="" /></li>
+          </div>
+
+          <h2>Prototyping & Testing</h2>
+          <div class="row">
+            <div id="slideshowLeft">
+	            <img class="mySlidesLeft" src="imgs/prototypes/matSlide1.png" alt=""/>
+              <img class="mySlidesLeft" src="imgs/matHeader.png" alt=""/>
+              <img class="mySlidesLeft" src="imgs/customFitHeader.png" alt=""/>
             </div>
 
             <div class="textRight">
-              <h2 style="text-align: left">Prototyping & Testing</h2>
               <p class="smallText">
-                The testing strategy I devised was conical: I started validating base assumptions through
-                informal interviews, unspecific questions about the overall subject and anecdotal data from users.
-                Once these base requirements were defined, I moved on to more specific questionnaires and interviews,
-                and finally to interaction testing with prototypes and user trials.
-                <br /><br />
-                A number of initial lo fidelity prototypes and flows were created based on the initial requirements,
-                and then tested with Pop. These where hand sketches created during brain storming and "Crazy 8" sessions.
-                <br /><br />
-                Higher fidelity prototypes were used for the final interaction testing and user trials: these were created
-                with adobe illustrator and tested with InVision.
+                <strong>Navigation:</strong><br />
+                I started by mapping out the requirements for navigating the app: the core navigation elements are all contained in a side menu, but some users didn't know how to access it, due to the overcrowded design of the app bar and the unfamiliar icon design.
+                The secondary navigation item in the app bar is the "Submit audit" button: an icon that displays once the user starts carrying out an audit, and exhibits a red badge with the count of completed observations. The third item appearing in the app bar was the
+                log in icon, showing the logged in user's account name. However, this icon was not responsive, and served no purpose. This was confusing, as the mental model most users had for it was that if clicked it would offer the option to log out and/or switch accounts.<br /><br />
+                The prototype we developed for the new app bar was a simplified version of the existing one, with the log in icon removed and the side menu icon replaced with a burger menu icon as per Material Design guidelines.
+                The initial testing was split between two groups that where given a task to complete. Group A was using the existing version of the app, while Group B was using the re-designed prototype, with both groups being completely unfamiliar with the Audit Tool.<br /><br />
+                Group B exhibited both a higher success rate and greater speed in task completion on testing round 1. In testing round 2, the groups switched and were asked to carry out the same task. Even accounting for the added familiarity due to having already carried out the task,
+                the group using the re-designed prototype still had a faster completion time, by an average of 1 second.<br /><br />
               </p>
             </div>
           </div>
 
-          <div class="band">
-            <div class="imagesRight">
-              <img class="imgLeft" src="imgs/prototypes/home.png" alt="" />
-              <img class="imgRight" src="imgs/prototypes/1.png" alt="" />
+          <div class="row">
+            <div id="slideshowRight">
+	            <img class="mySlidesRight" src="imgs/pMpHeader.png" alt=""/>
+              <img class="mySlidesRight" src="imgs/matHeader.png" alt=""/>
+              <img class="mySlidesRight" src="imgs/customFitHeader.png" alt=""/>
             </div>
 
             <div class="textLeft">
-              <h2 style="text-align: left">The Final Design</h2>
               <p class="smallText">
-                Once the correct flow and interface layout was established, the high fidelity designs were reviewed.
-                I was still new to design at this time, and I knew I needed to improve on the initial version of my interface.
-                I drew quite a lot of inspiration from Google's Material Design, but aimed to give my work a personal twist, such as
-                the highlighted edges on cards, the 45 degree angle lighting and the unique animations.
+                <strong>Audit Selection:</strong><br />
+                The problem was originating from an incorrect grouping of information. Why keep the audit selection dropdown separate from the others? The audit type directly depends on the rest of the information that needs to be selected. So the first thing we did was to group all the required dropdowns in the one card.
+                This simplified the selection process greatly, alongside the interface design improvements. With reduced loading times due to not having to render a new screen and the ease of selecting all relevant information without having to navigate away from a focus point,
+                the time it took for users to select and start an audit was reduced by almost a second.<br /><br />
+                Once this solution was implemented, through discussion with the dev team and some users an idea for further improvement of this section emerged: Administrators can schedule audits and assign them to users via the CMS.
+                We thought it would be helpful to users if we could show them the audits scheduled for that day once they logged in. We designed a button that, when clicked, would auto fill any information pertinent to the audit it was representing,
+                or start the audit directly if all the necessary information had already been entered through the scheduling process. This resulted in a higher rate of audit completion from our main clients.<br /><br />
               </p>
             </div>
           </div>
 
           <div class="statsList">
-            <li class="floatingStat"><img src="imgs/prototypes/2.png" alt="" /></li>
-            <li class="floatingStat"><img src="imgs/prototypes/1.png" alt="" /></li>
-            <li class="floatingStat"><img src="imgs/prototypes/3.png" alt="" /></li>
+            <li class="floatingStat"><img class="final" src="imgs/prototypes/2.png" alt="" /></li>
+            <li class="floatingStat"><img class="final" src="imgs/prototypes/1.png" alt="" /></li>
+            <li class="floatingStat"><img class="final" src="imgs/prototypes/3.png" alt="" /></li>
           </div>
 
           <ul class="statsList">
             <li class="floatingStat">
-              <h1>22</h1>
-              <p>Interviews</p>
+              <h1>24</h1>
+              <p>Individual Tests</p>
             </li>
 
             <li class="floatingStat">
-              <h1>7</h1>
+              <h1>8</h1>
               <p>Iterations</p>
             </li>
 
             <li class="floatingStat">
-              <h1>36</h1>
+              <h1>4</h1>
               <p>User trials</p>
             </li>
           </ul>
 
           <h1 style="text-align: left">What I learnt</h1>
           <p>
-            The main takeaways from this project were to never assume the user knows what to do:
-            You are not your user. From a technical point of view, I learnt a lot about CSS and JavaScript, and how to use them
-            efficiently with each other to create responsive animations and displaying data correctly:
-            key skills that would help me later in my career when asked to carry out front end tasks.<br /><br />
-            This project definitely helped me get a headstart in my career, and gave me the necessary tools
-            to start my first job with confidence.
+            The user requirements must always be at the center of any decision making, designing and testing. Once a system meets them fully, focusing on how to
+            facilitate them furder is the only way to improve a product without relying o the easy way out of adding features just for the sake of it.
             <br /><br />
           </p>
           <a href="index.html#designs" class="call solid">
@@ -182,7 +185,6 @@
       </div>
     </div>
 
-    <!-- <div id="dimmer"></div> -->
     <div id="fader"></div>
 
     <script type="text/javascript" src="js/jQuery.js"></script>
@@ -196,6 +198,39 @@
         var result = viewportHeight - headerHeight;
         window.scroll(0, result);
       });
+
+      var slideIndex = 0;
+      carouselLeft();
+      carouselRight();
+      function carouselLeft(){
+        "use strict";
+        var i;
+        var x = document.getElementsByClassName("mySlidesLeft");
+        for (i = 0; i < x.length; i++){
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length){
+		      slideIndex = 1;
+        }
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carouselLeft, 4000);
+      }
+
+      function carouselRight(){
+        "use strict";
+        var i;
+        var x = document.getElementsByClassName("mySlidesRight");
+        for (i = 0; i < x.length; i++){
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length){
+		      slideIndex = 1;
+        }
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carouselRight, 4000);
+      }
     </script>
   </body>
 </html>
