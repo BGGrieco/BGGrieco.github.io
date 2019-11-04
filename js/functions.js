@@ -23,15 +23,13 @@ $(document).ready(function() {
       document.images["pic"].src = "imgs/materialLogo.png";
       document.images["pic"].width = "70";
       newsrc = 1;
-    }
-    else if ( newsrc === 1 ) {
+    } else if ( newsrc === 1 ) {
       document.images["pic"].src = "imgs/appleLogo.png";
       document.images["pic"].width = "65";
       document.images["pic"].style.top = "-2px";
       document.images["pic"].style.left = "-2px";
       newsrc = 2;
-    }
-    else {
+    } else {
       document.images["pic"].src = "imgs/logo.png";
       document.images["pic"].width = "60";
       document.images["pic"].style.top = "0px";
