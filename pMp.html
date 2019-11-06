@@ -8,7 +8,6 @@
     <meta name="author" content="Brian G. Grieco">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="css/styling.css" type="text/css">
     <link rel="stylesheet" href="css/stories.css" type="text/css">
   </head>
@@ -91,26 +90,50 @@
             <br /><br />
           </p>
 
-          <div class="band">
-            <div class="imagesLeft">
-              <img class="imgLeft" src="imgs/prototypes/dashboardOld.png" alt="" />
-              <img class="imgRight" src="imgs/prototypes/pMpOne.png" alt="" />
+          <div class="statsList">
+            <li class="floatingStat"><img src="imgs/prototypes/dashboardOld.png" height="500" alt="" /></li>
+            <li class="floatingStat"><img src="imgs/prototypes/pMpOne.png" height="500" alt="" /></li>
+            <li class="floatingStat"><img src="imgs/prototypes/fire1.1.png" height="500" alt="" /></li>
+          </div>
+
+          <h2>Prototyping & Testing</h2>
+          <div class="row">
+            <div id="slideshowLeft">
+	            <img class="mySlidesLeft" src="imgs/prototypes/matSlide1.png" alt=""/>
+              <img class="mySlidesLeft" src="imgs/prototypes/matSlide3.png" alt=""/>
+              <img class="mySlidesLeft" src="imgs/prototypes/matSlide4.png" alt=""/>
             </div>
 
             <div class="textRight">
+            <p class="smallText">
+              The testing strategy I devised was conical: I started validating base assumptions through
+              informal interviews, unspecific questions about the overall subject and anecdotal data from users.
+              Once these base requirements were defined, I moved on to more specific questionnaires and interviews,
+              and finally to interaction testing with prototypes and user trials.
+              <br /><br />
+              A number of initial lo fidelity prototypes and flows were created based on the initial requirements,
+              and then tested with Pop. These where hand sketches created during brain storming and "Crazy 8" sessions.
+              <br /><br />
+              Higher fidelity prototypes were used for the final interaction testing and user trials: these were created
+              with adobe illustrator and tested with InVision.
+            </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div id="slideshowRight">
+	            <img class="mySlidesRight" src="imgs/pMpHeader.png" alt=""/>
+              <img class="mySlidesRight" src="imgs/matHeader.png" alt=""/>
+              <img class="mySlidesRight" src="imgs/customFitHeader.png" alt=""/>
+            </div>
+
+            <div class="textLeft">
               <h2 style="text-align: left">Re-Branding</h2>
               <p class="smallText">
                 FIRE1 are still developing their identity as a brand, so I didn't have much to work off when laying out a strategy for their version of the app.<br /><br />
                 I started with the colour used in their logo, a quite saturated blue, and worked out a palette of complimentary colours from it. I the used these colours to
                 in the app icons I was designing. When it came to the latter, I created a number of variants for FIRE1 to choose from, but all were outlined and minimalistic, albeit still colourful.
               </p>
-            </div>
-          </div>
-
-          <div class="band">
-            <div class="imagesRight">
-              <img class="imgLeft" src="imgs/prototypes/pmpThree.png" alt="" />
-              <img class="imgRight" src="imgs/prototypes/fire1.3.png" alt="" />
             </div>
 
             <div class="textLeft">
@@ -170,7 +193,7 @@
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
     <script type="text/javascript">
-      $(function() {
+      $(function(){
         var headerHeightString = $("#header").css("height");
         var headerHeightTruncation = headerHeightString.substring(0, headerHeightString.length - 2);
         var headerHeight = parseInt(headerHeightTruncation);
@@ -178,6 +201,39 @@
         var result = viewportHeight - headerHeight;
         window.scroll(0, result);
       });
+
+      var slideIndex = 0;
+      carouselLeft();
+      carouselRight();
+      function carouselLeft(){
+        "use strict";
+        var i;
+        var x = document.getElementsByClassName("mySlidesLeft");
+        for (i = 0; i < x.length; i++){
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length){
+		      slideIndex = 1;
+        }
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carouselLeft, 4000);
+      }
+
+      function carouselRight(){
+        "use strict";
+        var i;
+        var x = document.getElementsByClassName("mySlidesRight");
+        for (i = 0; i < x.length; i++){
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length){
+		      slideIndex = 1;
+        }
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carouselRight, 4000);
+      }
     </script>
   </body>
 </html>
