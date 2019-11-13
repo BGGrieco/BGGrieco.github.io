@@ -61,7 +61,8 @@ p {
   margin-top: 22px;
 }
 
-.mySlidesLeft, .mySlidesRight {
+.mySlidesLeft,
+.mySlidesRight {
   max-width: 98%;
   max-height: 100%;
 }

@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Burger menu animations
-  $("#navBurger, #sideMenuLinks").click(function() {
+  $("#navBurger, #sideMenuLinks").click(function () {
     $(".rotateBurger").toggleClass("rotateAgain");
     $(".burgerTop").toggleClass("arrowTop");
     $(".burgerBot").toggleClass("arrowBot");
@@ -9,21 +9,23 @@ $(document).ready(function() {
 
   // Animated logo section.
   $("#logo").mouseup(function() {
-    $(this).css({"animation-play-state": "paused"});
+    $(this).css({
+      "animation-play-state": "paused"
+    });
     changeImage();
   });
 
   var newsrc = 0;
 
   function changeImage() {
-    if ( newsrc === 0 ) {
+    if (newsrc === 0) {
       $("#logo").css("left", "-10");
       document.images["pic"].style.top = "-3px";
       document.images["pic"].style.left = "-3px";
       document.images["pic"].src = "imgs/materialLogo.png";
       document.images["pic"].width = "70";
       newsrc = 1;
-    } else if ( newsrc === 1 ) {
+    } else if (newsrc === 1) {
       document.images["pic"].src = "imgs/appleLogo.png";
       document.images["pic"].width = "65";
       document.images["pic"].style.top = "-2px";
@@ -64,19 +66,19 @@ $(document).ready(function() {
   function buttonTouchEffect() {
     var $buttonTouchEffect = $(".js-touch-effect");
     // button
-    $buttonTouchEffect.on("click",function(e) {
+    $buttonTouchEffect.on("click", function (e) {
       e.preventDefault();
 
       $(this).append("<span></span>");
       var $span = $(this).find("span"),
-          offSet = $(this).offset(),
-          offSetY = event.pageY-offSet.top,
-          offSetX = event.pageX-offSet.left;
+        offSet = $(this).offset(),
+        offSetY = event.pageY - offSet.top,
+        offSetX = event.pageX - offSet.left;
 
-      console.log(offSetY,offSetX);
+      console.log(offSetY, offSetX);
       $span.css({
-        top:offSetY,
-        left:offSetX
+        top: offSetY,
+        left: offSetX
       });
 
       $window.setTimeout(function() {
@@ -106,7 +108,9 @@ $(document).ready(function() {
   }
 
   function checkTime(i) {
-    if (i < 10) {i = "0" + i};
+    if (i < 10) {
+      i = "0" + i
+    };
     return i;
   }
 
@@ -133,7 +137,7 @@ $(document).ready(function() {
     $(".highlighter").hide(0);
   };
 
-  $(".roundMenu").click(function() {
+  $(".roundMenu").click(function () {
     roundMenu();
   });
 
@@ -146,17 +150,17 @@ $(document).ready(function() {
   var whichClass = $("#homeWrapper").hasClass("slideInRight");
 
   $("#chat").click(function() {
-    switch(page) {
+    switch (page) {
       case 0:
         page = 1;
-        switch(whichClass) {
+        switch (whichClass) {
           case true:
             $("#homeWrapper").removeClass("slideInRight");
             $("#homeWrapper").addClass("slideOutRight");
             break;
           default:
-          $("#homeWrapper").removeClass("slideInLeft");
-          $("#homeWrapper").addClass("slideOutLeft");
+            $("#homeWrapper").removeClass("slideInLeft");
+            $("#homeWrapper").addClass("slideOutLeft");
         }
         $("#chatWrapper").removeClass("slideOutLeft");
         $("#chatWrapper").addClass("slideInLeft");
@@ -169,49 +173,49 @@ $(document).ready(function() {
         $("#chatWrapper").addClass("slideInLeft");
         break;
       default:
-      console.log("Page is: " + page);
+        console.log("Page is: " + page);
     }
     roundMenu();
   });
 
   $("#home").click(function() {
-    switch(page) {
+    switch (page) {
       case 1:
         page = 0;
         $("#chatWrapper").removeClass("slideInLeft");
         $("#chatWrapper").addClass("slideOutLeft");
-        switch(whichClass) {
+        switch (whichClass) {
           case true:
             $("#homeWrapper").removeClass("slideInRight");
             $("#homeWrapper").addClass("slideOutRight");
             break;
           default:
-          $("#homeWrapper").removeClass("slideInLeft");
-          $("#homeWrapper").addClass("slideOutLeft");
+            $("#homeWrapper").removeClass("slideInLeft");
+            $("#homeWrapper").addClass("slideOutLeft");
         }
         break;
       case 2:
         page = 0;
         $("#profileWrapper").removeClass("slideInRight");
         $("#profileWrapper").addClass("slideOutRight");
-        switch(whichClass) {
+        switch (whichClass) {
           case true:
             $("#homeWrapper").removeClass("slideInRight");
             $("#homeWrapper").addClass("slideOutRight");
             break;
           default:
-          $("#homeWrapper").removeClass("slideInLeft");
-          $("#homeWrapper").addClass("slideOutLeft");
+            $("#homeWrapper").removeClass("slideInLeft");
+            $("#homeWrapper").addClass("slideOutLeft");
         }
         break;
       default:
-      console.log("Page is: " + page);
+        console.log("Page is: " + page);
     }
     roundMenu();
   });
 
   $("#profile").click(function() {
-    switch(page) {
+    switch (page) {
       case 1:
         page = 2;
         $("#chatWrapper").removeClass("slideInLeft");
@@ -221,20 +225,20 @@ $(document).ready(function() {
         break;
       case 0:
         page = 2;
-        switch(whichClass) {
+        switch (whichClass) {
           case true:
             $("#homeWrapper").removeClass("slideInRight");
             $("#homeWrapper").addClass("slideOutRight");
             break;
           default:
-          $("#homeWrapper").removeClass("slideInLeft");
-          $("#homeWrapper").addClass("slideOutLeft");
+            $("#homeWrapper").removeClass("slideInLeft");
+            $("#homeWrapper").addClass("slideOutLeft");
         }
         $("#profileWrapper").removeClass("slideOutRight");
         $("#profileWrapper").addClass("slideInRight");
         break;
       default:
-      console.log("Page is: " + page);
+        console.log("Page is: " + page);
     }
     roundMenu();
   });
