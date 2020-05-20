@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Roboto";
-  src: url("/font/Roboto-Regular.ttf") format('truetype');
+  src: url("../font/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/font/Roboto-Bold.ttf") format('truetype');
+  src: url("../font/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -313,22 +313,11 @@ span {
   background-color: white;
   pointer-events: none;
   -webkit-animation: effect-animation 3s;
+  animation: effect-animation 3s;
 }
 
 .round span {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-@-webkit-keyframes effect-animation {
-  from {
-    -webkit-transform: scale(1);
-    opacity: 0.6;
-  }
-
-  to {
-    -webkit-transform: scale(100);
-    opacity: 0;
-  }
 }
 
 .headerImage {
@@ -336,15 +325,15 @@ span {
   right: 0;
   height: 100%;
   width: 100%;
+  background-image: url("../imgs/duomo.jpg");
   background-attachment: fixed;
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/imgs/duomo.jpg);
   overflow: visible;
 }
 
-.headerImage::before {
+.headerImage:before {
   content: "";
   display: block;
   position: absolute;
@@ -356,7 +345,7 @@ span {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.headerImage::after {
+.headerImage:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -369,14 +358,16 @@ span {
 }
 
 #wordsContainer {
-  position: absolute;
+  position: relative;
   top: 20px;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   opacity: 0;
+  overflow: hidden;
   animation: appearFade 1.5s forwards;
   animation-delay: 2.5s;
+  z-index: 3;
 }
 
 #words {
@@ -384,7 +375,8 @@ span {
   display: block;
   margin: auto;
   top: 0;
-  height: 70%;
+  width: 80vw;
+  max-height: 90vh;
 }
 
 /*
@@ -490,7 +482,6 @@ span {
 #contentContainer {
   position: absolute;
   left: 0;
-  top: 100%;
   width: 100%;
   background-color: #e8e8e8;
 }
