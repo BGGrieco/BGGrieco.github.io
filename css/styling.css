@@ -2793,6 +2793,18 @@ span {
   #filler {
     height: 200px;
   }
+
+  .call.solid {
+    top: 0;
+    margin: 30px auto 20px auto;
+  }
+
+  .centeredImage {
+    width: 120%;
+    height: auto;
+    left: 40px;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 591px) {
