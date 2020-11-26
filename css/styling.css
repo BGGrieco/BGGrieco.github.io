@@ -2900,6 +2900,10 @@ span {
   .phoneCall {
     display: block;
   }
+
+  #footer {
+    bottom: 30px;
+  }
 }
 
 @media (max-width: 411px) {

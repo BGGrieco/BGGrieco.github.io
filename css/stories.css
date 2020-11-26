@@ -10,14 +10,9 @@ p {
   margin: 0 0 40px 0;
 }
 
-.containText {
-  min-width: 1024px;
-}
-
 #header {
   width: 60%;
   left: 20%;
-  min-width: 1012px;
   background-color: #e8e8e8;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -40,6 +35,10 @@ p {
   min-height: none;
 }
 
+.containText {
+  background-color: #e8e8e8;
+}
+
 .smallText {
   font-size: 16px;
 }
@@ -48,72 +47,34 @@ p {
   margin: -30px 0 0 0;
 }
 
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .band {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.band .images,
+.band .text {
   position: relative;
-  height: 450px;;
+  width: 48%;
 }
 
-.imagesLeft {
-  position: relative;
-  width: 50%;
-  height: 450px;
-  margin-bottom: 40px;
+.images {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
 }
 
-.imagesLeft img {
-  width: 40%;
-}
-
-.imagesRight {
-  position: absolute;
-  right: 0;
-  width: 50%;
-  height: 450px;
-  margin-bottom: 40px;
-}
-
-.imagesRight img {
-  width: 40%;
-  margin: 0 0 10px 5px;
-}
-
-.imagesRight .imgLeft {
-  margin-left: 10%;
-}
-
-.imagesCenter {
-  position: relative;
-  width: 100%;
-  margin: 50px 0;
-}
-
-.imagesCenter img {
-  width: 24%;
-  margin-left: 0.5%;
-}
-
-.imgRight {
-  float: right;
-  margin-right: 10%;
-}
-
-.textRight {
-  position: absolute;
-  width: 50%;
-  left: 50%;
-  top: 0;
-}
-
-.textLeft {
-  position: relative;
-  width: 50%;
-}
-
-.spacer {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 20px;
+.images img {
+  width: 48%;
+  max-height: 353px;
+  max-width: 185px;
 }
 
 .statsList {
@@ -123,27 +84,41 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
+}
+
+.statsList img {
+  width: 30%;
+}
+
+.statsList.four img {
+  width: 24%;
+  min-width: 140px;
 }
 
 .floatingStat {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
   text-align: center;
   position: relative;
+  width: 20%
 }
 
 .floatingStat h1 {
   position: relative;
-  margin: 10px 0;
+  margin: 10px auto;
   top: 0;
   font-size: 48px;
+  width: 100%;
 }
 
 .floatingStat p {
   text-align: center;
   position: relative;
+  margin: 10px auto;
   top: 0;
+  width: 100%;
 }
 
 .call.solid {
@@ -161,7 +136,86 @@ p {
   top: 18px;
 }
 
-@media screen and (max-width: 1600px) {
+#footer .containText {
+  background-color: #606060;
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .images img {
+    width: 48%;
+  }
+
+  #header {
+    width: 100%;
+    left: 0;
+  }
+
+  .containText {
+    width: 95%;
+    padding: 0 3%;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 750px) {
+  .images img {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 750px) {
+  .band {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .band:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .band .images,
+  .band .text {
+    width: 100%;
+  }
+
+  .text {
+    margin-top: 40px;
+  }
+
+  .statsList {
+    margin-top: 0;
+  }
+
+  .statsList.four {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .statsList.four img {
+    margin-bottom: 20px;
+  }
+
+  .floatingStat h1 {
+    font-size: 32px;
+  }
+
+  .floatingStat p {
+    font-size: 14px;
+  }
+
+  .call.solid {
+    top: 0;
+    margin: -20px auto 20px auto;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1000px) {
+  #header {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1600px) {
   #header {
     width: 80%;
     left: 10%;
