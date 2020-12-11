@@ -150,7 +150,7 @@ li {
   width: 60%;
   position: relative;
   margin: auto;
-  max-width: 1250px;
+  max-width: 1000px;
 }
 
 #logo {
@@ -665,7 +665,7 @@ span {
   margin: auto;
   margin-bottom: 50px;
   width: 60%;
-  max-width: 1250px;
+  max-width: 1000px;
 }
 
 .containText a {
@@ -685,7 +685,7 @@ span {
   position: relative;
   margin: auto;
   width: 60%;
-  max-width: 1250px;
+  max-width: 1000px;
   margin-bottom: 20px;
 }
 

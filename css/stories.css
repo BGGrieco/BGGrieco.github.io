@@ -17,6 +17,17 @@ p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  max-width: 1000px;
+}
+
+#header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 80%);
 }
 
 .storyHeader {
@@ -28,11 +39,27 @@ p {
 
 .storyWords {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  margin: auto;
-  min-height: none;
+  width: 80%;
+  color: #ffffff;
+  text-align: left;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  margin: 0 24px 24px 24px;
+}
+
+.storyWords h1 {
+  text-align: left;
+  margin: 0 0 12px 0;
+  font-weight: 400;
+  font-size: 42px;
+}
+
+.storyWords h2 {
+  font-weight: 300;
+  margin: 0;
+  font-size: 28px;
 }
 
 .containText {
@@ -145,14 +172,48 @@ p {
     width: 48%;
   }
 
+  .containText {
+    width: 95%;
+    padding: 0 3% 10% 3%;
+  }
+}
+
+@media screen and (max-width: 600px) {
   #header {
     width: 100%;
+    height: 100%;
     left: 0;
   }
 
+  #header::after {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #202020;
+  }
+
+  .storyHeader {
+    height: 50vh;
+    width: auto;
+  }
+
+  .storyWords {
+    bottom: auto;
+    width: auto;
+    padding-top: 24px;
+  }
+
+  .storyWords h1 {
+    font-size: 28px;
+  }
+
+  .storyWords h2 {
+    font-size: 22px;
+  }
+
   .containText {
-    width: 95%;
-    padding: 0 3%;
+    margin-bottom: 0;
   }
 }
 
@@ -208,16 +269,22 @@ p {
   }
 }
 
-@media screen and (min-width: 451px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
   #header {
     width: 90%;
     left: 5%;
   }
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1600px) {
+@media screen and (min-width: 1000px) and (max-width: 1600px) {
   #header {
     width: 80%;
     left: 10%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  #header {
+    left: calc((100% - 1000px) / 2);
   }
 }
