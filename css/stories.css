@@ -171,11 +171,6 @@ p {
   .images img {
     width: 48%;
   }
-
-  .containText {
-    width: 95%;
-    padding: 0 3% 10% 3%;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -214,6 +209,8 @@ p {
 
   .containText {
     margin-bottom: 0;
+    width: 95%;
+    padding: 0 3% 10% 3%;
   }
 }
 
@@ -224,6 +221,11 @@ p {
 }
 
 @media screen and (min-width: 320px) and (max-width: 750px) {
+  #header {
+    left: 0;
+    width: 100vw;
+  }
+
   .band {
     flex-direction: column;
     margin-top: 0;
@@ -269,7 +271,7 @@ p {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   #header {
     width: 90%;
     left: 5%;
