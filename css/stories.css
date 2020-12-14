@@ -206,12 +206,6 @@ p {
   .storyWords h2 {
     font-size: 22px;
   }
-
-  .containText {
-    margin-bottom: 0;
-    width: 95%;
-    padding: 0 3% 10% 3%;
-  }
 }
 
 @media screen and (min-width: 450px) and (max-width: 750px) {
@@ -224,6 +218,12 @@ p {
   #header {
     left: 0;
     width: 100vw;
+  }
+
+  .containText {
+    margin-bottom: 0;
+    width: 95%;
+    padding: 0 3% 10% 3%;
   }
 
   .band {
