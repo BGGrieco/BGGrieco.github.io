@@ -2194,6 +2194,7 @@ span {
 
 .containText.videoText {
   width: 100%;
+  border-top: 1px solid #202020;
 }
 
 .iframeContainer {
