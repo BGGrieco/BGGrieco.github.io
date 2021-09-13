@@ -104,6 +104,12 @@ p {
   max-width: 185px;
 }
 
+.images .singleImage {
+  width: 100%;
+  max-height: none;
+  max-width: none;
+}
+
 .statsList {
   margin-top: 50px;
   padding: 0;
