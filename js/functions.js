@@ -159,12 +159,12 @@ $(document).ready(function () {
             $('#homeWrapper').addClass('slideOutRight');
             break;
           default:
-            $('#homeWrapper').removeClass('slideInLeft');
-            $('#homeWrapper').addClass('slideOutLeft');
+            console.log('Default');
         }
         $('#chatWrapper').removeClass('slideOutLeft');
         $('#chatWrapper').addClass('slideInLeft');
         break;
+
       case 2:
         page = 1;
         $('#profileWrapper').removeClass('slideInRight');
@@ -174,7 +174,7 @@ $(document).ready(function () {
         break;
       default:
         console.log('Page is: ' + page);
-    }
+    }  
     roundMenu();
   });
 
@@ -186,26 +186,26 @@ $(document).ready(function () {
         $('#chatWrapper').addClass('slideOutLeft');
         switch (whichClass) {
           case true:
-            $('#homeWrapper').removeClass('slideInRight');
-            $('#homeWrapper').addClass('slideOutRight');
+            $('#homeWrapper').removeClass('slideOutRight');
+            $('#homeWrapper').addClass('slideInRight');
             break;
           default:
-            $('#homeWrapper').removeClass('slideInLeft');
-            $('#homeWrapper').addClass('slideOutLeft');
+            console.log('Default');
         }
         break;
+
       case 2:
         page = 0;
         $('#profileWrapper').removeClass('slideInRight');
         $('#profileWrapper').addClass('slideOutRight');
         switch (whichClass) {
           case true:
-            $('#homeWrapper').removeClass('slideInRight');
-            $('#homeWrapper').addClass('slideOutRight');
+            $('#homeWrapper').removeClass('slideOutLeft');
+            $('#homeWrapper').removeClass('slideOutRight');
+            $('#homeWrapper').addClass('slideInLeft');
             break;
           default:
-            $('#homeWrapper').removeClass('slideInLeft');
-            $('#homeWrapper').addClass('slideOutLeft');
+            console.log('Default');
         }
         break;
       default:
@@ -223,16 +223,16 @@ $(document).ready(function () {
         $('#profileWrapper').removeClass('slideOutRight');
         $('#profileWrapper').addClass('slideInRight');
         break;
+
       case 0:
         page = 2;
         switch (whichClass) {
           case true:
             $('#homeWrapper').removeClass('slideInRight');
-            $('#homeWrapper').addClass('slideOutRight');
+            $('#homeWrapper').addClass('slideOutLeft');
             break;
           default:
-            $('#homeWrapper').removeClass('slideInLeft');
-            $('#homeWrapper').addClass('slideOutLeft');
+            console.log('Default');
         }
         $('#profileWrapper').removeClass('slideOutRight');
         $('#profileWrapper').addClass('slideInRight');
