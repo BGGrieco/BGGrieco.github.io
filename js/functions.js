@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   // Burger menu animations
   $('#navBurger, #sideMenuLinks').click(function () {
     $('.rotateBurger').toggleClass('rotateAgain');
