@@ -285,7 +285,7 @@ p {
 
   .call.solid {
     top: 0;
-    margin: -20px auto 20px auto;
+    margin: 0 auto 20px auto;
   }
 }
 
