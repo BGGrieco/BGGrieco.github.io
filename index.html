@@ -1,673 +1,879 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Brian Grieco</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Official website of UX Designer, Web Developer and Media Artist Brian Grieco.">
-    <meta name="keywords" content="Design, UI, UX, UIDesigner, UXDesigner, SoftwareDesign">
-    <meta name="author" content="Brian G. Grieco">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <link rel="stylesheet" href="css/styling.css" type="text/css">
-  </head>
-  <body>
-    <!--Nav Bar-->
-    <div id="navBar" class="nav">
-      <div class="navbarContent">
-        <div id="logo" class="attention">
-          <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
-        </div>
-        <ul id="innerLinks">
-          <li><a href="#bio">Biography</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#interactions">Interactions</a></li>
-          <li><a href="#designs">Portfolio</a></li>
-          <li><a href="#moreContainer">Contacts</a></li>
-        </ul>
 
-        <ul id="outerLinks">
-          <li>
-            <a class="hoverable" href="https://github.com/BGGrieco" target="_blank">
-              <img src="imgs/gitHubA.png" width="20" alt="github" />
-              <img src="imgs/gitHubHover.png" width="20" alt="github" />
-            </a>
-          </li>
-          <li>
-            <a class="hoverable" href="https://codepen.io/BGGrieco/" target="_blank">
-              <img src="imgs/codepen.png" width="20" alt="codepen" />
-              <img src="imgs/codepenHover.png" width="20" alt="codepen" />
-            </a>
-          </li>
-          <li>
-            <li>
-              <a class="hoverable" href="https://dribbble.com/bggrieco" target="_blank">
-                <img src="imgs/dribbble.png" width="20" alt="dribbble" />
-                <img src="imgs/dribbbleHover.png" width="20" alt="dribbble" />
-              </a>
-            </li>
-            <a class="hoverable" href="https://www.linkedin.com/in/briangrieco/" target="_blank">
-              <img src="imgs/linkedIn.png" width="20" alt="linkedIn" />
-              <img src="imgs/linkedInHover.png" width="20" alt="linkedIn" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<head>
+  <title>Brian Grieco</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Official website of UX Designer, Web Developer and Media Artist Brian Grieco.">
+  <meta name="keywords" content="Design, UI, UX, UIDesigner, UXDesigner, SoftwareDesign">
+  <meta name="author" content="Brian G. Grieco">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/styling.css" type="text/css">
+</head>
 
-    <!--Mobile Nav Bar-->
-    <div class="mobileNav">
-      <div class="round js-touch-effect">
-        <div id="navBurger" class="rotateBurger">
-          <div class="burgerTop"></div>
-          <div class="mid"></div>
-          <div class="burgerBot"></div>
-        </div>
-      </div>
-
-      <div class="actions">
-        <ul>
-          <li>
-            <a href="mailto:brian.g.grieco@gmail.com"><div class="ripple"></div></a>
-            <img class="sideimg" src="imgs/mail.png" width="25" style="top: 14px; left: -1px;" alt="e-mail" />
-          </li>
-          <li>
-            <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank"><div class="ripple"></div></a>
-            <img class="sideimg" src="imgs/download.png" width="31" style="top: 14px; left: -2px;" alt="cv" />
-          </li>
-          <li>
-            <a href="#phoneBio"><div class="ripple"></div></a>
-            <img class="sideimg" src="imgs/up.png" width="14" style="top: 14px; left: -1px;" alt="up" />
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!--Side Menu-->
-    <div id="sideMenu" class="closed">
+<body>
+  <!--Nav Bar-->
+  <div id="navBar" class="nav">
+    <div class="navbarContent">
       <div id="logo" class="attention">
         <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
       </div>
-
-      <ul id="sideMenuLinks">
-        <li><a href="#phoneBio">Biography</a></li>
-        <li><a href="#phoneSkills">Skills</a></li>
-        <li><a href="#phoneInteractions">Interactions</a></li>
-        <li><a href="#phoneDesigns">Portfolio</a></li>
+      <ul id="innerLinks">
+        <li><a href="#bio">Biography</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interactions">Interactions</a></li>
+        <li><a href="#designs">Portfolio</a></li>
         <li><a href="#moreContainer">Contacts</a></li>
       </ul>
-    </div>
 
-    <!--Header-->
-    <div id="header">
-      <img id="duomo" src="imgs/duomo.jpg" alt="backgroundImage" />
-      <div id="overlay"></div>
-      <div id="wordsContainer">
-        <img id="words" src="imgs/header.png" alt="title" />
-        <a href="#designs" class="call bigCall">
-          <p>Show me</p>
-          <img class="goArrow" src="imgs/go.png" width="20" alt="" />
+      <ul id="outerLinks">
+        <li>
+          <a class="hoverable" href="https://github.com/BGGrieco" target="_blank">
+            <img src="imgs/gitHubA.png" width="20" alt="github" />
+            <img src="imgs/gitHubHover.png" width="20" alt="github" />
+          </a>
+        </li>
+        <li>
+          <a class="hoverable" href="https://codepen.io/BGGrieco/" target="_blank">
+            <img src="imgs/codepen.png" width="20" alt="codepen" />
+            <img src="imgs/codepenHover.png" width="20" alt="codepen" />
+          </a>
+        </li>
+        <li>
+        <li>
+          <a class="hoverable" href="https://dribbble.com/bggrieco" target="_blank">
+            <img src="imgs/dribbble.png" width="20" alt="dribbble" />
+            <img src="imgs/dribbbleHover.png" width="20" alt="dribbble" />
+          </a>
+        </li>
+        <a class="hoverable" href="https://www.linkedin.com/in/briangrieco/" target="_blank">
+          <img src="imgs/linkedIn.png" width="20" alt="linkedIn" />
+          <img src="imgs/linkedInHover.png" width="20" alt="linkedIn" />
         </a>
-        <a href="#phoneDesigns" class="call phoneCall">
-          <p>Show me</p>
-          <img class="goArrow" src="imgs/go.png" width="20" alt="" />
-        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Mobile Nav Bar-->
+  <div class="mobileNav">
+    <div class="round js-touch-effect">
+      <div id="navBurger" class="rotateBurger">
+        <div class="burgerTop"></div>
+        <div class="mid"></div>
+        <div class="burgerBot"></div>
       </div>
     </div>
 
-    <!--Side Buttons-->
-    <div id="sideButtons">
-      <div id="mail" class="side mail">
-        <a href="mailto:brian.g.grieco@gmail.com"><div class="ripple"></div></a>
-        <img class="sideimg" src="imgs/mail.png" width="27" style="top: 19px; left: -1px;" alt="e-mail" />
-      </div>
+    <div class="actions">
+      <ul>
+        <li>
+          <a href="mailto:brian.g.grieco@gmail.com">
+            <div class="ripple"></div>
+          </a>
+          <img class="sideimg" src="imgs/mail.png" width="25" style="top: 14px; left: -1px;" alt="e-mail" />
+        </li>
+        <li>
+          <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">
+            <div class="ripple"></div>
+          </a>
+          <img class="sideimg" src="imgs/download.png" width="31" style="top: 14px; left: -2px;" alt="cv" />
+        </li>
+        <li>
+          <a href="#phoneBio">
+            <div class="ripple"></div>
+          </a>
+          <img class="sideimg" src="imgs/up.png" width="14" style="top: 14px; left: -1px;" alt="up" />
+        </li>
+      </ul>
+    </div>
+  </div>
 
-      <div id="civi" class="side civi">
-        <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank"><div class="ripple"></div></a>
-        <img class="sideimg" src="imgs/download.png" width="31" style="top: 18px; left: -2px;" alt="cv" />
-      </div>
+  <!--Side Menu-->
+  <div id="sideMenu" class="closed">
+    <div id="logo" class="attention">
+      <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
+    </div>
 
-      <div id="up" class="side up">
-        <a href="#bio"><div class="ripple"></div></a>
-        <img class="sideimg" src="imgs/up.png" width="17" style="top: 17px; left: -1px;" alt="up" />
+    <ul id="sideMenuLinks">
+      <li><a href="#phoneBio">Biography</a></li>
+      <li><a href="#phoneSkills">Skills</a></li>
+      <li><a href="#phoneInteractions">Interactions</a></li>
+      <li><a href="#phoneDesigns">Portfolio</a></li>
+      <li><a href="#moreContainer">Contacts</a></li>
+    </ul>
+  </div>
+
+  <!--Header-->
+  <div id="header">
+    <img id="duomo" src="imgs/duomo.jpg" alt="backgroundImage" />
+    <div id="overlay"></div>
+    <div id="wordsContainer">
+      <img id="words" src="imgs/header.png" alt="title" />
+      <a href="#designs" class="call bigCall">
+        <p>Show me</p>
+        <img class="goArrow" src="imgs/go.png" width="20" alt="arrow" />
+      </a>
+      <a href="#phoneDesigns" class="call phoneCall">
+        <p>Show me</p>
+        <img class="goArrow" src="imgs/go.png" width="20" alt="arrow" />
+      </a>
+    </div>
+  </div>
+
+  <!--Side Buttons-->
+  <div id="sideButtons">
+    <div id="mail" class="side mail">
+      <a href="mailto:brian.g.grieco@gmail.com">
+        <div class="ripple"></div>
+      </a>
+      <img class="sideimg" src="imgs/mail.png" width="27" style="top: 19px; left: -1px;" alt="e-mail" />
+    </div>
+
+    <div id="civi" class="side civi">
+      <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">
+        <div class="ripple"></div>
+      </a>
+      <img class="sideimg" src="imgs/download.png" width="31" style="top: 18px; left: -2px;" alt="cv" />
+    </div>
+
+    <div id="up" class="side up">
+      <a href="#bio">
+        <div class="ripple"></div>
+      </a>
+      <img class="sideimg" src="imgs/up.png" width="17" style="top: 17px; left: -1px;" alt="up" />
+    </div>
+  </div>
+
+  <div id="contentContainer">
+    <!--Bio-->
+    <div id="bio"></div>
+    <div id="phoneBio" class="sectionContainer">
+      <h1>BIOGRAPHY</h1>
+      <div id="faceContainer">
+        <img id="face" src="imgs/face2.png" width="200" alt="my face" />
+      </div>
+      <div class="containText">
+        <p>
+          I am a UX/UI designer currently working with a strong and
+          motivated team at <a href="https://www.irishtimes.com/" target="_blank">The Irish Times</a>.
+          I specialize in bringing concepts and ideas for mobile applications from sketch to completion,
+          following and tailoring every stage of the process: from initial data models and screen-flows to completed
+          product.
+          <br /><br />
+          I work with a number of tools, most prominently Sketch, Zeplin, Illustrator and Balsamiq Mockups.
+          Due to my past career in audio production, I also have a lot of experience with audio and video editing
+          software.
+          <br /><br />
+          When I am not working I enjoy practicing Muay Thai, playing video games, reading and hiking. I also have a
+          passion for style and sartorialism.
+          <br /><br />
+          <strong>
+            I built this website without using any UI or animations libraries such as Bootstrap, jQuery UI or ScrollMagic.
+            All the animations, interactions and styling were designed and created by me using CSS3 and
+            some jQuery to trigger the animations.
+          </strong>
+        </p>
+        <div><a href="#designs">Cool. What have you actually done though?</a></div>
       </div>
     </div>
 
-    <div id="contentContainer">
-      <!--Bio-->
-      <div id="bio"></div>
-      <div id="phoneBio" class="sectionContainer">
-        <h1>BIOGRAPHY</h1>
-        <div id="faceContainer">
-          <img id="face" src="imgs/face2.png" width="200" alt="myFace" />
-        </div>
-        <div class="containText">
-          <p>
-            I am a UX/UI designer currently working with a strong and
-            motivated team at <a href="https://www.irishtimes.com/" target="_blank">The Irish Times</a>.
-            I specialize in bringing concepts and ideas for mobile applications from sketch to completion,
-            following and tailoring every stage of the process: from initial data models and screen-flows to completed
-            product.
-            <br /><br />
-            I work with a number of tools, most prominently Sketch, Zeplin, Illustrator and Balsamiq Mockups.
-            Due to my past career in audio production, I also have a lot of experience with audio and video editing
-            software.
-            <br /><br />
-            When I am not working I enjoy practicing Muay Thai, playing video games, reading and hiking. I also have a passion for style and sartorialism.
-            <br /><br />
-            <strong>
-              I built this website without using any UI or animations library such as Bootstrap, jQuery UI or ScrollMagic.
-              All the animations, interactions and styling were designed and created by me using CSS3 and
-              some jQuery to trigger the animations.
-            </strong>
-          </p>
-          <div><a href="#designs">Cool. What have you actually done though?</a></div>
-        </div>
+    <!--Skills-->
+    <div id="skills"></div>
+    <div id="phoneSkills" class="sectionContainer">
+      <h1>SKILLS</h1>
+      <div class="containText">
+        <p>
+          Due to my past work in audio and media, I have a varied set of technical skills ranging from
+          audio and video production, to a basic knowledge of the most used programming languages and
+          frameworks.
+        </p>
       </div>
 
-      <!--Skills-->
-      <div id="skills"></div>
-      <div id="phoneSkills" class="sectionContainer">
-        <h1>SKILLS</h1>
-        <div class="containText">
-          <p>
-            Due to my past work in audio and media, I have a varied set of technical skills ranging from
-            audio and video production, to a basic knowledge of the most used programming languages and
-            frameworks.
-          </p>
-        </div>
-
-        <!--CREATIVE SKILLS-->
-        <div class="contain containSkills">
-          <div class="columnContainerL">
-            <img class="skillIcon" src="imgs/lamp.png" width="50" alt="" />
-            <p class="skillTitle">CREATIVE SKILLS:</p>
-            <!--SKETCH-->
-            <div id="ska" class="createContainers">
-              <img src="imgs/ske.png" width="44" alt=""/>
-              <p class="creative">Sketch</p>
-              <ul class="pointsR">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-              </ul>
-            </div>
-            <!--ILLUSTRATOR-->
-            <div id="ai" class="createContainers">
-              <img src="imgs/ai.png" width="45" alt=""/>
-              <p class="creative">Illustrator</p>
-              <ul class="pointsR">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-              </ul>
-            </div>
-            <!--PHOTOSHOP-->
-            <div id="ps" class="createContainers">
-              <img src="imgs/ps.png" width="45" alt=""/>
-              <p class="creative">PhotoShop</p>
-              <ul class="pointsR">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--ZEPLIN-->
-            <div id="pt" class="createContainers">
-              <img class="displace" src="imgs/zep.png" width="41" alt=""/>
-              <p class="creative">Zeplin</p>
-              <ul class="pointsR">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-              </ul>
-            </div>
-            <!--INVISION-->
-            <div id="pd" class="createContainers">
-              <img class="displace" src="imgs/inv.png" width="41" alt=""/>
-              <p class="creative">inVision</p>
-              <ul class="pointsR">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-              </ul>
-            </div>
-            <!--BALSAMIQ-->
-            <div id="fm" class="createContainers">
-              <img class="displace" src="imgs/bals.png" width="41" alt=""/>
-              <p class="creative">Balsamiq</p>
-              <ul class="pointsR">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--PREMIERE PRO-->
-            <div id="pr" class="createContainers">
-              <img src="imgs/pr.png" width="45" alt=""/>
-              <p class="creative">Premiere</p>
-              <ul class="pointsR">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-              </ul>
-            </div>
-            <!--AFTER EFFECTS-->
-            <div id="ae" class="createContainers">
-            <img src="imgs/ae.png" width="45" alt=""/>
-              <p class="creative">AfterEffects</p>
-              <ul class="pointsR">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
+      <!--CREATIVE SKILLS-->
+      <div class="contain containSkills">
+        <div class="columnContainerL">
+          <img class="skillIcon" src="imgs/lamp.png" width="50" alt="light bulb icon" />
+          <p class="skillTitle">CREATIVE SKILLS:</p>
+          <!--SKETCH-->
+          <div id="ska" class="createContainers">
+            <img src="imgs/ske.png" width="44" alt="sketch icon" />
+            <p class="creative">Sketch</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+            </ul>
           </div>
-
-          <!--TECNICAL SKILLS-->
-          <div class="columnContainerR">
-            <img class="skillIcon" src="imgs/cog.png" width="50" alt="" />
-            <p class="skillTitle">TECHNICAL SKILLS:</p>
-            <!--HTML-->
-            <div id="html" class="hexagon">
-              <img class="left" src="imgs/html.png" width="50" alt="" />
-              <p class="technicalL">HTML 5</p>
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-              </ul>
-            </div>
-            <!--CSS-->
-            <div id="css" class="hexagon">
-              <img class="right" src="imgs/css.png" width="50" alt="" />
-              <p class="technicalR">CSS 3</p>
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-              </ul>
-            </div>
-            <!--JS-->
-            <div id="js" class="hexagon">
-              <img class="left" src="imgs/js.png" width="50" alt="" />
-              <p class="technicalL">JavaScript</p>
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--REACT-->
-            <div id="rea" class="hexagon">
-              <img class="right" src="imgs/react.png" width="48" alt="" />
-              <p class="technicalR">React Native</p>
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--PYTHON-->
-            <div id="py" class="hexagon">
-              <img class="left" src="imgs/python.png" width="50" alt="" />
-              <p class="technicalL">Python (Django)</p>
-              <ul class="pointsL">
-                <li><div class="point"></div></li>
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--JAVA-->
-            <div id="java" class="hexagon">
-              <img class="right" src="imgs/java.png" width="50" alt="" />
-              <p class="technicalR">Java</p>
-              <ul class="pointsL">
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--PHP-->
-            <div id="php" class="hexagon">
-              <img class="left" src="imgs/php.png" width="50" alt="" />
-              <p class="technicalL">PHP</p>
-              <ul class="pointsL">
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
-            <!--SQL-->
-            <div id="sql" class="hexagon">
-              <img class="right" src="imgs/sql.png" width="50" alt="" />
-              <p class="technicalR">mySQL</p>
-              <ul class="pointsL">
-                <li><div class="activate"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-                <li><div class="null"></div></li>
-              </ul>
-            </div>
+          <!--ILLUSTRATOR-->
+          <div id="ai" class="createContainers">
+            <img src="imgs/ai.png" width="45" alt="illustrator icon" />
+            <p class="creative">Illustrator</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+            </ul>
+          </div>
+          <!--PHOTOSHOP-->
+          <div id="ps" class="createContainers">
+            <img src="imgs/ps.png" width="45" alt="photoshop icon" />
+            <p class="creative">PhotoShop</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
+          </div>
+          <!--ZEPLIN-->
+          <div id="pt" class="createContainers">
+            <img class="displace" src="imgs/zep.png" width="41" alt="zeplin icon" />
+            <p class="creative">Zeplin</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+            </ul>
+          </div>
+          <!--INVISION-->
+          <div id="pd" class="createContainers">
+            <img class="displace" src="imgs/inv.png" width="41" alt="inVision icon" />
+            <p class="creative">inVision</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+            </ul>
+          </div>
+          <!--BALSAMIQ-->
+          <div id="fm" class="createContainers">
+            <img class="displace" src="imgs/bals.png" width="41" alt="balsamiq icon" />
+            <p class="creative">Balsamiq</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
+          </div>
+          <!--PREMIERE PRO-->
+          <div id="pr" class="createContainers">
+            <img src="imgs/pr.png" width="45" alt="premiere pro icon" />
+            <p class="creative">Premiere</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+            </ul>
+          </div>
+          <!--AFTER EFFECTS-->
+          <div id="ae" class="createContainers">
+            <img src="imgs/ae.png" width="45" alt="after effects icon" />
+            <p class="creative">AfterEffects</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <!--Interactions-->
-      <div id="interactions"></div>
-      <div id="phoneInteractions" class="sectionContainer">
-        <h1>INTERACTIONS</h1>
-        <div class="containText">
-          <p>
-            Here you can view and engage with interactions I created for hybrid mobile applications.
-            Some of these are original interactions I experimented with while developing
-            my first applications, others are standard interactions that are common in native
-            applications, but are recreated here using JavaScript and HTML. I aim to create hybrid
-            applications that retain a native appereance and feel. Interact with the virtual phones to get an idea!
-          </p>
-          <div><a href="#bio">Sorry, who are you again?</a></div>
-          <div><a href="#skills">How did you say you did all this?</a></div>
-        </div>
-
-        <div class="contain">
-          <!--RADIAL OPTIONS MENU-->
-          <div id="radial">
-            <img class="phoneL" src="imgs/sgs8_2.png" width="280" alt="" />
-            <img class="sketchL" src="imgs/illustrationOne.png" width="461" alt="" />
-            <div class="shadowL"></div>
-            <div id="containOne">
-              <!--Top Bar-->
-              <div class="topBar">
-                <img class="rec" src="imgs/reception.png" width="12" alt="" />
-                <p class="percent">82%</p>
-                <img class="bat" src="imgs/battery.png" width="6" alt="" />
-                <div class="time"></div>
-              </div>
-              <!--Adaptive Container-->
-              <div class="square">
-                <div class="container containerDown">
-                  <div id="fab" class="dot dotDown">
-                    <div id=plusContain class="fab rotate">
-                      <div id="plus" class="lighten">+</div>
-                    </div>
-                  </div>
-                </div>
-                <!--Radial Buttons-->
-                <div id="hme" class="tab bigOne">
-                  <div class="iconButton">
-                    <img class="workIcon" src="imgs/home.png" alt="" />
-                  </div>
-                </div>
-                <div id="prf" class="tab bigTwo">
-                  <div class="iconButton">
-                    <img class="workIcon" src="imgs/profile.png" alt="" />
-                  </div>
-                </div>
-                <div id="wrt" class="tab bigThree">
-                  <div class="iconButton">
-                    <img class="workIcon" src="imgs/stylus.png" alt="" />
-                  </div>
-                </div>
-                <div id="cht" class="tab bigFour">
-                  <div class="iconButton">
-                    <img class="workIcon" src="imgs/msg.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!--Bottom Bar-->
-              <div class="bottomBar">
-                <img class="back" src="imgs/backWhite.png" width="16" alt="" />
-                <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
-                <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
-              </div>
-            </div>
+        <!--TECNICAL SKILLS-->
+        <div class="columnContainerR">
+          <img class="skillIcon" src="imgs/cog.png" width="50" alt="cog icon" />
+          <p class="skillTitle">TECHNICAL SKILLS:</p>
+          <!--HTML-->
+          <div id="html" class="hexagon">
+            <img class="left" src="imgs/html.png" width="50" alt="h.t.m.l icon" />
+            <p class="technicalL">HTML 5</p>
+            <ul class="pointsL">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+            </ul>
           </div>
-
-          <!--RADIAL NAVIGATION MENU-->
-          <div id="navigate">
-            <img class="phoneR" src="imgs/sgs8_2.png" width="280" alt="" />
-            <img class="sketchR" src="imgs/illustrationTwo.png" width="461" alt="" />
-            <div class="shadowR"></div>
-            <div id="containTwo">
-              <!--Top Bar-->
-              <div class="topBar">
-                <img class="rec" src="imgs/reception.png" width="12" alt="" />
-                <p class="percent">82%</p>
-                <img class="bat" src="imgs/battery.png" width="6" alt="" />
-                <div class="time"></div>
-              </div>
-              <!--Page-->
-              <div id="chatWrapper">
-                <img class="pageIcon" src="imgs/msg.png" alt="" />
-              </div>
-              <div id="homeWrapper">
-                <img class="pageIcon" src="imgs/home.png" alt="" />
-              </div>
-              <div id="profileWrapper">
-                <img class="pageIcon" src="imgs/profile.png" alt="" />
-              </div>
-              <!--Footer-->
-              <div class="footer">
-                <!--Radial Nav Menu-->
-                <div id="navContainer">
-                  <!--Buttons-->
-                  <div id="chat" class="sml smlOne">
-                    <div class="testOne">
-                      <a id="navOne">
-                        <img id="grayOne" class="in" src="imgs/darkMessage.png" width="21" alt="" />
-                        <img id="whiteOne" class="out" src="imgs/whiteMessage.png" width="25" alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <div id="home" class="sml smlTwo">
-                    <div class="testTwo">
-                      <a id="navTwo">
-                        <img id="grayTwo" class="in" src="imgs/darkHome.png" width="19" alt="" />
-                        <img id="whiteTwo" class="out" src="imgs/whiteHome.png" width="23" alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <div id="profile" class="sml smlThree">
-                    <div class="testThree">
-                      <a id="navThree">
-                        <img id="grayThree" class="in" src="imgs/darkProfile.png" width="20" alt="" />
-                        <img id="whiteThree" class="out" src="imgs/whiteProfile.png" width="23" alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <!--Interaction Menu-->
-                  <div id="burger" class="roundMenu">
-                    <div id="circle" class="tap"></div>
-                  </div>
-                  <div class="highlighter"></div>
-                </div>
-              </div>
-              <!--Bottom Bar-->
-              <div class="bottomBar">
-                <img class="back" src="imgs/backWhite.png" width="16" alt="" />
-                <img class="homie" src="imgs/homeWhite.png" width="16" alt="" />
-                <img class="recents" src="imgs/recentsWhite.png" width="16" alt="" />
-              </div>
-            </div>
+          <!--CSS-->
+          <div id="css" class="hexagon">
+            <img class="right" src="imgs/css.png" width="50" alt="c.s.s. icon" />
+            <p class="technicalR">CSS 3</p>
+            <ul class="pointsL">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+            </ul>
           </div>
-
-          <div id="filler"></div>
-        </div>
-      </div>
-
-      <!--Designs-->
-      <div id="designs"></div>
-      <div id="phoneDesigns" class="sectionContainer">
-        <h1>PORTFOLIO</h1>
-        <div class="containText" id="designsText">
-          <p>
-            Below are some video showcases of some of the projects I have worked on during the years.
-            I have designed and iterated core features and interfaces for a number of products, ranging from hybrid mobile applications such as MEG's Audit Tool,
-            to native Android and iOS applications such as patientMpower and it's other flavours and MEG's E-Guides app.
-            I have also designed and developed websites to showcase these products, such as the patientMpower and MEG Support Tools portfolio websites,
-            and control panel websites for the products mentioned above.
-          </p>
-          <div><a href="#bio">Sorry, who are you again?</a></div>
-          <div><a href="#skills">How did you say you did all this?</a></div>
-        </div>
-
-        <!--Videos-->
-        <div class="videoContainer">
-          <div class="containText videoText">
-            <h2>CustomFit</h2>
-            <p>
-              CustomFit is an innovative fitness app based on full workout customisation,
-              progress tracking, non-gendered design and innovative interactions.<br /><br />
-              This was my thesis for my Master of Science degree in Social Media APIs.<br /><br />
-              <strong>Responsibilities on this project:</strong><br />
-              - Flow design<br />
-              - UX/UI design<br />
-              - Mock-ups and testing<br />
-              - Full stack development
-            </p>
-            <a href="customFit.html" class="call solid">
-              <p>Read the story!</p>
-              <img class="goArrow" src="imgs/goDark.png" width="20" alt="" />
-            </a>
-            <img class="centeredImage" src="imgs/customFit2.png" height="800" alt="" />
+          <!--JS-->
+          <div id="js" class="hexagon">
+            <img class="left" src="imgs/js.png" width="50" alt="javascript icon" />
+            <p class="technicalL">JavaScript</p>
+            <ul class="pointsL">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
           </div>
-
-          <div class="containText videoText">
-            <h2>patientMpower</h2>
-            <p>
-              A showcase of the work I have done for <a href="https://play.google.com/store/apps/details?id=com.maithu.transplantbuddy" target="_blank">patientMpower</a>.<br /><br />
-              patientMpower is a data collection app that focuses on empowering patients to directly record
-              quantitative and qualitative data on their condition and share it with their carers and doctors directly.
-              This helps patients better manage their chronic disease, improving their outcomes & providing data to help further medical research.<br /><br />
-              The video below shows the evolution of flow and UI design in the product.<br /><br />
-              <strong>Responsibilities on this project:</strong><br />
-              - Flow design<br />
-              - UX/UI design<br />
-              - Mock-ups and testing<br />
-            </p>
-            <a href="pMp.html" class="call solid">
-              <p>Read the story!</p>
-              <img class="goArrow" src="imgs/goDark.png" width="20" alt="" />
-            </a>
+          <!--REACT-->
+          <div id="rea" class="hexagon">
+            <img class="right" src="imgs/react.png" width="48" alt="react icon" />
+            <p class="technicalR">React Native</p>
+            <ul class="pointsL">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
           </div>
-          <div class="iframeContainer">
-            <iframe src="https://www.youtube.com/embed/sH5WQo2oAIg"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                    picture-in-picture" allowfullscreen>
-            </iframe>
+          <!--PYTHON-->
+          <div id="py" class="hexagon">
+            <img class="left" src="imgs/python.png" width="50" alt="python icon" />
+            <p class="technicalL">Python (Django)</p>
+            <ul class="pointsL">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
           </div>
-
-          <div class="containText videoText">
-            <h2>Casa dello Zecchiere</h2>
-            <p>
-              A showcase of the website for <a href="http://www.casadellozecchiere.it/" target="_blank">Casa dello Zecchiere</a>, which I designed and developed.<br /><br />
-              Casa dello Zecchiere is a venue situated in a beautiful hystorical building in Milan city centre.
-              Available to book for parties, conferences, art shows, fundraisers etc.<br /><br />
-              <strong>Responsibilities on this project:</strong><br />
-              - Flow design<br />
-              - UX/UI design<br />
-              - Full stack development<br />
-            </p>
+          <!--JAVA-->
+          <div id="java" class="hexagon">
+            <img class="right" src="imgs/java.png" width="50" alt="java icon" />
+            <p class="technicalR">Java</p>
+            <ul class="pointsL">
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
           </div>
-          <div class="iframeContainer">
-            <iframe src="https://www.youtube.com/embed/DwV1Lx7nzyA"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                    picture-in-picture" allowfullscreen>
-            </iframe>
+          <!--PHP-->
+          <div id="php" class="hexagon">
+            <img class="left" src="imgs/php.png" width="50" alt="p.h.p icon" />
+            <p class="technicalL">PHP</p>
+            <ul class="pointsL">
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
           </div>
-
-          <div class="containText videoText">
-            <h2>MEG Audit Tool</h2>
-            <p>
-              A showcase of the work I have done on <a href="https://play.google.com/store/apps/details?id=com.meg.mat.client" target="_blank">MEG Support Tools' Audit Tool</a>.<br /><br />
-              The MEG Audit Tool is a data collection tool built with Angular 6. As such,
-              it runs on any mobile device and browser, and empowers data collection for
-              hospitals, building sites and any situation that requires auditing or data collection.<br /><br />
-              The video below shows the evolution of flow and UI design in the product.<br /><br />
-              <strong>Responsibilities on this project:</strong><br />
-              - Flow design<br />
-              - UX/UI design<br />
-              - Mock-ups and testing<br />
-              - Front-end development<br />
-              - Team management
-            </p>
+          <!--SQL-->
+          <div id="sql" class="hexagon">
+            <img class="right" src="imgs/sql.png" width="50" alt="my S.Q.L icon" />
+            <p class="technicalR">mySQL</p>
+            <ul class="pointsL">
+              <li>
+                <div class="activate"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+              <li>
+                <div class="null"></div>
+              </li>
+            </ul>
           </div>
-          <div class="iframeContainer">
-            <iframe src="https://www.youtube.com/embed/LTZ3EWRk3aY"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                    picture-in-picture" allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </div>
-
-      <!--More-->
-      <div id="more"></div>
-      <div id="moreContainer" class="sectionContainer">
-        <h1>THANK YOU FOR SCROLLING THIS FAR!</h1>
-        <div class="containText" id="moreText">
-          <h2>Want to know more about me and my work? You can...</h2>
-          <p>
-            <a href="https://dribbble.com/bggrieco" target="_blank">Visit my Dribbble account.</a><br/>
-          </p>
-          <p>
-            <a href="https://codepen.io/BGGrieco/" target="_blank">Visit my Codepen page.</a>
-          </p>
-          <p>
-            Visit my <a href="https://github.com/BGGrieco" target="_blank">GitHub page</a>, where you can view all of my personal project's codebases, including <a href="https://github.com/BGGrieco/BGGrieco.github.io" target="_blank">this website's!</a>
-          </p>
-          <p>
-            Or contact me directly through <a href="https://www.linkedin.com/in/briangrieco/" target="_blank">LinkedIn</a>!
-          </p>
-          </br>
-          <h3>I'd love to hear from you, even just for questions or design opinions. Have a great day!</h3>
-          <p>Brian Grieco</p>
-          <p><img src="imgs/phone.png" width="25" alt="phone" />+353 87 975 3550</p>
-          <p><img src="imgs/mail.png" width="26" alt="e-mail" /><a href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
-        </div>
-      </div>
-
-      <div id="footer">
-        <div class="containText">
-          <p class="footerText">Brian G. Grieco | Tel: +353 87 975 3550 | <a href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
         </div>
       </div>
     </div>
 
-    <div id="fader"></div>
+    <!--Interactions-->
+    <div id="interactions"></div>
+    <div id="phoneInteractions" class="sectionContainer">
+      <h1>INTERACTIONS</h1>
+      <div class="containText">
+        <p>
+          Here you can view and engage with interactions I created for hybrid mobile applications.
+          Some of these are original interactions I experimented with while developing
+          my first applications, others are standard interactions that are common in native
+          applications, but are recreated here using JavaScript and HTML. I aim to create hybrid
+          applications that retain a native appereance and feel. Interact with the virtual phones to get an idea!
+        </p>
+        <div><a href="#bio">Sorry, who are you again?</a></div>
+        <div><a href="#skills">How did you say you did all this?</a></div>
+      </div>
 
-    <script type="text/javascript" src="js/jQuery.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-  </body>
+      <div class="contain">
+        <!--RADIAL OPTIONS MENU-->
+        <div id="radial">
+          <img class="phoneL" src="imgs/sgs8_2.png" width="280" alt="samsung galaxy 8 image" />
+          <img class="sketchL" src="imgs/illustrationOne.png" width="461" alt="sketch one" />
+          <div class="shadowL"></div>
+          <div id="containOne">
+            <!--Top Bar-->
+            <div class="topBar">
+              <img class="rec" src="imgs/reception.png" width="12" alt="internet icon" />
+              <p class="percent">82%</p>
+              <img class="bat" src="imgs/battery.png" width="6" alt="battery icon" />
+              <div class="time"></div>
+            </div>
+            <!--Adaptive Container-->
+            <div class="square">
+              <div class="container containerDown">
+                <div id="fab" class="dot dotDown">
+                  <div id=plusContain class="fab rotate">
+                    <div id="plus" class="lighten">+</div>
+                  </div>
+                </div>
+              </div>
+              <!--Radial Buttons-->
+              <div id="hme" class="tab bigOne">
+                <div class="iconButton">
+                  <img class="workIcon" src="imgs/home.png" alt="home icon" />
+                </div>
+              </div>
+              <div id="prf" class="tab bigTwo">
+                <div class="iconButton">
+                  <img class="workIcon" src="imgs/profile.png" alt="profile icon" />
+                </div>
+              </div>
+              <div id="wrt" class="tab bigThree">
+                <div class="iconButton">
+                  <img class="workIcon" src="imgs/stylus.png" alt="pen icon" />
+                </div>
+              </div>
+              <div id="cht" class="tab bigFour">
+                <div class="iconButton">
+                  <img class="workIcon" src="imgs/msg.png" alt="message icon" />
+                </div>
+              </div>
+            </div>
+            <!--Bottom Bar-->
+            <div class="bottomBar">
+              <img class="back" src="imgs/backWhite.png" width="16" alt="back arrow" />
+              <img class="homie" src="imgs/homeWhite.png" width="16" alt="home icon" />
+              <img class="recents" src="imgs/recentsWhite.png" width="16" alt="recents icon" />
+            </div>
+          </div>
+        </div>
+
+        <!--RADIAL NAVIGATION MENU-->
+        <div id="navigate">
+          <img class="phoneR" src="imgs/sgs8_2.png" width="280" alt="samsung galaxy 8 image" />
+          <img class="sketchR" src="imgs/illustrationTwo.png" width="461" alt="sketch two" />
+          <div class="shadowR"></div>
+          <div id="containTwo">
+            <!--Top Bar-->
+            <div class="topBar">
+              <img class="rec" src="imgs/reception.png" width="12" alt="internet icon" />
+              <p class="percent">82%</p>
+              <img class="bat" src="imgs/battery.png" width="6" alt="battery icon" />
+              <div class="time"></div>
+            </div>
+            <!--Page-->
+            <div id="chatWrapper">
+              <img class="pageIcon" src="imgs/msg.png" alt="message icon" />
+            </div>
+            <div id="homeWrapper">
+              <img class="pageIcon" src="imgs/home.png" alt="home icon" />
+            </div>
+            <div id="profileWrapper">
+              <img class="pageIcon" src="imgs/profile.png" alt="profile icon" />
+            </div>
+            <!--Footer-->
+            <div class="footer">
+              <!--Radial Nav Menu-->
+              <div id="navContainer">
+                <!--Buttons-->
+                <div id="chat" class="sml smlOne">
+                  <div class="testOne">
+                    <a id="navOne">
+                      <img id="grayOne" class="in" src="imgs/darkMessage.png" width="21" alt="message icon black" />
+                      <img id="whiteOne" class="out" src="imgs/whiteMessage.png" width="25" alt="message icon white" />
+                    </a>
+                  </div>
+                </div>
+                <div id="home" class="sml smlTwo">
+                  <div class="testTwo">
+                    <a id="navTwo">
+                      <img id="grayTwo" class="in" src="imgs/darkHome.png" width="19" alt="home icon black" />
+                      <img id="whiteTwo" class="out" src="imgs/whiteHome.png" width="23" alt="home icon white" />
+                    </a>
+                  </div>
+                </div>
+                <div id="profile" class="sml smlThree">
+                  <div class="testThree">
+                    <a id="navThree">
+                      <img id="grayThree" class="in" src="imgs/darkProfile.png" width="20" alt="profile icon black" />
+                      <img id="whiteThree" class="out" src="imgs/whiteProfile.png" width="23" alt="profile icon white" />
+                    </a>
+                  </div>
+                </div>
+                <!--Interaction Menu-->
+                <div id="burger" class="roundMenu">
+                  <div id="circle" class="tap"></div>
+                </div>
+                <div class="highlighter"></div>
+              </div>
+            </div>
+            <!--Bottom Bar-->
+            <div class="bottomBar">
+              <img class="back" src="imgs/backWhite.png" width="16" alt="back arrow" />
+              <img class="homie" src="imgs/homeWhite.png" width="16" alt="home icon" />
+              <img class="recents" src="imgs/recentsWhite.png" width="16" alt="recents icon" />
+            </div>
+          </div>
+        </div>
+
+        <div id="filler"></div>
+      </div>
+    </div>
+
+    <!--Designs-->
+    <div id="designs"></div>
+    <div id="phoneDesigns" class="sectionContainer">
+      <h1>PORTFOLIO</h1>
+      <div class="containText" id="designsText">
+        <p>
+          Below are showcases of some of the projects I have worked on during the years.
+          I have designed and iterated core features and interfaces for a number of products, ranging from hybrid mobile
+          applications such as <a href="https://www.megsupporttools.com">MEG</a>'s Audit Tool, to native Android and iOS
+          applications such as <a href="https://patientmpower.com/">patientMpower</a> and it's other flavours and MEG's
+          E-Guides app.<br /><br />I have worked in complex news website with extremely varied types of data and interfaces, such as with <a href="www.irishtimes.ie">The Irish Times</a>.<br /><br />
+          And I have developed apps in full stack as part of my M.Sc degree.
+        </p>
+        <div><a href="#bio">Sorry, who are you again?</a></div>
+        <div><a href="#skills">How did you say you did all this?</a></div>
+      </div>
+
+      <!--Videos-->
+      <div class="videoContainer">
+        <div class="containText videoText">
+          <h2>The Irish Times</h2>
+          <p>
+            The Irish Times was the first Irish news paper, and one of the first in the world, to "go digital". It
+            is a long standing news agency that has evolved much in its over 100 years of existence, and today focuses on delivering
+            real, reliable information in an era dominated by conspiracy theories and "fake news".
+            Working on such a well respected and renown news source is challenging, and has thought me a lot.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - User testing<br />
+            - UX/UI design<br />
+            - Mentorship<br />
+            - Front-end development
+          </p>
+          <a href="irishTimes.html" class="call solid">
+            <p>Read the story!</p>
+            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
+          </a>
+          <img class="centeredImage" src="imgs/irishtimes.jpg" style="height: auto; left: 0; width: 100%;" alt="The Irish Times Clock" />
+        </div>
+
+        <div class="containText videoText">
+          <h2>CustomFit</h2>
+          <p>
+            CustomFit is an innovative fitness app based on full workout customisation,
+            progress tracking, non-gendered design and innovative interactions.<br /><br />
+            This was my thesis for my Master of Science degree in Social Media APIs.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - Flow design<br />
+            - UX/UI design<br />
+            - Mock-ups and testing<br />
+            - Full stack development
+          </p>
+          <a href="customFit.html" class="call solid">
+            <p>Read the story!</p>
+            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
+          </a>
+          <img class="centeredImage" src="imgs/customFit2.png" height="800" alt="Custom Fit Logo" />
+        </div>
+
+        <div class="containText videoText">
+          <h2>patientMpower</h2>
+          <p>
+            A showcase of the work I have done for <a
+              href="https://play.google.com/store/apps/details?id=com.maithu.transplantbuddy"
+              target="_blank">patientMpower</a>.<br /><br />
+            patientMpower is a data collection app that focuses on empowering patients to directly record
+            quantitative and qualitative data on their condition and share it with their carers and doctors directly.
+            This helps patients better manage their chronic disease, improving their outcomes & providing data to help
+            further medical research.<br /><br />
+            The video below shows the evolution of flow and UI design in the product.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - Flow design<br />
+            - UX/UI design<br />
+            - Mock-ups and testing<br />
+          </p>
+          <a href="pMp.html" class="call solid">
+            <p>Read the story!</p>
+            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
+          </a>
+        </div>
+        <div class="iframeContainer">
+          <iframe src="https://www.youtube.com/embed/sH5WQo2oAIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="containText videoText">
+          <h2>Casa dello Zecchiere</h2>
+          <p>
+            A showcase of the website for <a href="http://www.casadellozecchiere.it/" target="_blank">Casa dello
+              Zecchiere</a>, which I designed and developed.<br /><br />
+            Casa dello Zecchiere is a venue situated in a beautiful hystorical building in Milan city centre.
+            Available to book for parties, conferences, art shows, fundraisers etc.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - Flow design<br />
+            - UX/UI design<br />
+            - Full stack development<br />
+          </p>
+        </div>
+        <div class="iframeContainer">
+          <iframe src="https://www.youtube.com/embed/DwV1Lx7nzyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="containText videoText">
+          <h2>MEG Audit Tool</h2>
+          <p>
+            A showcase of the work I have done on <a
+              href="https://play.google.com/store/apps/details?id=com.meg.mat.client" target="_blank">MEG Support Tools'
+              Audit Tool</a>.<br /><br />
+            The MEG Audit Tool is a data collection tool built with Angular 6. As such,
+            it runs on any mobile device and browser, and empowers data collection for
+            hospitals, building sites and any situation that requires auditing or data collection.<br /><br />
+            The video below shows the evolution of flow and UI design in the product.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - Flow design<br />
+            - UX/UI design<br />
+            - Mock-ups and testing<br />
+            - Front-end development<br />
+            - Team management
+          </p>
+        </div>
+        <div class="iframeContainer">
+          <iframe src="https://www.youtube.com/embed/LTZ3EWRk3aY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--More-->
+    <div id="more"></div>
+    <div id="moreContainer" class="sectionContainer">
+      <h1>THANK YOU FOR SCROLLING THIS FAR!</h1>
+      <div class="containText" id="moreText">
+        <h2>Want to know more about me and my work? You can...</h2>
+        <p>
+          <a href="https://dribbble.com/bggrieco" target="_blank">Visit my Dribbble account.</a><br />
+        </p>
+        <p>
+          <a href="https://codepen.io/BGGrieco/" target="_blank">Visit my Codepen page.</a>
+        </p>
+        <p>
+          Visit my <a href="https://github.com/BGGrieco" target="_blank">GitHub page</a>, where you can view all of my
+          personal project's codebases, including <a href="https://github.com/BGGrieco/BGGrieco.github.io"
+            target="_blank">this website's!</a>
+        </p>
+        <p>
+          Or contact me directly through <a href="https://www.linkedin.com/in/briangrieco/"
+            target="_blank">LinkedIn</a>!
+        </p>
+        </br>
+        <h3>I'd love to hear from you, even just for questions or design opinions. Have a great day!</h3>
+        <p>Brian Grieco</p>
+        <p><img src="imgs/phone.png" width="25" alt="phone" />+353 87 975 3550</p>
+        <p><img src="imgs/mail.png" width="26" alt="e-mail" /><a
+            href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="containText">
+        <p class="footerText">Brian G. Grieco | Tel: +353 87 975 3550 | <a
+            href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="fader"></div>
+
+  <script type="text/javascript" src="js/jQuery.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+</body>
+
 </html>

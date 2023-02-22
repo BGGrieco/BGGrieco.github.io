@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   // Burger menu animations
   $('#navBurger, #sideMenuLinks').click(function () {
     $('.rotateBurger').toggleClass('rotateAgain');
@@ -174,7 +175,7 @@ $(document).ready(function () {
         break;
       default:
         console.log('Page is: ' + page);
-    }  
+    }
     roundMenu();
   });
 
