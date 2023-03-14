@@ -384,8 +384,12 @@ li {
 
 .goArrow {
   position: absolute;
-  top: 19px;
   right: 12px;
+  top: 19px;
+}
+
+.goArrow.rotated {
+  transform: rotateZ(90deg);
 }
 
 span {
