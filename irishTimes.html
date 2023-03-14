@@ -219,9 +219,12 @@
                 &nbsp;
                 <h1 style="text-align: left">What I learnt</h1>
                 <p>
-                    My experience with The Irish Times has been long, positive, and varied. From user research, to re-designs and improvements, to front-end development, 
-                    to bringing both internal and customer-facing products from mere idea to full deployment, to mentoring interns.<br /><br /> 
-                    Thanks to thiese experiences, I have aquired many soft and hard skills, especially in the areas of teamwork, front end development, and mentoring.
+                    My experience with The Irish Times has been long, positive, and varied. From user research, to
+                    re-designs and improvements, to front-end development,
+                    to bringing both internal and customer-facing products from mere idea to full deployment, to
+                    mentoring interns.<br /><br />
+                    Thanks to thiese experiences, I have aquired many soft and hard skills, especially in the areas of
+                    teamwork, front end development, and mentoring.
                     <br /><br />
                 </p>
                 <a href="index.html#designs" class="call solid">
@@ -245,13 +248,17 @@
     <script type="text/javascript" src="js/jQuery.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
     <script type="text/javascript">
-        $(function () {
-            var headerHeightString = $("#header").css("height");
-            var headerHeightTruncation = headerHeightString.substring(0, headerHeightString.length - 2);
-            var headerHeight = parseInt(headerHeightTruncation);
-            var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-            var result = viewportHeight - headerHeight;
-            window.scroll(0, result);
+        $(document).ready(function () {
+            $(function () {
+                var headerHeightString = $("#header").css("height");
+                var headerHeightTruncation = headerHeightString.substring(0, headerHeightString.length -
+                    2);
+                var headerHeight = parseInt(headerHeightTruncation);
+                var viewportHeight = Math.max(document.documentElement.clientHeight, window
+                    .innerHeight || 0);
+                var result = viewportHeight - headerHeight;
+                window.scroll(0, result);
+            });
         });
     </script>
 </body>

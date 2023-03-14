@@ -44,21 +44,21 @@
           </a>
         </li>
         <li>
-          <li>
-            <a class="hoverable" href="https://dribbble.com/bggrieco" target="_blank">
-              <img src="imgs/dribbble.png" width="20" alt="dribbble" />
-              <img src="imgs/dribbbleHover.png" width="20" alt="dribbble" />
-            </a>
-          </li>
-          <a class="hoverable" href="https://www.linkedin.com/in/briangrieco/" target="_blank">
-            <img src="imgs/linkedIn.png" width="20" alt="linkedIn" />
-            <img src="imgs/linkedInHover.png" width="20" alt="linkedIn" />
+        <li>
+          <a class="hoverable" href="https://dribbble.com/bggrieco" target="_blank">
+            <img src="imgs/dribbble.png" width="20" alt="dribbble" />
+            <img src="imgs/dribbbleHover.png" width="20" alt="dribbble" />
           </a>
+        </li>
+        <a class="hoverable" href="https://www.linkedin.com/in/briangrieco/" target="_blank">
+          <img src="imgs/linkedIn.png" width="20" alt="linkedIn" />
+          <img src="imgs/linkedInHover.png" width="20" alt="linkedIn" />
+        </a>
         </li>
       </ul>
     </div>
   </div>
-  
+
   <!--Mobile Nav Bar-->
   <div class="mobileNav">
     <div class="round js-touch-effect">
@@ -192,8 +192,8 @@
         </div>
 
         <div class="statsList four">
-          <img src="imgs/prototypes/pmpOne.png" alt="" />
-          <img src="imgs/prototypes/pmpTwo.png" alt="" />
+          <img src="imgs/prototypes/pMpOne.png" alt="" />
+          <img src="imgs/prototypes/pMpTwo.png" alt="" />
           <img src="imgs/prototypes/fire1.1.png" alt="" />
           <img src="imgs/prototypes/fire1.2.png" alt="" />
         </div>
@@ -242,13 +242,15 @@
   <script type="text/javascript" src="js/jQuery.js"></script>
   <script type="text/javascript" src="js/functions.js"></script>
   <script type="text/javascript">
-    $(function () {
-      var headerHeightString = $("#header").css("height");
-      var headerHeightTruncation = headerHeightString.substring(0, headerHeightString.length - 2);
-      var headerHeight = parseInt(headerHeightTruncation);
-      var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-      var result = viewportHeight - headerHeight;
-      window.scroll(0, result);
+    $(document).ready(function () {
+      $(function () {
+        var headerHeightString = $("#header").css("height");
+        var headerHeightTruncation = headerHeightString.substring(0, headerHeightString.length - 2);
+        var headerHeight = parseInt(headerHeightTruncation);
+        var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        var result = viewportHeight - headerHeight;
+        window.scroll(0, result);
+      });
     });
   </script>
 </body>
