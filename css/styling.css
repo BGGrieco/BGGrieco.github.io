@@ -2893,6 +2893,11 @@ span {
     top: 20px;
   }
 
+  #words {
+    height: auto;
+    width: 105%;
+  }
+
   .bigCall {
     display: none;
   }
@@ -2913,11 +2918,6 @@ span {
   .navbarContent,
   .videoContainer {
     width: 95%;
-  }
-
-  #words {
-    height: auto;
-    width: 105%;
   }
 
   .pointsR>li>div,
