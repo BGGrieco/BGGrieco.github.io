@@ -482,7 +482,7 @@ span {
   position: fixed;
   right: 80px;
   top: 130px;
-  z-index: 2;
+  z-index: 4;
   -webkit-animation: sideButtonsFade 1s forwards;
   animation: sideButtonsFade 1s forwards;
 }
@@ -531,9 +531,16 @@ span {
 
 .sideimg {
   display: block;
-  position: relative;
-  margin: auto;
+  height: 100%;
   pointer-events: none;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+#mailImg {
+  background: url('../imgs/mail.png') center no-repeat;
+  background-size: 55%;
 }
 
 .mail {
@@ -542,12 +549,22 @@ span {
   animation: slideOut 0.3s ease-in forwards;
 }
 
+#civiImg {
+  background: url('../imgs/download.png') 45% 45% no-repeat;
+  background-size: 62%;
+}
+
 .civi {
   left: 0;
   -webkit-animation: slideOut 0.3s ease-in forwards;
   animation: slideOut 0.3s ease-in forwards;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
+}
+
+#upImg {
+  background: url('../imgs/up.png') center no-repeat;
+  background-size: 30%;
 }
 
 .up {
@@ -2705,6 +2722,20 @@ span {
 }
 
 @media screen and (max-width: 1000px) {
+
+  #sideButtons {
+    right: 20px;
+  }
+
+  .side {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ripple {
+    height: 40px;
+    width: 40px;
+  }
 
   .contain,
   .containText,
