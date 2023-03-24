@@ -2713,10 +2713,6 @@ span {
     width: 90%;
   }
 
-  #sideButtons {
-    display: none;
-  }
-
   #innerLinks a {
     margin-left: 12px;
   }
@@ -2875,6 +2871,10 @@ span {
 
 @media (max-width: 750px) {
   #navBar {
+    display: none;
+  }
+
+  #sideButtons {
     display: none;
   }
 
