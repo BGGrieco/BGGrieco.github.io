@@ -664,11 +664,11 @@ span {
 }
 
 .containText {
-  position: relative;
   margin: auto;
-  margin-bottom: 50px;
-  width: 60%;
   max-width: 1000px;
+  padding-bottom: 50px;
+  position: relative;
+  width: 60%;
 }
 
 .containText a {
