@@ -84,7 +84,7 @@ $(document).ready(function () {
 
       $window.setTimeout(function () {
         $span.remove();
-      }, 400);
+      }, 300);
     });
   }
 
@@ -243,8 +243,6 @@ $(document).ready(function () {
     }
     roundMenu();
   });
-
-  // Smooth link scrolling
 
   // Fade Content Animation
   setTimeout(function () {
