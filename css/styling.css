@@ -83,6 +83,14 @@ li {
   display: none;
 }
 
+.mobileimg {
+  display: block;
+  margin: auto;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+}
+
 #navBar {
   position: fixed;
   top: -96px;
