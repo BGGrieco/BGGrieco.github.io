@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
 
   // Animated logo section.
-  $('#logo').mouseup(function () {
+  $('.attention').mouseup(function () {
     $(this).css({
       'animation-play-state': 'paused'
     });
@@ -84,7 +84,7 @@ $(document).ready(function () {
 
       $window.setTimeout(function () {
         $span.remove();
-      }, 400);
+      }, 300);
     });
   }
 

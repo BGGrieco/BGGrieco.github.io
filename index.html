@@ -18,11 +18,9 @@
   <!--Nav Bar-->
   <div id="navBar" class="nav">
     <div class="navbarContent">
-      <a href="#bio">
-        <div id="logo" class="attention">
-          <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
-        </div>
-      </a>
+      <div id="logo" class="attention">
+        <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
+      </div>
       <ul id="innerLinks">
         <li><a href="#bio">Biography</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -96,18 +94,16 @@
 
   <!--Side Menu-->
   <div id="sideMenu" class="closed">
-    <a href="#phoneBio">
-      <div id="logo" class="attention">
-        <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
-      </div>
-    </a>
+    <div id="logo">
+      <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
+    </div>
 
     <ul id="sideMenuLinks">
-      <li><a href="#phoneBio">Biography</a></li>
-      <li><a href="#phoneSkills">Skills</a></li>
-      <li><a href="#phoneInteractions">Interactions</a></li>
-      <li><a href="#phoneDesigns">Portfolio</a></li>
-      <li><a href="#moreContainer">Contacts</a></li>
+      <li><a href="#" onclick="smoothScroll(document.getElementById('phoneBio'))">Biography</a></li>
+      <li><a href="#" onclick="smoothScroll(document.getElementById('phoneSkills'))">Skills</a></li>
+      <li><a href="#" onclick="smoothScroll(document.getElementById('phoneInteractions'))">Interactions</a></li>
+      <li><a href="#" onclick="smoothScroll(document.getElementById('phoneDesigns'))">Portfolio</a></li>
+      <li><a href="#" onclick="smoothScroll(document.getElementById('moreContainer'))">Contacts</a></li>
     </ul>
   </div>
 
@@ -180,7 +176,7 @@
             some jQuery to trigger the animations.
           </strong>
         </p>
-        <div><a href="#designs">Cool. What have you actually done though?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('designs'))">Cool. What have you actually done though?</a></div>
         <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
       </div>
     </div>
@@ -498,7 +494,7 @@
           <!--PYTHON-->
           <div id="py" class="hexagon">
             <img class="right" src="imgs/python.png" width="50" alt="python icon" />
-            <p class="technicalR">Python (Django)</p>
+            <p class="technicalR">Python</p>
             <ul class="pointsL">
               <li>
                 <div class="activate"></div>
@@ -577,8 +573,8 @@
           applications, but are recreated here using JavaScript and HTML. I aim to create hybrid
           applications that retain a native appearance and feel. Interact with the virtual phones to get an idea!
         </p>
-        <div><a href="#bio">Sorry, who are you again?</a></div>
-        <div><a href="#skills">How did you say you did all this?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Sorry, who are you again?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('skills'))">How did you say you did all this?</a></div>
         <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
       </div>
 
@@ -719,12 +715,12 @@
           I have designed and iterated core features and interfaces for a number of products, ranging from hybrid mobile
           applications such as <a href="https://www.megsupporttools.com">MEG</a>'s Audit Tool, to native Android and iOS
           applications such as <a href="https://patientmpower.com/">patientMpower</a> and its other flavours and MEG's
-          E-Guides app.<br /><br />My work with <a href="www.irishtimes.ie">The Irish Times</a> involved a complex news website with extremely varied types of data and
+          E-Guides app.<br /><br />My work with <a href="https://www.irishtimes.com" target="_blank">The Irish Times</a> involved a complex news website with extremely varied types of data and
           interfaces.<br /><br />
           And I have developed apps in full stack as part of my M.Sc degree.
         </p>
-        <div><a href="#bio">Sorry, who are you again?</a></div>
-        <div><a href="#skills">How did you say you did all this?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Sorry, who are you again?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('skills'))">How did you say you did all this?</a></div>
         <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
       </div>
 
@@ -733,7 +729,7 @@
         <div class="containText videoText">
           <h2>The Irish Times</h2>
           <p>
-            <a href="https://www.irishtimes.com/" target="_blank">The Irish Times</a> was the first Irish newspaper, and one of the first in the world, to "go digital". It
+            <a href="https://www.irishtimes.com" target="_blank">The Irish Times</a> was the first Irish newspaper, and one of the first in the world, to "go digital". It
             is a long-standing news agency that has evolved much in over 100 years of existence, and today focuses
             on delivering real, reliable information in an era dominated by conspiracy theories and "fake news".
             Working on such a well respected and renowned news source is challenging, and has tought me a
@@ -744,11 +740,11 @@
             - Mentorship<br />
             - Front-end development
           </p>
-          <a href="irishTimes.html" class="call solid">
+          <a href="irishTimes.html" class="call solid" target="_blank">
             <p>Read the story!</p>
             <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
           </a>
-          <img class="centeredImage" src="imgs/irishtimes.jpg" style="height: auto; left: 0; width: 100%;"
+          <img class="centeredImage" src="imgs/irishtimes.png" style="height: auto; left: 0; width: 100%;"
             alt="The Irish Times Clock" />
         </div>
 
@@ -764,7 +760,7 @@
             - Mock-ups and testing<br />
             - Full stack development
           </p>
-          <a href="customFit.html" class="call solid">
+          <a href="customFit.html" class="call solid" target="_blank">
             <p>Read the story!</p>
             <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
           </a>
@@ -787,7 +783,7 @@
             - UX/UI design<br />
             - Mock-ups and testing<br />
           </p>
-          <a href="pMp.html" class="call solid">
+          <a href="pMp.html" class="call solid" target="_blank">
             <p>Read the story!</p>
             <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
           </a>
@@ -888,6 +884,30 @@
 
   <script type="text/javascript" src="js/jQuery.js"></script>
   <script type="text/javascript" src="js/functions.js"></script>
+  <script>
+    window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+  </script>
 </body>
 
 </html>
