@@ -244,6 +244,8 @@ $(document).ready(function () {
     roundMenu();
   });
 
+  // Smooth link scrolling
+
   // Fade Content Animation
   setTimeout(function () {
     $('#fader').addClass('fader');

@@ -180,7 +180,7 @@
             some jQuery to trigger the animations.
           </strong>
         </p>
-        <div><a href="#designs">Cool. What have you actually done though?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('designs'))">Cool. What have you actually done though?</a></div>
         <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
       </div>
     </div>
@@ -498,7 +498,7 @@
           <!--PYTHON-->
           <div id="py" class="hexagon">
             <img class="right" src="imgs/python.png" width="50" alt="python icon" />
-            <p class="technicalR">Python (Django)</p>
+            <p class="technicalR">Python</p>
             <ul class="pointsL">
               <li>
                 <div class="activate"></div>
@@ -577,8 +577,8 @@
           applications, but are recreated here using JavaScript and HTML. I aim to create hybrid
           applications that retain a native appearance and feel. Interact with the virtual phones to get an idea!
         </p>
-        <div><a href="#bio">Sorry, who are you again?</a></div>
-        <div><a href="#skills">How did you say you did all this?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Sorry, who are you again?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('skills'))">How did you say you did all this?</a></div>
         <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
       </div>
 
@@ -723,8 +723,8 @@
           interfaces.<br /><br />
           And I have developed apps in full stack as part of my M.Sc degree.
         </p>
-        <div><a href="#bio">Sorry, who are you again?</a></div>
-        <div><a href="#skills">How did you say you did all this?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Sorry, who are you again?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('skills'))">How did you say you did all this?</a></div>
         <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
       </div>
 
@@ -888,6 +888,30 @@
 
   <script type="text/javascript" src="js/jQuery.js"></script>
   <script type="text/javascript" src="js/functions.js"></script>
+  <script>
+    window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do { //find scroll container
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do { //find the top of target relatively to the container
+          if (target == scrollContainer) break;
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+  </script>
 </body>
 
 </html>
