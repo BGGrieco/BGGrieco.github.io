@@ -646,11 +646,12 @@ span {
 }
 
 #contentContainer {
-  position: absolute;
+  background-color: #e8e8e8;
   left: 0;
+  overflow: hidden;
+  position: absolute;
   top: 100%;
   width: 100%;
-  background-color: #e8e8e8;
 }
 
 /*
