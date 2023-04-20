@@ -172,100 +172,6 @@ li {
   position: relative;
   pointer-events: none;
   cursor: pointer;
-  -webkit-animation: bounce 2.8s linear infinite;
-  animation: bounce 2.8s linear infinite;
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    bottom: 0;
-  }
-
-  3% {
-    bottom: 0;
-  }
-
-  6% {
-    bottom: 5px;
-  }
-
-  8% {
-    bottom: 8px;
-  }
-
-  10% {
-    bottom: 5px;
-  }
-
-  13% {
-    bottom: 0;
-  }
-
-  16% {
-    bottom: 4px;
-  }
-
-  18% {
-    bottom: 6px;
-  }
-
-  20% {
-    bottom: 4px;
-  }
-
-  23% {
-    bottom: 0;
-  }
-
-  100% {
-    bottom: 0;
-  }
-}
-
-@keyframes bounce {
-  0% {
-    bottom: 0;
-  }
-
-  3% {
-    bottom: 0;
-  }
-
-  6% {
-    bottom: 5px;
-  }
-
-  8% {
-    bottom: 8px;
-  }
-
-  10% {
-    bottom: 5px;
-  }
-
-  13% {
-    bottom: 0;
-  }
-
-  16% {
-    bottom: 4px;
-  }
-
-  18% {
-    bottom: 6px;
-  }
-
-  20% {
-    bottom: 4px;
-  }
-
-  23% {
-    bottom: 0;
-  }
-
-  100% {
-    bottom: 0;
-  }
 }
 
 #innerLinks {
@@ -489,7 +395,7 @@ span {
 #sideButtons {
   position: fixed;
   right: 80px;
-  top: 130px;
+  bottom: 75px;
   z-index: 4;
   -webkit-animation: sideButtonsFade 1s forwards;
   animation: sideButtonsFade 1s forwards;
@@ -846,12 +752,6 @@ span {
   height: 25px;
 }
 
-.displace {
-  position: relative;
-  top: 2px;
-  left: 2px;
-}
-
 .creative {
   position: absolute;
   left: 80px;
@@ -1037,6 +937,10 @@ span {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+}
+
+#plusContain .highlighter {
+  top: -15px;
 }
 
 #plus {
@@ -2727,6 +2631,7 @@ span {
   }
 
   #sideButtons {
+    bottom: 45px;
     right: 50px;
   }
 }
@@ -2734,6 +2639,7 @@ span {
 @media screen and (max-width: 1000px) {
 
   #sideButtons {
+    bottom: 20px;
     right: 20px;
   }
 

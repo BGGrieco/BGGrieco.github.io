@@ -18,18 +18,27 @@
   <!--Nav Bar-->
   <div id="navBar" class="nav">
     <div class="navbarContent">
-      <div id="logo" class="attention">
-        <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
-      </div>
+      <a href="index.html">
+        <div id="logo">
+          <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
+        </div>
+      </a>
       <ul id="innerLinks">
-        <li><a href="#bio">Biography</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interactions">Interactions</a></li>
-        <li><a href="#designs">Portfolio</a></li>
-        <li><a href="#moreContainer">Contacts</a></li>
+        <li><a href="#" onclick="smoothScroll(document.getElementById('skills'))">Skills</a></li>
+        <li><a href="#" onclick="smoothScroll(document.getElementById('designs'))">Portfolio</a></li>
+        <li><a href="#" onclick="smoothScroll(document.getElementById('interactions'))">Interactions</a></li>
+        <li><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Biography</a></li>
+        <li><a href="#" onclick="smoothScroll(document.getElementById('more'))">Contacts</a></li>
+        <li><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download CV</a></li>
       </ul>
 
       <ul id="outerLinks">
+        <li>
+          <a class="hoverable" href="mailto:brian.g.grieco@gmail.com">
+            <img src="imgs/eMail.png" width="20" alt="email" />
+            <img src="imgs/eMailHover.png" width="20" alt="email" />
+          </a>
+        </li>
         <li>
           <a class="hoverable" href="https://github.com/BGGrieco" target="_blank">
             <img src="imgs/gitHubA.png" width="20" alt="github" />
@@ -43,12 +52,6 @@
           </a>
         </li>
         <li>
-        <li>
-          <a class="hoverable" href="https://dribbble.com/bggrieco" target="_blank">
-            <img src="imgs/dribbble.png" width="20" alt="dribbble" />
-            <img src="imgs/dribbbleHover.png" width="20" alt="dribbble" />
-          </a>
-        </li>
         <a class="hoverable" href="https://www.linkedin.com/in/briangrieco/" target="_blank">
           <img src="imgs/linkedIn.png" width="20" alt="linkedIn" />
           <img src="imgs/linkedInHover.png" width="20" alt="linkedIn" />
@@ -99,10 +102,10 @@
     </div>
 
     <ul id="sideMenuLinks">
-      <li><a href="#" onclick="smoothScroll(document.getElementById('phoneBio'))">Biography</a></li>
       <li><a href="#" onclick="smoothScroll(document.getElementById('phoneSkills'))">Skills</a></li>
-      <li><a href="#" onclick="smoothScroll(document.getElementById('phoneInteractions'))">Interactions</a></li>
       <li><a href="#" onclick="smoothScroll(document.getElementById('phoneDesigns'))">Portfolio</a></li>
+      <li><a href="#" onclick="smoothScroll(document.getElementById('phoneInteractions'))">Interactions</a></li>
+      <li><a href="#" onclick="smoothScroll(document.getElementById('phoneBio'))">Biography</a></li>
       <li><a href="#" onclick="smoothScroll(document.getElementById('moreContainer'))">Contacts</a></li>
     </ul>
   </div>
@@ -113,33 +116,19 @@
     <div id="overlay"></div>
     <div id="wordsContainer">
       <img id="words" src="imgs/header.png" alt="title" />
-      <a href="#bio" class="call bigCall">
+      <a href="#skills" class="call bigCall">
         <p>Show me</p>
         <img class="goArrow rotated" src="imgs/go.png" width="20" alt="arrow" />
       </a>
-      <a href="#phoneBio" class="call phoneCall">
+      <a href="#phoneSkills" class="call phoneCall">
         <p>Show me</p>
         <img class="goArrow rotated" src="imgs/go.png" width="20" alt="arrow" />
       </a>
     </div>
   </div>
 
-  <!--Side Buttons-->
+  <!--Side Button-->
   <div id="sideButtons">
-    <div id="mail" class="side mail">
-      <a href="mailto:brian.g.grieco@gmail.com">
-        <div class="ripple"></div>
-      </a>
-      <div id="mailImg" class="sideimg"></div>
-    </div>
-
-    <div id="civi" class="side civi">
-      <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">
-        <div class="ripple"></div>
-      </a>
-      <div id="civiImg" class="sideimg"></div>
-    </div>
-
     <div id="up" class="side up">
       <a href="#bio">
         <div class="ripple"></div>
@@ -149,38 +138,6 @@
   </div>
 
   <div id="contentContainer">
-    <!--Bio-->
-    <div id="bio"></div>
-    <div id="phoneBio" class="sectionContainer">
-      <h1>BIOGRAPHY</h1>
-      <div id="faceContainer">
-        <img id="face" src="imgs/face2.png" width="200" alt="my face" />
-      </div>
-      <div class="containText">
-        <p>
-          I am a UX/UI designer that specializes in bringing concepts and ideas for mobile applications and websites
-          from sketch to completion, following and tailoring every stage of the process: from initial data models and screen-flows to completed
-          product.
-          <br /><br />
-          I work with a number of tools, most prominently Sketch, Zeplin, Illustrator and Balsamiq Mockups, but I learn new software quickly.
-          Due to my past career in audio production, I also have a lot of experience with audio and video editing
-          software.
-          <br /><br />
-          When I am not working I enjoy practicing Muay Thai, playing video games, reading and hiking. I also have a
-          passion for style and sartorialism.
-          <br /><br />
-          <strong>
-            I built this website without using any UI or animations libraries such as Bootstrap, jQuery UI or
-            ScrollMagic.
-            All the animations, interactions and styling were designed and created by me using CSS3 and
-            some jQuery to trigger the animations.
-          </strong>
-        </p>
-        <div><a href="#" onclick="smoothScroll(document.getElementById('designs'))">Cool. What have you actually done though?</a></div>
-        <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
-      </div>
-    </div>
-
     <!--Skills-->
     <div id="skills"></div>
     <div id="phoneSkills" class="sectionContainer">
@@ -199,9 +156,31 @@
         <div class="columnContainerL">
           <img class="skillIcon" src="imgs/lamp.png" width="50" alt="light bulb icon" />
           <p class="skillTitle">CREATIVE SKILLS:</p>
+          <!--FIGMA-->
+          <div id="fig" class="createContainers">
+            <img src="imgs/fig.png" width="45" alt="figma icon" />
+            <p class="creative">Figma</p>
+            <ul class="pointsR">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+            </ul>
+          </div>
           <!--SKETCH-->
           <div id="ska" class="createContainers">
-            <img src="imgs/ske.png" width="44" alt="sketch icon" />
+            <img src="imgs/ske.png" width="45" alt="sketch icon" />
             <p class="creative">Sketch</p>
             <ul class="pointsR">
               <li>
@@ -239,7 +218,7 @@
                 <div class="point"></div>
               </li>
               <li>
-                <div class="activate"></div>
+                <div class="point"></div>
               </li>
             </ul>
           </div>
@@ -258,38 +237,16 @@
                 <div class="point"></div>
               </li>
               <li>
-                <div class="activate"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-            </ul>
-          </div>
-          <!--ZEPLIN-->
-          <div id="pt" class="createContainers">
-            <img class="displace" src="imgs/zep.png" width="41" alt="zeplin icon" />
-            <p class="creative">Zeplin</p>
-            <ul class="pointsR">
-              <li>
                 <div class="point"></div>
               </li>
               <li>
                 <div class="point"></div>
-              </li>
-              <li>
-                <div class="point"></div>
-              </li>
-              <li>
-                <div class="point"></div>
-              </li>
-              <li>
-                <div class="activate"></div>
               </li>
             </ul>
           </div>
           <!--INVISION-->
-          <div id="pd" class="createContainers">
-            <img class="displace" src="imgs/inv.png" width="41" alt="inVision icon" />
+          <div id="inv" class="createContainers">
+            <img src="imgs/inv.png" width="45" alt="inVision icon" />
             <p class="creative">inVision</p>
             <ul class="pointsR">
               <li>
@@ -305,35 +262,13 @@
                 <div class="point"></div>
               </li>
               <li>
-                <div class="activate"></div>
-              </li>
-            </ul>
-          </div>
-          <!--BALSAMIQ-->
-          <div id="fm" class="createContainers">
-            <img class="displace" src="imgs/bals.png" width="41" alt="balsamiq icon" />
-            <p class="creative">Balsamiq</p>
-            <ul class="pointsR">
-              <li>
                 <div class="point"></div>
-              </li>
-              <li>
-                <div class="point"></div>
-              </li>
-              <li>
-                <div class="point"></div>
-              </li>
-              <li>
-                <div class="activate"></div>
-              </li>
-              <li>
-                <div class="null"></div>
               </li>
             </ul>
           </div>
           <!--PREMIERE PRO-->
           <div id="pr" class="createContainers">
-            <img src="imgs/pr.png" width="45" alt="premiere pro icon" />
+            <img src="imgs/pr.png" width="45" alt="Premiere Pro icon" />
             <p class="creative">Premiere</p>
             <ul class="pointsR">
               <li>
@@ -355,7 +290,7 @@
           </div>
           <!--AFTER EFFECTS-->
           <div id="ae" class="createContainers">
-            <img src="imgs/ae.png" width="45" alt="after effects icon" />
+            <img src="imgs/ae.png" width="45" alt="After Effects icon" />
             <p class="creative">AfterEffects</p>
             <ul class="pointsR">
               <li>
@@ -399,7 +334,7 @@
                 <div class="point"></div>
               </li>
               <li>
-                <div class="activate"></div>
+                <div class="point"></div>
               </li>
             </ul>
           </div>
@@ -421,15 +356,40 @@
                 <div class="point"></div>
               </li>
               <li>
-                <div class="activate"></div>
+                <div class="point"></div>
+              </li>
+            </ul>
+          </div>
+          <!--SASS-->
+          <div id="sass" class="hexagon">
+            <img class="left" src="imgs/sa.png" width="50" alt="Sass icon" />
+            <p class="technicalL">Sass</p>
+            <ul class="pointsL">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
               </li>
             </ul>
           </div>
           <!--JS-->
           <div id="js" class="hexagon">
-            <img class="left" src="imgs/js.png" width="50" alt="javascript icon" />
-            <p class="technicalL">JavaScript</p>
+            <img class="right" src="imgs/js.png" width="50" alt="JavaScript icon" />
+            <p class="technicalR">JavaScript</p>
             <ul class="pointsL">
+              <li>
+                <div class="point"></div>
+              </li>
               <li>
                 <div class="point"></div>
               </li>
@@ -442,15 +402,34 @@
               <li>
                 <div class="activate"></div>
               </li>
+            </ul>
+          </div>
+          <!--JQ-->
+          <div id="jq" class="hexagon">
+            <img class="left" src="imgs/jq.png" width="50" alt="jQuery icon" />
+            <p class="technicalL">jQuery</p>
+            <ul class="pointsL">
               <li>
-                <div class="null"></div>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="activate"></div>
               </li>
             </ul>
           </div>
           <!--REACT-->
           <div id="rea" class="hexagon">
-            <img class="right" src="imgs/react.png" width="48" alt="react icon" />
-            <p class="technicalR">React</p>
+            <img class="right" src="imgs/angular.png" width="48" alt="react icon" />
+            <p class="technicalR">Angular</p>
             <ul class="pointsL">
               <li>
                 <div class="point"></div>
@@ -459,10 +438,10 @@
                 <div class="point"></div>
               </li>
               <li>
-                <div class="activate"></div>
+                <div class="point"></div>
               </li>
               <li>
-                <div class="null"></div>
+                <div class="activate"></div>
               </li>
               <li>
                 <div class="null"></div>
@@ -471,9 +450,15 @@
           </div>
           <!--ANGULAR-->
           <div id="ang" class="hexagon">
-            <img class="left" src="imgs/angular.png" width="50" alt="angular icon" />
-            <p class="technicalL">Angular</p>
+            <img class="left" src="imgs/react.png" width="50" alt="angular icon" />
+            <p class="technicalL">React</p>
             <ul class="pointsL">
+              <li>
+                <div class="point"></div>
+              </li>
+              <li>
+                <div class="point"></div>
+              </li>
               <li>
                 <div class="point"></div>
               </li>
@@ -483,80 +468,142 @@
               <li>
                 <div class="null"></div>
               </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
             </ul>
           </div>
-          <!--PYTHON-->
-          <div id="py" class="hexagon">
-            <img class="right" src="imgs/python.png" width="50" alt="python icon" />
-            <p class="technicalR">Python</p>
-            <ul class="pointsL">
-              <li>
-                <div class="activate"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-            </ul>
-          </div>
-          <!--JAVA-->
-          <div id="java" class="hexagon">
-            <img class="left" src="imgs/java.png" width="50" alt="java icon" />
-            <p class="technicalL">Java</p>
-            <ul class="pointsL">
-              <li>
-                <div class="activate"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-            </ul>
-          </div>
-          <!--PHP-->
-          <div id="php" class="hexagon">
-            <img class="right" src="imgs/php.png" width="50" alt="p.h.p icon" />
-            <p class="technicalR">PHP</p>
-            <ul class="pointsL">
-              <li>
-                <div class="activate"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-              <li>
-                <div class="null"></div>
-              </li>
-            </ul>
-          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Designs-->
+    <div id="designs"></div>
+    <div id="phoneDesigns" class="sectionContainer">
+      <h1>PORTFOLIO</h1>
+      <div class="containText" id="designsText">
+        <p>
+          Below are showcases of some of the projects I have worked on during the years.
+          I have designed and iterated core features and interfaces for a number of products, ranging from hybrid mobile
+          applications such as <a href="https://www.megsupporttools.com">MEG</a>'s Audit Tool, to native Android and iOS
+          applications such as <a href="https://patientmpower.com/">patientMpower</a> and its other flavours and MEG's
+          E-Guides app.<br /><br />My work with <a href="https://www.irishtimes.com" target="_blank">The Irish Times</a> involved a complex news website with extremely varied types of data and
+          interfaces.<br /><br />
+          And I have developed apps in full stack as part of my M.Sc degree.
+        </p>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Sorry, who are you again?</a></div>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('skills'))">How did you say you did all this?</a></div>
+        <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
+      </div>
+
+      <!--Videos-->
+      <div class="videoContainer">
+        <div class="containText videoText">
+          <h2>The Irish Times</h2>
+          <p>
+            <a href="https://www.irishtimes.com" target="_blank">The Irish Times</a> was the first Irish newspaper, and one of the first in the world, to "go digital". It
+            is a long-standing news agency that has evolved much in over 100 years of existence, and today focuses
+            on delivering real, reliable information in an era dominated by conspiracy theories and "fake news".
+            Working on such a well respected and renowned news source is challenging, and has tought me a
+            lot.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - UX research<br />
+            - UX/UI design<br />
+            - User testing<br />
+            - Front-end development
+          </p>
+          <a href="irishTimes.html" class="call solid" target="_blank">
+            <p>Read the story!</p>
+            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
+          </a>
+          <img class="centeredImage" src="imgs/irishtimes.png" style="height: auto; left: 0; width: 100%;"
+            alt="The Irish Times Clock" />
+        </div>
+
+        <div class="containText videoText">
+          <h2>CustomFit</h2>
+          <p>
+            CustomFit is an innovative fitness app based on full workout customisation,
+            progress tracking, non-gendered design and innovative interactions.<br /><br />
+            This was my thesis for my Master of Science degree in Social Media APIs.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - UX research<br />
+            - UX/UI design<br />
+            - User testing<br />
+            - Full stack development
+          </p>
+          <a href="customFit.html" class="call solid" target="_blank">
+            <p>Read the story!</p>
+            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
+          </a>
+          <img class="centeredImage" src="imgs/customFit2.png" height="800" alt="Custom Fit Logo" />
+        </div>
+
+        <div class="containText videoText">
+          <h2>Casa dello Zecchiere</h2>
+          <p>
+            A showcase of the website for <a href="http://www.casadellozecchiere.it/" target="_blank">Casa dello
+              Zecchiere</a>, which I designed and developed.<br /><br />
+            Casa dello Zecchiere is a venue situated in a beautiful historical building in Milan city centre.
+            It is available to book for parties, conferences, art shows, fundraisers etc.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - Flow design<br />
+            - Graphic design<br />
+            - UX/UI design<br />
+            - Full stack development<br />
+          </p>
+        </div>
+        <div class="iframeContainer">
+          <iframe src="https://www.youtube.com/embed/DwV1Lx7nzyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="containText videoText">
+          <h2>MEG Audit Tool</h2>
+          <p>
+            A showcase of the work I have done on <a
+              href="https://play.google.com/store/apps/details?id=com.meg.mat.client" target="_blank">MEG Support Tools'
+              Audit Tool</a>.<br /><br />
+            The MEG Audit Tool is a data collection tool built with Angular 6. As such,
+            it runs on any mobile device and browser, and empowers data collection for
+            hospitals, building sites and any situation that requires auditing or data collection:<br /><br />
+            The video below shows the evolution of flow and UI design in the product.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - UI design<br />
+            - Front-end development<br />
+            - Team management
+          </p>
+        </div>
+        <div class="iframeContainer">
+          <iframe src="https://www.youtube.com/embed/LTZ3EWRk3aY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="containText videoText">
+          <h2>patientMpower</h2>
+          <p>
+            A showcase of the work I have done for <a
+              href="https://play.google.com/store/apps/details?id=com.maithu.transplantbuddy"
+              target="_blank">patientMpower</a>.<br /><br />
+            patientMpower is a data collection app that focuses on empowering patients to directly record
+            quantitative and qualitative data on their condition and share it with their carers and doctors directly.
+            This helps patients better manage their chronic disease, improving their outcomes & providing data to help
+            further medical research.<br /><br />
+            The video below shows the evolution of flow and UI design in the product.<br /><br />
+            <strong>Responsibilities on this project:</strong><br />
+            - UX research<br />
+            - UX/UI design<br />
+            - User testing<br />
+            - Front-end development<br />
+          </p>
+          <a href="pMp.html" class="call solid" target="_blank">
+            <p>Read the story!</p>
+            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
+          </a>
+        </div>
+        <div class="iframeContainer">
+          <iframe src="https://www.youtube.com/embed/sH5WQo2oAIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
@@ -575,7 +622,6 @@
         </p>
         <div><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Sorry, who are you again?</a></div>
         <div><a href="#" onclick="smoothScroll(document.getElementById('skills'))">How did you say you did all this?</a></div>
-        <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
       </div>
 
       <div class="contain">
@@ -598,6 +644,7 @@
                 <div id="fab" class="dot dotDown">
                   <div id=plusContain class="fab rotate">
                     <div id="plus" class="lighten">+</div>
+                    <div class="highlighter"></div>
                   </div>
                 </div>
               </div>
@@ -705,137 +752,34 @@
       </div>
     </div>
 
-    <!--Designs-->
-    <div id="designs"></div>
-    <div id="phoneDesigns" class="sectionContainer">
-      <h1>PORTFOLIO</h1>
-      <div class="containText" id="designsText">
-        <p>
-          Below are showcases of some of the projects I have worked on during the years.
-          I have designed and iterated core features and interfaces for a number of products, ranging from hybrid mobile
-          applications such as <a href="https://www.megsupporttools.com">MEG</a>'s Audit Tool, to native Android and iOS
-          applications such as <a href="https://patientmpower.com/">patientMpower</a> and its other flavours and MEG's
-          E-Guides app.<br /><br />My work with <a href="https://www.irishtimes.com" target="_blank">The Irish Times</a> involved a complex news website with extremely varied types of data and
-          interfaces.<br /><br />
-          And I have developed apps in full stack as part of my M.Sc degree.
-        </p>
-        <div><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Sorry, who are you again?</a></div>
-        <div><a href="#" onclick="smoothScroll(document.getElementById('skills'))">How did you say you did all this?</a></div>
-        <div><a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a></div>
+    <!--Bio-->
+    <div id="bio"></div>
+    <div id="phoneBio" class="sectionContainer">
+      <h1>BIOGRAPHY</h1>
+      <div id="faceContainer">
+        <img id="face" src="imgs/face2.png" width="200" alt="my face" />
       </div>
-
-      <!--Videos-->
-      <div class="videoContainer">
-        <div class="containText videoText">
-          <h2>The Irish Times</h2>
-          <p>
-            <a href="https://www.irishtimes.com" target="_blank">The Irish Times</a> was the first Irish newspaper, and one of the first in the world, to "go digital". It
-            is a long-standing news agency that has evolved much in over 100 years of existence, and today focuses
-            on delivering real, reliable information in an era dominated by conspiracy theories and "fake news".
-            Working on such a well respected and renowned news source is challenging, and has tought me a
-            lot.<br /><br />
-            <strong>Responsibilities on this project:</strong><br />
-            - User testing<br />
-            - UX/UI design<br />
-            - Mentorship<br />
-            - Front-end development
-          </p>
-          <a href="irishTimes.html" class="call solid" target="_blank">
-            <p>Read the story!</p>
-            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
-          </a>
-          <img class="centeredImage" src="imgs/irishtimes.png" style="height: auto; left: 0; width: 100%;"
-            alt="The Irish Times Clock" />
-        </div>
-
-        <div class="containText videoText">
-          <h2>CustomFit</h2>
-          <p>
-            CustomFit is an innovative fitness app based on full workout customisation,
-            progress tracking, non-gendered design and innovative interactions.<br /><br />
-            This was my thesis for my Master of Science degree in Social Media APIs.<br /><br />
-            <strong>Responsibilities on this project:</strong><br />
-            - Flow design<br />
-            - UX/UI design<br />
-            - Mock-ups and testing<br />
-            - Full stack development
-          </p>
-          <a href="customFit.html" class="call solid" target="_blank">
-            <p>Read the story!</p>
-            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
-          </a>
-          <img class="centeredImage" src="imgs/customFit2.png" height="800" alt="Custom Fit Logo" />
-        </div>
-
-        <div class="containText videoText">
-          <h2>patientMpower</h2>
-          <p>
-            A showcase of the work I have done for <a
-              href="https://play.google.com/store/apps/details?id=com.maithu.transplantbuddy"
-              target="_blank">patientMpower</a>.<br /><br />
-            patientMpower is a data collection app that focuses on empowering patients to directly record
-            quantitative and qualitative data on their condition and share it with their carers and doctors directly.
-            This helps patients better manage their chronic disease, improving their outcomes & providing data to help
-            further medical research.<br /><br />
-            The video below shows the evolution of flow and UI design in the product.<br /><br />
-            <strong>Responsibilities on this project:</strong><br />
-            - Flow design<br />
-            - UX/UI design<br />
-            - Mock-ups and testing<br />
-          </p>
-          <a href="pMp.html" class="call solid" target="_blank">
-            <p>Read the story!</p>
-            <img class="goArrow" src="imgs/goDark.png" width="20" alt="arrow" />
-          </a>
-        </div>
-        <div class="iframeContainer">
-          <iframe src="https://www.youtube.com/embed/sH5WQo2oAIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                    picture-in-picture" allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="containText videoText">
-          <h2>Casa dello Zecchiere</h2>
-          <p>
-            A showcase of the website for <a href="http://www.casadellozecchiere.it/" target="_blank">Casa dello
-              Zecchiere</a>, which I designed and developed.<br /><br />
-            Casa dello Zecchiere is a venue situated in a beautiful historical building in Milan city centre.
-            It is available to book for parties, conferences, art shows, fundraisers etc.<br /><br />
-            <strong>Responsibilities on this project:</strong><br />
-            - Flow design<br />
-            - UX/UI design<br />
-            - Full stack development<br />
-          </p>
-        </div>
-        <div class="iframeContainer">
-          <iframe src="https://www.youtube.com/embed/DwV1Lx7nzyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                    picture-in-picture" allowfullscreen>
-          </iframe>
-        </div>
-
-        <div class="containText videoText">
-          <h2>MEG Audit Tool</h2>
-          <p>
-            A showcase of the work I have done on <a
-              href="https://play.google.com/store/apps/details?id=com.meg.mat.client" target="_blank">MEG Support Tools'
-              Audit Tool</a>.<br /><br />
-            The MEG Audit Tool is a data collection tool built with Angular 6. As such,
-            it runs on any mobile device and browser, and empowers data collection for
-            hospitals, building sites and any situation that requires auditing or data collection:<br /><br />
-            The video below shows the evolution of flow and UI design in the product.<br /><br />
-            <strong>Responsibilities on this project:</strong><br />
-            - Flow design<br />
-            - UX/UI design<br />
-            - Mock-ups and testing<br />
-            - Front-end development<br />
-            - Team management
-          </p>
-        </div>
-        <div class="iframeContainer">
-          <iframe src="https://www.youtube.com/embed/LTZ3EWRk3aY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                    picture-in-picture" allowfullscreen>
-          </iframe>
-        </div>
+      <div class="containText">
+        <p>
+          I am a UX/UI designer that specializes in bringing concepts and ideas for mobile applications and websites
+          from sketch to completion, following and tailoring every stage of the process: from initial data models and screen-flows to completed
+          product.
+          <br /><br />
+          I work with a number of tools, most prominently Sketch, Zeplin, Illustrator and Balsamiq Mockups, but I learn new software quickly.
+          Due to my past career in audio production, I also have a lot of experience with audio and video editing
+          software.
+          <br /><br />
+          When I am not working I enjoy practicing Muay Thai, playing video games, reading and hiking. I also have a
+          passion for style and sartorialism.
+          <br /><br />
+          <strong>
+            I built this website without using any UI or animations libraries such as Bootstrap, jQuery UI or
+            ScrollMagic.
+            All the animations, interactions and styling were designed and created by me using CSS3 and
+            some jQuery to trigger the animations.
+          </strong>
+        </p>
+        <div><a href="#" onclick="smoothScroll(document.getElementById('designs'))">Cool. What have you actually done though?</a></div>
       </div>
     </div>
 
@@ -849,7 +793,7 @@
           <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">Download my CV</a>
         </p>
         <p>
-          <a href="https://dribbble.com/bggrieco" target="_blank">Visit my Dribbble account.</a><br />
+          <a href="https://dribbble.com/bggrieco/shots" target="_blank">Visit my Dribbble account.</a><br />
         </p>
         <p>
           <a href="https://codepen.io/BGGrieco/" target="_blank">Visit my Codepen page.</a>

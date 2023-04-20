@@ -8,39 +8,6 @@ $(document).ready(function () {
     $('#sideMenu').toggleClass('opened closed');
   });
 
-  // Animated logo section.
-  $('.attention').mouseup(function () {
-    $(this).css({
-      'animation-play-state': 'paused'
-    });
-    changeImage();
-  });
-
-  var newsrc = 0;
-
-  function changeImage() {
-    if (newsrc === 0) {
-      $('#logo').css('left', '-10');
-      document.images['pic'].style.top = '-3px';
-      document.images['pic'].style.left = '-3px';
-      document.images['pic'].src = 'imgs/materialLogo.png';
-      document.images['pic'].width = '70';
-      newsrc = 1;
-    } else if (newsrc === 1) {
-      document.images['pic'].src = 'imgs/appleLogo.png';
-      document.images['pic'].width = '65';
-      document.images['pic'].style.top = '-2px';
-      document.images['pic'].style.left = '-2px';
-      newsrc = 2;
-    } else {
-      document.images['pic'].src = 'imgs/logo.png';
-      document.images['pic'].width = '60';
-      document.images['pic'].style.top = '0px';
-      document.images['pic'].style.left = '0px';
-      newsrc = 0;
-    }
-  }
-
   // Scroll animations
   $(window).scroll(function () {
     if ($(window).scrollTop() > 500) {
@@ -127,6 +94,7 @@ $(document).ready(function () {
     $('.bigTwo').toggleClass('bigTwoOn');
     $('.bigThree').toggleClass('bigThreeOn');
     $('.bigFour').toggleClass('bigFourOn');
+    $('.highlighter').hide(0);
   });
 
   // Nav Menu Animations
