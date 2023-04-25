@@ -118,7 +118,7 @@ p {
 }
 
 .mask {
-  width: 55%;
+  width: 50%;
   max-height: 250px;
   overflow: hidden;
 }
@@ -298,8 +298,9 @@ p {
   }
 
   .mask {
-    width: 100%;
+    margin-top: 12px;
     max-height: 350px;
+    width: 100%;
   }
 
   .band .images,
