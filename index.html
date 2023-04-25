@@ -20,7 +20,7 @@
     <div class="navbarContent">
       <a href="index.html">
         <div id="logo">
-          <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
+          <img id="change" src="imgs/logo.png" width="50" alt="logo" />
         </div>
       </a>
       <ul id="innerLinks">
@@ -86,7 +86,7 @@
           <img class="mobileimg" src="imgs/download.png" width="31" style="top: 14px; left: -2px;" alt="cv" />
         </li>
         <li>
-          <a href="#phoneBio">
+          <a href="#phoneStart">
             <div class="ripple"></div>
           </a>
           <img class="mobileimg" src="imgs/up.png" width="14" style="top: 14px; left: -1px;" alt="up" />
@@ -97,9 +97,11 @@
 
   <!--Side Menu-->
   <div id="sideMenu" class="closed">
-    <div id="logo">
-      <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
-    </div>
+    <a href="index.html">
+      <div id="logo">
+        <img id="change" src="imgs/logo.png" width="50" alt="logo" />
+      </div>
+    </a>
 
     <ul id="sideMenuLinks">
       <li><a href="#" onclick="smoothScroll(document.getElementById('phoneSkills'))">Skills</a></li>
@@ -116,11 +118,11 @@
     <div id="overlay"></div>
     <div id="wordsContainer">
       <img id="words" src="imgs/header.png" alt="title" />
-      <a href="#skills" class="call bigCall">
+      <a href="#start" class="call bigCall">
         <p>Show me</p>
         <img class="goArrow rotated" src="imgs/go.png" width="20" alt="arrow" />
       </a>
-      <a href="#phoneSkills" class="call phoneCall">
+      <a href="#phoneStart" class="call phoneCall">
         <p>Show me</p>
         <img class="goArrow rotated" src="imgs/go.png" width="20" alt="arrow" />
       </a>
@@ -130,7 +132,7 @@
   <!--Side Button-->
   <div id="sideButtons">
     <div id="up" class="side up">
-      <a href="#bio">
+      <a href="#start">
         <div class="ripple"></div>
       </a>
       <div id="upImg" class="sideimg"></div>
@@ -138,6 +140,12 @@
   </div>
 
   <div id="contentContainer">
+    <div id="start"></div>
+    <div id="phoneStart" class="sectionContainer">
+      <h1>Brian Guido Grieco</h1>
+      <p>UX researcher, UI designer, and front-end developer.</p>
+      <p><b>Location:</b> Milano, Italy.</p>
+    </div>
     <!--Skills-->
     <div id="skills"></div>
     <div id="phoneSkills" class="sectionContainer">
@@ -539,10 +547,10 @@
         <div class="containText videoText">
           <h2>Casa dello Zecchiere</h2>
           <p>
-            A showcase of the website for <a href="http://www.casadellozecchiere.it/" target="_blank">Casa dello
-              Zecchiere</a>, which I designed and developed.<br /><br />
-            Casa dello Zecchiere is a venue situated in a beautiful historical building in Milan city centre.
-            It is available to book for parties, conferences, art shows, fundraisers etc.<br /><br />
+            A showcase of the website for Casa dello
+              Zecchiere, which I designed and developed.<br /><br />
+            Casa dello Zecchiere was a venue situated in a beautiful historical building in Milan city centre,
+            available to book for parties, conferences, art shows, fundraisers etc.<br /><br />
             <strong>Responsibilities on this project:</strong><br />
             - Flow design<br />
             - Graphic design<br />
@@ -614,11 +622,11 @@
       <h1>INTERACTIONS</h1>
       <div class="containText">
         <p>
-          Here you can view and engage with interactions I created for hybrid mobile applications.
-          Some of these are original interactions I experimented with while developing
-          my first applications, others are standard interactions that are common in native
-          applications, but are recreated here using JavaScript and HTML. I aim to create hybrid
-          applications that retain a native appearance and feel. Interact with the virtual phones to get an idea!
+          Here you can view and engage with interactions I created for hybrid mobile applications.</br> </br>
+          While researching usability in digital products for my M.Sc. thesis, I was struck at how videogames, particularly
+          fast-paced action games, use radial menus for quick selection of items. It was clear that this type of menu
+          allowed for intuitive selection of its items, and I decided to design some radial menu interactions for hybrid mobile applications.</br></br>
+          Interact with the buttons below to experience my radial menu designs!
         </p>
         <div><a href="#" onclick="smoothScroll(document.getElementById('bio'))">Sorry, who are you again?</a></div>
         <div><a href="#" onclick="smoothScroll(document.getElementById('skills'))">How did you say you did all this?</a></div>
@@ -824,6 +832,7 @@
     </div>
   </div>
 
+  <div id="dimmer" class="lighter"></div>
   <div id="fader"></div>
 
   <script type="text/javascript" src="js/jQuery.js"></script>

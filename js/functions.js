@@ -2,10 +2,24 @@ $(document).ready(function () {
 
   // Burger menu animations
   $('#navBurger, #sideMenuLinks').click(function () {
+    aniMations();
+  });
+
+  function aniMations() {
     $('.rotateBurger').toggleClass('rotateAgain');
     $('.burgerTop').toggleClass('arrowTop');
     $('.burgerBot').toggleClass('arrowBot');
     $('#sideMenu').toggleClass('opened closed');
+    $('#dimmer').toggleClass('darker lighter');
+  };
+  // Click out to close menu
+  $('#dimmer').click(function(event) {
+    var $target = $(event.target);
+    console.log($target);
+    if(!$target.closest('#sideMenu').length &&
+    $('#sideMenu').is(':visible')) {
+      aniMations();
+    }
   });
 
   // Scroll animations
@@ -14,16 +28,12 @@ $(document).ready(function () {
       $('#navBar').addClass('navOn');
     }
     if ($(window).scrollTop() > 800) {
-      $('.mail').addClass('mailOn');
-      $('.civi').addClass('civiOn');
       $('.up').addClass('upOn');
     }
     if ($(window).scrollTop() < 500) {
       $('#navBar').removeClass('navOn');
     }
     if ($(window).scrollTop() < 800) {
-      $('.mail').removeClass('mailOn');
-      $('.civi').removeClass('civiOn');
       $('.up').removeClass('upOn');
     }
   });
@@ -210,6 +220,37 @@ $(document).ready(function () {
         console.log('Page is: ' + page);
     }
     roundMenu();
+  });
+
+  // Enlarge images on onclick
+  $('.enlargeable').click(function () {
+      $('#darken').css({'display': 'block'});
+      var newsrc = $(this).attr('src');
+      console.log(newsrc);
+      document.images['pic'].src = newsrc;
+  });
+
+  var zoomImage = document.getElementsByClassName('imageContainer');
+  for(var i = 0; i < zoomImage.length; i++) {
+    (function(index) {
+      zoomImage[index].addEventListener('click', function() {
+         if($(this).hasClass('zoomed')) {
+           $(this).removeClass('zoomed');
+         } else {
+           $(this).addClass('zoomed');
+         }
+       })
+    })(i);
+  }
+
+  // Click out to close zoom
+  $('#darken').click(function(event) {
+    var $target = $(event.target);
+    console.log($target);
+    if(!$target.closest('.imageContainer').length &&
+    $('.imageContainer').is(':visible')) {
+      $('#darken').hide();
+    }
   });
 
   // Fade Content Animation
