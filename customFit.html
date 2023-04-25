@@ -19,20 +19,26 @@
   <!--Nav Bar-->
   <div id="navBar" class="nav">
     <div class="navbarContent">
-      <a href="index.html#bio">
+      <a href="index.html">
         <div id="logo">
-          <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
+          <img id="change" src="imgs/logo.png" width="50" alt="logo" />
         </div>
       </a>
       <ul id="innerLinks">
-        <li><a href="index.html#bio">Biography</a></li>
         <li><a href="index.html#skills">Skills</a></li>
-        <li><a href="index.html#interactions">Interactions</a></li>
         <li><a href="index.html#designs">Portfolio</a></li>
-        <li><a href="index.html#moreContainer">Contacts</a></li>
+        <li><a href="index.html#interactions">Interactions</a></li>
+        <li><a href="index.html#bio">Biography</a></li>
+        <li><a href="index.html#more">Contacts</a></li>
       </ul>
 
       <ul id="outerLinks">
+        <li>
+          <a class="hoverable" href="mailto:brian.g.grieco@gmail.com">
+            <img src="imgs/eMail.png" width="20" alt="email" />
+            <img src="imgs/eMailHover.png" width="20" alt="email" />
+          </a>
+        </li>
         <li>
           <a class="hoverable" href="https://github.com/BGGrieco" target="_blank">
             <img src="imgs/gitHubA.png" width="20" alt="github" />
@@ -46,12 +52,6 @@
           </a>
         </li>
         <li>
-        <li>
-          <a class="hoverable" href="https://dribbble.com/bggrieco" target="_blank">
-            <img src="imgs/dribbble.png" width="20" alt="dribbble" />
-            <img src="imgs/dribbbleHover.png" width="20" alt="dribbble" />
-          </a>
-        </li>
         <a class="hoverable" href="https://www.linkedin.com/in/briangrieco/" target="_blank">
           <img src="imgs/linkedIn.png" width="20" alt="linkedIn" />
           <img src="imgs/linkedInHover.png" width="20" alt="linkedIn" />
@@ -77,19 +77,19 @@
           <a href="mailto:brian.g.grieco@gmail.com">
             <div class="ripple"></div>
           </a>
-          <img class="sideimg" src="imgs/mail.png" width="25" style="top: 14px; left: -1px;" alt="e-mail" />
+          <img class="mobileimg" src="imgs/mail.png" width="25" style="top: 14px; left: -1px;" alt="e-mail" />
         </li>
         <li>
           <a href="cv/bggriecoCV.pdf" download="BrianGrieco_CV.pdf" target="_blank">
             <div class="ripple"></div>
           </a>
-          <img class="sideimg" src="imgs/download.png" width="31" style="top: 14px; left: -2px;" alt="cv" />
+          <img class="mobileimg" src="imgs/download.png" width="31" style="top: 14px; left: -2px;" alt="cv" />
         </li>
         <li>
-          <a href="#header">
+          <a href="#top">
             <div class="ripple"></div>
           </a>
-          <img class="sideimg" src="imgs/up.png" width="14" style="top: 14px; left: -1px;" alt="up" />
+          <img class="mobileimg" src="imgs/up.png" width="14" style="top: 14px; left: -1px;" alt="up" />
         </li>
       </ul>
     </div>
@@ -97,22 +97,23 @@
 
   <!--Side Menu-->
   <div id="sideMenu" class="closed">
-    <a href="index.html#phoneBio">
-      <div id="logo" class="attention">
-        <img id="change" name="pic" src="imgs/logo.png" width="60" alt="logo" />
+    <a href="index.html">
+      <div id="logo">
+        <img id="change" src="imgs/logo.png" width="50" alt="logo" />
       </div>
     </a>
 
     <ul id="sideMenuLinks">
-      <li><a href="index.html#phoneBio">Biography</a></li>
       <li><a href="index.html#phoneSkills">Skills</a></li>
-      <li><a href="index.html#phoneInteractions">Interactions</a></li>
       <li><a href="index.html#phoneDesigns">Portfolio</a></li>
-      <li><a href="index.html#moreContainer">Contacts</a></li>
+      <li><a href="index.html#phoneInteractions">Interactions</a></li>
+      <li><a href="index.html#phoneBio">Biography</a></li>
+      <li><a href="index.html#more">Contacts</a></li>
     </ul>
   </div>
 
   <div id="contentContainer">
+    <div id="top"></div>
     <!--Header-->
     <div id="header">
       <img class="storyHeader" src="imgs/customFitHeader.png" alt="backgroundImage" />
@@ -237,13 +238,13 @@
 
     <div id="footer">
       <div class="containText">
-        <p class="footerText">Brian G. Grieco | Tel: +353 87 975 3550 | <a
+        <p class="footerText">Brian G. Grieco | Tel: +39 370 702 6255 | <a
             href="mailto:brian.g.grieco@gmail.com">brian.g.grieco@gmail.com</a></p>
       </div>
     </div>
   </div>
 
-  <!-- <div id="dimmer"></div> -->
+  <div id="dimmer" class="lighter"></div>
   <div id="fader"></div>
 
   <script type="text/javascript" src="js/jQuery.js"></script>

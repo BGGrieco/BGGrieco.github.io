@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Roboto";
-  src: url("/font/Roboto-Regular.ttf") format('truetype');
+  src: url("../font/Roboto-Regular.ttf") format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("/font/Roboto-Bold.ttf") format('truetype');
+  src: url("../font/Roboto-Bold.ttf") format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -96,7 +96,6 @@ li {
   top: -96px;
   left: 0;
   width: 100%;
-  height: 80px;
   background-color: #fafafa;
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -154,124 +153,23 @@ li {
 }
 
 .navbarContent {
-  width: 60%;
-  position: relative;
-  margin: auto;
+  margin: 8px auto 6px auto;
   max-width: 1000px;
+  position: relative;
+  width: 60%;
 }
 
 #logo {
   position: relative;
-  top: 10px;
-  width: 60px;
+  width: 50px;
   cursor: pointer;
   z-index: 3;
 }
 
-#change {
-  position: relative;
-  pointer-events: none;
-  cursor: pointer;
-  -webkit-animation: bounce 2.8s linear infinite;
-  animation: bounce 2.8s linear infinite;
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    bottom: 0;
-  }
-
-  3% {
-    bottom: 0;
-  }
-
-  6% {
-    bottom: 5px;
-  }
-
-  8% {
-    bottom: 8px;
-  }
-
-  10% {
-    bottom: 5px;
-  }
-
-  13% {
-    bottom: 0;
-  }
-
-  16% {
-    bottom: 4px;
-  }
-
-  18% {
-    bottom: 6px;
-  }
-
-  20% {
-    bottom: 4px;
-  }
-
-  23% {
-    bottom: 0;
-  }
-
-  100% {
-    bottom: 0;
-  }
-}
-
-@keyframes bounce {
-  0% {
-    bottom: 0;
-  }
-
-  3% {
-    bottom: 0;
-  }
-
-  6% {
-    bottom: 5px;
-  }
-
-  8% {
-    bottom: 8px;
-  }
-
-  10% {
-    bottom: 5px;
-  }
-
-  13% {
-    bottom: 0;
-  }
-
-  16% {
-    bottom: 4px;
-  }
-
-  18% {
-    bottom: 6px;
-  }
-
-  20% {
-    bottom: 4px;
-  }
-
-  23% {
-    bottom: 0;
-  }
-
-  100% {
-    bottom: 0;
-  }
-}
-
 #innerLinks {
+  left: 20px;
   position: absolute;
-  top: 13px;
-  left: 30px;
+  top: 0;
   z-index: 2;
 }
 
@@ -286,9 +184,10 @@ li {
 }
 
 #outerLinks {
+  margin: 12px 0 0 0;
   position: absolute;
-  top: 12px;
   right: 0;
+  top: 0;
 }
 
 #outerLinks a {
@@ -489,7 +388,7 @@ span {
 #sideButtons {
   position: fixed;
   right: 80px;
-  top: 130px;
+  bottom: 75px;
   z-index: 4;
   -webkit-animation: sideButtonsFade 1s forwards;
   animation: sideButtonsFade 1s forwards;
@@ -546,30 +445,6 @@ span {
   z-index: 1;
 }
 
-#mailImg {
-  background: url('../imgs/mail.png') center no-repeat;
-  background-size: 55%;
-}
-
-.mail {
-  left: 0;
-  -webkit-animation: slideOut 0.3s ease-in forwards;
-  animation: slideOut 0.3s ease-in forwards;
-}
-
-#civiImg {
-  background: url('../imgs/download.png') 45% 45% no-repeat;
-  background-size: 62%;
-}
-
-.civi {
-  left: 0;
-  -webkit-animation: slideOut 0.3s ease-in forwards;
-  animation: slideOut 0.3s ease-in forwards;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-}
-
 #upImg {
   background: url('../imgs/up.png') center no-repeat;
   background-size: 30%;
@@ -581,20 +456,6 @@ span {
   animation: slideOut 0.3s ease-in forwards;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
-}
-
-.mailOn {
-  left: 137px;
-  -webkit-animation: slideIn 0.3s ease-out forwards;
-  animation: slideIn 0.3s ease-out forwards;
-}
-
-.civiOn {
-  left: 137px;
-  -webkit-animation: slideIn 0.3s ease-out forwards;
-  animation: slideIn 0.3s ease-out forwards;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
 }
 
 .upOn {
@@ -654,13 +515,22 @@ span {
   width: 100%;
 }
 
+#start {
+  position: relative;
+  top: -60px;
+}
+
+#phoneStart {
+  text-align: center;
+}
+
 /*
 *
 *
 /* BIOGRAPHY SECTION */
 #bio {
-  position: absolute;
-  top: -80px;
+  position: relative;
+  top: -60px;
 }
 
 .sectionContainer {
@@ -707,7 +577,7 @@ span {
 /* SKILLS SECTION */
 #skills {
   position: relative;
-  top: -80px;
+  top: -60px;
 }
 
 .contain {
@@ -846,12 +716,6 @@ span {
   height: 25px;
 }
 
-.displace {
-  position: relative;
-  top: 2px;
-  left: 2px;
-}
-
 .creative {
   position: absolute;
   left: 80px;
@@ -876,7 +740,7 @@ span {
 /* INTERACTIONS SECTION */
 #interactions {
   position: relative;
-  top: -80px;
+  top: -60px;
 }
 
 #radial {
@@ -1037,6 +901,10 @@ span {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+}
+
+#plusContain .highlighter {
+  top: -15px;
 }
 
 #plus {
@@ -2205,7 +2073,7 @@ span {
 /* DESIGNS SECTION */
 #designs {
   position: relative;
-  top: -80px;
+  top: -60px;
 }
 
 .centeredImage {
@@ -2249,7 +2117,7 @@ span {
 /* MORE SECTION */
 #more {
   position: relative;
-  top: -80px;
+  top: -60px;
 }
 
 #moreContainer {
@@ -2700,20 +2568,69 @@ span {
   }
 }
 
-/* #dimmer {
-  display: none;
-} */
-
 #dimmer {
-  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  color: red;
-  opacity: 0.5;
+  width: 100vw;
   z-index: 4;
+}
+
+.darker {
+  -webkit-animation: openDarker 0.3s ease-out forwards;
+  animation: openDarker 0.3s ease-out forwards;
+}
+
+.lighter {
+  display: none;
+  -webkit-animation: closeDarker 0.3s ease-out forwards;
+  animation: closeDarker 0.3s ease-out forwards;
+}
+
+@-webkit-keyframes openDarker {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes openDarker {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes closeDarker {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@keyframes closeDarker {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
 }
 
 /* ADAPTIVE RULES */
@@ -2727,6 +2644,7 @@ span {
   }
 
   #sideButtons {
+    bottom: 45px;
     right: 50px;
   }
 }
@@ -2734,6 +2652,7 @@ span {
 @media screen and (max-width: 1000px) {
 
   #sideButtons {
+    bottom: 20px;
     right: 20px;
   }
 
@@ -2789,6 +2708,9 @@ span {
 }
 
 @media screen and (max-width: 760px) {
+  h1 {
+    padding-top: 12px;
+  }
 
   .phoneL,
   .phoneR {
@@ -2910,7 +2832,7 @@ span {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 820px) {
   #navBar {
     display: none;
   }
