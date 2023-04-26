@@ -717,7 +717,7 @@ span {
 
 .creative {
   position: absolute;
-  left: 80px;
+  left: 86px;
   top: -3px;
 }
 
@@ -2770,12 +2770,6 @@ span {
 }
 
 @media screen and (max-width: 580px) {
-  .creative {
-    font-size: 14px;
-    top: 0;
-    left: 60px
-  }
-
   .technical,
   .creative {
     font-size: 14px;
