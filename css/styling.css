@@ -1,14 +1,24 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../font/Roboto-Regular.ttf") format('truetype');
-  font-weight: 400;
+  font-family: "Thin";
+  src: url("../font/WorkSans-ExtraLight.ttf") format('truetype');
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../font/Roboto-Bold.ttf") format('truetype');
-  font-weight: 700;
+  font-family: "Light";
+  src: url("../font/WorkSans-Light.ttf") format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("../font/WorkSans-Regular.ttf") format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heavy";
+  src: url("../font/WorkSans-Medium.ttf") format('truetype');
   font-style: normal;
 }
 
@@ -19,12 +29,17 @@ body {
 }
 
 body {
-  font-family: "Roboto";
   color: #202020;
+  font-family: "Light";
 }
 
 h1 {
+  font-family: "Thin";
   text-align: center;
+}
+
+strong {
+  font-family: "Regular";
 }
 
 p {
@@ -32,8 +47,9 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: #202020;
+  font-family: "Regular";
+  text-decoration: none;
 }
 
 a:hover {
@@ -270,7 +286,7 @@ li {
   color: #202020;
   border-top: 1px solid white;
   border-left: 1px solid white;
-  width: 173px;
+  width: 190px;
   text-decoration: none;
   -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
@@ -524,6 +540,10 @@ span {
   text-align: center;
 }
 
+#phoneStart h1 {
+  font-family: "Light";
+}
+
 /*
 *
 *
@@ -567,10 +587,6 @@ span {
   width: 60%;
 }
 
-.containText a {
-  text-decoration: underline;
-}
-
 /*
 *
 *
@@ -612,8 +628,9 @@ span {
 }
 
 .skillTitle {
-  position: absolute;
+  font-family: "Heavy";
   left: 80px;
+  position: absolute;
   top: -5px;
 }
 
@@ -716,14 +733,16 @@ span {
 }
 
 .creative {
-  position: absolute;
+  font-family: "Regular";
   left: 86px;
+  position: absolute;
   top: -3px;
 }
 
 .technical {
-  position: absolute;
+  font-family: "Regular";
   left: 96px;
+  position: absolute;
   top: -5px;
 }
 
@@ -737,9 +756,9 @@ span {
 }
 
 #radial {
-  position: relative;
   margin: auto;
   pointer-events: none;
+  position: relative;
 }
 
 .phoneL {
@@ -2117,10 +2136,14 @@ span {
   border-bottom: none;
 }
 
+#moreText h2 {
+  font-family: "Thin";
+}
+
 #moreText img {
+  margin-right: 10px;
   position: relative;
   top: 3px;
-  margin-right: 10px;
 }
 
 /*
@@ -2815,6 +2838,12 @@ span {
   .sketchR {
     left: 20px;
     top: -550px;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 900px) {
+  #innerLinks a {
+    margin-left: 6px;
   }
 }
 
