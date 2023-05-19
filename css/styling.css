@@ -190,7 +190,7 @@ li {
 }
 
 #innerLinks a {
-  margin-left: 20px;
+  margin-left: 12px;
   color: #b0b0b0;
 }
 
@@ -523,7 +523,7 @@ span {
 }
 
 #contentContainer {
-  background-color: #e8e8e8;
+  background-color: #f0f0f0;
   left: 0;
   overflow: hidden;
   position: absolute;
@@ -780,7 +780,7 @@ span {
   width: 273px;
   height: 603px;
   border-radius: 35px;
-  background-color: #e8e8e8;
+  background-color: #f0f0f0;
   -webkit-box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.2);
   box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -792,7 +792,7 @@ span {
   top: 33px;
   width: 263px;
   height: 542px;
-  background-color: #e8e8e8;
+  background-color: #f0f0f0;
   pointer-events: auto;
   z-index: 2;
 }
@@ -1446,7 +1446,7 @@ span {
   width: 273px;
   height: 603px;
   border-radius: 35px;
-  background-color: #e8e8e8;
+  background-color: #f0f0f0;
   -webkit-box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.2);
   box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -1458,7 +1458,7 @@ span {
   top: 33px;
   width: 263px;
   height: 542px;
-  background-color: #e8e8e8;
+  background-color: #f0f0f0;
   overflow: hidden;
   pointer-events: auto;
   z-index: 2;
