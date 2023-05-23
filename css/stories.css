@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
 }
 
 h1 {
@@ -17,7 +17,7 @@ p {
 #header {
   width: 60%;
   left: 20%;
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -67,7 +67,7 @@ p {
 }
 
 .containText {
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
   padding-top: 12px;
 }
 
