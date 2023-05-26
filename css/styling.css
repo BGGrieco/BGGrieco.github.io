@@ -2082,7 +2082,28 @@ span {
 /*
 *
 *
-/* DESIGNS SECTION */
+/* PORTFOLIO SECTION */
+
+.anchor {
+  border-bottom: 1px solid #202020;
+  display: flex;
+  font-family: "Light";
+  justify-content: space-between;
+}
+
+svg {
+  fill: #202020;
+  margin-top: 26px;
+}
+
+.anchor:hover > svg {
+  fill: #4a86e8;
+}
+
+/*
+*
+*
+/* EXPERIENCE SECTION */
 #designs {
   position: relative;
   top: -60px;
