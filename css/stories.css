@@ -7,7 +7,9 @@ h1 {
 }
 
 h2 {
-  margin-top: 0;
+  border-bottom: 1px solid #202020;
+  margin: -7px 0 12px 0;
+  padding-bottom: 12px;
 }
 
 p {
@@ -82,15 +84,22 @@ p {
 .flexContainer {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+}
+
+.flexContainer h1 {
+  border-top: 5px solid #ffffff;
+  margin-left: calc(50% - 50vw);
+  padding-top: 20px;
+  width: 100vw;
 }
 
 .band {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #202020;
 }
 
 .band .images,

@@ -544,15 +544,15 @@ span {
   font-family: "Light";
 }
 
-/*
-*
-*
-/* BIOGRAPHY SECTION */
-#bio {
+.sectionAnchor {
   position: relative;
   top: -60px;
 }
 
+/*
+*
+*
+/* BIOGRAPHY SECTION */
 .sectionContainer {
   position: relative;
   width: 100%;
@@ -591,11 +591,6 @@ span {
 *
 *
 /* SKILLS SECTION */
-#skills {
-  position: relative;
-  top: -60px;
-}
-
 .contain {
   position: relative;
   margin: auto;
@@ -750,11 +745,6 @@ span {
 *
 *
 /* INTERACTIONS SECTION */
-#interactions {
-  position: relative;
-  top: -60px;
-}
-
 #radial {
   margin: auto;
   pointer-events: none;
@@ -2083,7 +2073,6 @@ span {
 *
 *
 /* PORTFOLIO SECTION */
-
 .anchor {
   border-bottom: 1px solid #202020;
   display: flex;
@@ -2104,11 +2093,6 @@ svg {
 *
 *
 /* EXPERIENCE SECTION */
-#designs {
-  position: relative;
-  top: -60px;
-}
-
 .centeredImage {
   position: relative;
   display: block;
@@ -2148,11 +2132,6 @@ svg {
 *
 *
 /* MORE SECTION */
-#more {
-  position: relative;
-  top: -60px;
-}
-
 #moreContainer {
   border-bottom: none;
 }
