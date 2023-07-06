@@ -16,6 +16,10 @@ p {
   margin: 0;
 }
 
+p.caption {
+  font-size: 12px;
+}
+
 #header {
   width: 60%;
   left: 20%;
@@ -110,8 +114,9 @@ p {
 
 .images {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   height: fit-content;
+  justify-content: space-between;
 }
 
 .images img {
