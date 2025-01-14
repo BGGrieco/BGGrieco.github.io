@@ -1,0 +1,372 @@
+@keyframes fadeLoadingScreen {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes elevate {
+    from {
+        -webkit-backdrop-filter: blur(8px) saturate(1);
+        backdrop-filter: blur(8px) saturate(1);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    to {
+        -webkit-backdrop-filter: blur(24px) saturate(5);
+        backdrop-filter: blur(24px) saturate(5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
+        color: #6f6af8;
+    }
+}
+
+@keyframes sink {
+    from {
+        -webkit-backdrop-filter: blur(24px) saturate(5);
+        backdrop-filter: blur(24px) saturate(5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.5), rgba(200, 200, 200, 0.4));
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.2);
+        color: #6f6af8;
+    }
+
+    to {
+        -webkit-backdrop-filter: blur(8px) saturate(1);
+        backdrop-filter: blur(8px) saturate(1);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.3), rgba(200, 200, 200, 0.2));
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes colorIt {
+    from {
+        stroke: rgba(0, 0, 0, 0.8);
+    }
+
+    to {
+        stroke: rgba(111, 106, 248, 1);
+    }
+}
+
+@keyframes deColorIt {
+    from {
+        stroke: rgba(111, 106, 248, 1);
+    }
+
+    to {
+        stroke: rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        right: 26px;
+    }
+
+    to {
+        right: 48px;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        right: 48px;
+    }
+
+    to {
+        right: 26px;
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: -1px;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -100px;
+    }
+}
+
+@keyframes shrink {
+    from {
+        -webkit-backdrop-filter: blur(8px) saturate(3);
+        backdrop-filter: blur(8px) saturate(3);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.4);
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+    to {
+        -webkit-backdrop-filter: blur(4px) saturate(2.5);
+        backdrop-filter: blur(4px) saturate(2.5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.6);
+        height: 95%;
+        margin: 2.5% 0 0 2.5%;
+        width: 95%;
+    }
+}
+
+@keyframes shrinkSmallScreen {
+    from {
+        -webkit-backdrop-filter: blur(8px) saturate(3);
+        backdrop-filter: blur(8px) saturate(3);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+    to {
+        -webkit-backdrop-filter: blur(4px) saturate(2.5);
+        backdrop-filter: blur(4px) saturate(2.5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        height: 95%;
+        margin: 2.5% 0 0 2.5%;
+        width: 95%;
+    }
+}
+
+@keyframes expand {
+    from {
+        -webkit-backdrop-filter: blur(4px) saturate(2.5);
+        backdrop-filter: blur(4px) saturate(2.5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+        height: 95%;
+        margin: 2.5% 0 0 2.5%;
+        width: 95%;
+    }
+
+    to {
+        -webkit-backdrop-filter: blur(8px) saturate(3);
+        backdrop-filter: blur(8px) saturate(3);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.6);
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@keyframes expandSmallScreen {
+    from {
+        -webkit-backdrop-filter: blur(4px) saturate(2.5);
+        backdrop-filter: blur(4px) saturate(2.5);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.2), rgba(200, 200, 200, 0.1));
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        height: 95%;
+        margin: 2.5% 0 0 2.5%;
+        width: 95%;
+    }
+
+    to {
+        -webkit-backdrop-filter: blur(8px) saturate(3);
+        backdrop-filter: blur(8px) saturate(3);
+        background: radial-gradient(farthest-corner at 0 0, rgba(255, 255, 255, 0.6), rgba(200, 200, 200, 0.4));
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.4);
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@keyframes enlarge {
+    from {
+        -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        height: auto;
+        top: 15%;
+        width: 60%;
+    }
+
+    to {
+        -webkit-filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        height: auto;
+        top: 5%;
+        width: 75%;
+    }
+}
+
+@keyframes deflate {
+    from {
+        -webkit-filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(8px 8px 24px rgba(0, 0, 0, 0.3));
+        height: auto;
+        top: 5%;
+        width: 75%;
+    }
+
+    to {
+        -webkit-filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.2));
+        height: auto;
+        top: 15%;
+        width: 60%;
+    }
+}
+
+@keyframes enlargeSmall {
+    from {
+        height: auto;
+        top: 15%;
+        width: 40%;
+    }
+
+    to {
+        height: auto;
+        top: 5%;
+        width: 50%;
+    }
+}
+
+@keyframes deflateSmall {
+    from {
+        height: auto;
+        top: 5%;
+        width: 50%;
+    }
+
+    to {
+        height: auto;
+        top: 15%;
+        width: 40%;
+    }
+}
+
+@keyframes parallax {
+    to {
+        transform: translateY(10000px);
+    }
+}
+
+@keyframes closeOverlay {
+    0% {
+        -webkit-backdrop-filter: blur(16px) saturate(0.3);
+        backdrop-filter: blur(16px) saturate(0.3);
+        display: block;
+    }
+
+    99% {
+        -webkit-backdrop-filter: blur(0) saturate(1);
+        backdrop-filter: blur(0) saturate(1);
+        display: block;
+    }
+
+    100% {
+        -webkit-backdrop-filter: blur(0) saturate(1);
+        backdrop-filter: blur(0) saturate(1);
+        display: none;
+    }
+}
+
+@keyframes openOverlay {
+    0% {
+        -webkit-backdrop-filter: blur(0) saturate(1);
+        backdrop-filter: blur(0) saturate(1);
+        display: none;
+    }
+
+    1% {
+        -webkit-backdrop-filter: blur(0) saturate(1);
+        backdrop-filter: blur(0) saturate(1);
+        display: block;
+    }
+
+    100% {
+        -webkit-backdrop-filter: blur(16px) saturate(0.3);
+        backdrop-filter: blur(16px) saturate(0.3);
+        display: block;
+    }
+}
+
+@keyframes closeRight {
+    from {
+        right: 0;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+
+@keyframes openRight {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes closeDown {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes openUp {
+    from {
+        top: 100%;
+    }
+
+    to {
+        top: 0;
+    }
+}

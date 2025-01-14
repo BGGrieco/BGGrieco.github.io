@@ -1,0 +1,77 @@
+.projectDetail {
+    animation: closeRight 0.3s ease forwards;
+    -webkit-backdrop-filter: blur(16px) saturate(0.3);
+    backdrop-filter: blur(16px) saturate(0.3);
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 60vw;
+    z-index: 4;
+
+    &.open {
+        animation: openRight 0.3s ease forwards;
+    }
+
+    @media screen and (max-width: 820px) {
+        width: 80vw;
+    }
+
+    @media screen and (max-width: 680px) {
+        animation: closeDown 0.3s ease forwards;
+        width: 100%;
+
+        &.open {
+            animation: openUp 0.3s ease forwards;
+        }
+    }
+
+    .closeButton {
+        background-color: rgba(255, 255, 255, 0);
+        background-image: url("/arrow.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 52px;
+        position: absolute;
+        right: -12px;
+        top: 0;
+        transition: 0.2s;
+        transform: scaleX(-1);
+        width: 52px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transition: 0.2s;
+        }
+
+        @media screen and (max-width: 680px) {
+            background-size: 32px 32px;
+            height: 48px;
+            transform: rotate(90deg);
+            width: 48px;
+        }
+    }
+
+    .detailImage {
+        margin: -42px -48px 32px -48px;
+        width: calc(100% + 96px);
+
+        @media screen and (max-width: 1200px) {
+            margin: -26px -32px 32px -32px;
+            width: calc(100% + 64px);
+        }
+
+        @media screen and (max-width: 680px) {
+            margin: -18px -24px 24px -24px;
+            width: calc(100% + 48px);
+        }
+    }
+
+    .detailWords {
+        position: relative;
+    }
+}

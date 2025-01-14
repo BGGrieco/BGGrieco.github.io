@@ -1,0 +1,109 @@
+@import "../../../animations.scss";
+
+.skillTypeContainer {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: -4px;
+    width: 100%;
+
+    img {
+        height: 80px;
+        opacity: 0.8;
+        width: 80px;
+    }
+
+    .skillName {
+        border-radius: 25px;
+        box-shadow: 8px 8px 24px rgba(0, 0, 0, 0);
+        height: 48px;
+        left: 12px;
+        margin: 13px 96px 0 0;
+        padding: 12px 48px;
+        position: relative;
+        width: 240px;
+
+        @media screen and (max-width: 450px) {
+            padding: 12px 24px;
+        }
+
+        p {
+            line-height: 22px;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin: 13px 0 0 0;
+        }
+    }
+
+    &.offset img {
+        margin-left: 36px;
+    }
+
+    &.offset .skillName {
+        margin: 13px 24px 0 0;
+
+        @media screen and (max-width: 450px) {
+            margin: 13px 0 0 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        animation: elevate 0.3s ease forwards;
+
+        p {
+            color: #6f6af8;
+            transition: 0.3s;
+        }
+    }
+}
+
+.technical {
+    .skillTypeContainer {
+        height: 80px;
+        margin: -4px 0 0 0;
+        position: relative;
+        top: -1px;
+
+        .skillName {
+            margin: 11px 0 0 96px;
+
+            @media screen and (min-width: 450px) and (max-width: 540px) {
+                left: -12px;
+            }
+
+            @media screen and (max-width: 450px) {
+                left: 0;
+                margin: 11px 12px 0 0;
+            }
+        }
+
+        img {
+            height: 70px;
+            order: 2;
+            width: 70px;
+        }
+
+        &.offset img {
+            margin-right: 36px;
+        }
+
+        &.offset .skillName {
+            margin: 11px 0 0 24px;
+            @media screen and (max-width: 450px) {
+                left: 0;
+                margin: 11px 0 0;
+            }
+        }
+
+        &.offset img {
+            @media screen and (max-width: 450px) {
+                margin-left: 12px;
+            }
+        }
+    }
+}
