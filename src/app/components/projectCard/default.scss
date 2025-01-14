@@ -1,0 +1,26 @@
+.projectCard {
+    color: #000000;
+    cursor: pointer;
+    direction: ltr;
+    height: 100%;
+    width: 100%;
+
+    span {
+        color: #000000;
+    }
+
+    .centerImage {
+        display: block;
+        -webkit-filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.5));
+        margin: auto;
+        position: relative;
+        height: auto;
+        top: 15%;
+        width: 60%;
+    }
+
+    @media screen and (max-width: 420px) {
+        padding: 10px 16px 16px 16px;
+    }
+}

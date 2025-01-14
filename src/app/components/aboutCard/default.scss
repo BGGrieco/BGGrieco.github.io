@@ -1,0 +1,58 @@
+.aboutCard {
+    padding: 42px 48px 48px 48px;
+
+    @media screen and (max-width: 1200px) {
+        padding: 26px 32px 32px 32px;
+    }
+
+    .textAndButtons {
+        display: flex;
+        flex-direction: column;
+
+        div:first-child {
+            margin: 0 0 24px 0;
+
+            @media screen and (min-width: 980px) {
+                margin: 0 24px 0 0;
+            }
+        }
+
+        @media screen and (min-width: 980px) {
+            flex-direction: row;
+        }
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        margin-top: 0;
+        justify-content: start;
+
+        .button:first-child {
+            margin-bottom: 24px;
+        }
+    }
+
+    .squaresGrid {
+        margin-bottom: -12px;
+        position: relative;
+
+        @media screen and (max-width: 820px) {
+            left: -32px;
+            margin-bottom: 0;
+            padding: 0 32px;
+            width: calc(100% + 64px);
+        }
+
+        &::before {
+            padding-bottom: 0;
+        }
+
+        .externalCard:nth-child(odd) {
+            margin-left: 0;
+        }
+
+        .externalCard:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+}

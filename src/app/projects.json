@@ -1,0 +1,90 @@
+{
+    "cyberPilot": {
+        "imageURL": "/cyberPilotProj.png",
+        "title": "WindTre",
+        "subtitle": "Cyber Security Portal",
+        "entities": "Jakala, Shiroi Studio",
+        "blurb1": "Design a self-assessment matrix to present various cybersecurity solutions to clients based on system-identified needs",
+        "blurb2": "Design accessible reports for displaying collated cyber risk data in a personalised manner for presentation to decision makers at various levels of technical proficiency",
+        "blurb3": "Develop the interactive UI as a 'digital sales room' style environment for sales enablement",
+        "blurb4": "Design a UI that's recogniseable's as Windtre's, but diferent enough to be new and exciting",
+        "role": "Team Lead, Senior UX/UI"
+    },
+    "brembo": {
+        "imageURL": "/bremboProj.png",
+        "title": "Brembo",
+        "subtitle": "E-Commerce",
+        "entities": "AKQA, Shiroi Studio",
+        "blurb1": "Benchmark the NA e-commerce website against competitors and partners to drive sales conversions",
+        "blurb2": "Create and wireframed a sitemap to identify opportunities for improvement in the site's usability, and identify existing opportunities on the current e-commerce website",
+        "blurb3": "Identify potential opportunities for sales, brand and target markets in future developments of the website",
+        "blurb4": "Map customer personas and journeys across a variety of generations and target markets",
+        "role": "Senior UX Researcher"
+    },
+    "areaClienti": {
+        "imageURL": "/windTreProj.png",
+        "title": "WindTre",
+        "subtitle": "Re-design Client Portal",
+        "entities": "Jakala, Shiroi Studio",
+        "blurb1": "Develop interactive user solutions and design a secure self service portal",
+        "blurb2": "Research and implement user journeys and use cases",
+        "blurb3": "Design logic systems for functional automations and develop a logic matrix for client support ticketing system",
+        "blurb4": "Refactor and simplify the internal data structure",
+        "role": "Team Lead, Senior UX/UI"
+    },
+    "unifarco": {
+        "imageURL": "/unifarcoProj.png",
+        "title": "Unifarco",
+        "subtitle": "Design System",
+        "entities": "Shiroi Studio",
+        "blurb1": "Create a comprehensive, scalable, and detailed Design System",
+        "blurb2": "Use best practice methodologies to convert multiple design elements into standardised, reuseable design components",
+        "blurb3": "Map components into an easy to use design library in Figma for various stakeholders",
+        "blurb4": "Provide guideance, and mentorship, and feedback to junior designers throughout the project",
+        "role": "Team Lead"
+    },
+    "ePaper": {
+        "imageURL": "/ePaperProj.png",
+        "title": "The Irish Times",
+        "subtitle": "ePaper",
+        "entities": "The Irish Times UX Team",
+        "blurb1": "Design a showcase website that would show off the exclusive ePaper feature, in one page only",
+        "blurb2": "Make the look and feel of the website as premium as possible",
+        "blurb3": "Include an infografic and a contact form, and fully responsive layout",
+        "blurb4": "Develop the design using SCSS and jQuery",
+        "role": "UX/UI, Front-end development"
+    },
+    "customFit": {
+        "imageURL": "/customFitProj.png",
+        "title": "CustomFit",
+        "subtitle": "My M.Sc. Thesis",
+        "entities": "Brian Grieco",
+        "blurb1": "Conceive an idea and market research it",
+        "blurb2": "Design prototypes and research the UX journey, collect data, and form an initial project structure",
+        "blurb3": "Finalise the project's data structure and UI design",
+        "blurb4": "Develop in full stack",
+        "role": "UX research, UI Design, Full stack development"
+    },
+    "pMp": {
+        "imageURL": "/pMpProj.png",
+        "title": "patientMpower",
+        "subtitle": "Data monitoring for chronic desease patients",
+        "entities": "Brian Grieco",
+        "blurb1": "Examine previous UI an user test it",
+        "blurb2": "Use test results to define an improved UX",
+        "blurb3": "Design the new UI around the new and improved UX",
+        "blurb4": "Liaise with the development team to ensure the designs are implemented correctly",
+        "role": "Team Lead, UX/UI design"
+    },
+    "listen": {
+        "imageURL": "/listenProj.png",
+        "title": "The Irish Times",
+        "subtitle": "Listen",
+        "entities": "The Irish Times UX Team",
+        "blurb1": "Research the initial UX and branding for the new 'Listen' feature",
+        "blurb2": "Gather data and requirements and present them to the rest of the team",
+        "blurb3": "Define and run initial tests on hi-fi mockups",
+        "blurb4": "Implement testing results in design process, design and develop the UI",
+        "role": "Discovery Lead, UX Research, UI Design, Front-end development"
+    }
+}
