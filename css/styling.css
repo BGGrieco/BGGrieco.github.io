@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Thin";
+  src: url("../font/WorkSans-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Light";
+  src: url("../font/WorkSans-Light.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url("../font/WorkSans-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heavy";
+  src: url("../font/WorkSans-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Regular";
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 6em;
+  font-weight: 400;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 2.15em;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h3, a {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 20%);
+}
+
+a:hover {
+  color: #4a86e8;
+}
+
+#duomo {
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#overlay {
+  background: radial-gradient(farthest-corner at 100% 100%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0.3));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#wordsContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#name {
+  margin: 64px 64px 64px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+#brokenText {
+  left: 0;
+  margin: 0 64px 128px 64px;
+  position: absolute;
+  text-align: left;
+  bottom: 0;
+}
+
+#brokenText h1:nth-child(2) {
+  margin: 24px 0 0 120px;
+}
+
+#info {
+  bottom: 0;
+  margin: 64px 0 32px 64px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  h3, a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 1.45em;
+  }
+
+  h3, a {
+    font-size: 16px;
+  }
+
+  #name, #brokenText {
+    width: 100%;
+  }
+
+  #name {
+    margin: 48px 0;
+  }
+  
+  #brokenText {
+    margin: 0 0 128px 48px;
+  }
+
+  #info {
+    margin: 0 0 32px 24px;
+  }
+
+  h3 {
+    width: calc(100% - 48px);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3, a {
+    font-size: 16px;
+  }
+  
+  #brokenText {
+    margin: 0 0 144px 24px;
+  }
+
+  h3 {
+    flex-direction: column;
+    height: 72px;
+  }
+}
